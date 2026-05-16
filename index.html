@@ -282,6 +282,9 @@ input,textarea,select{font-family:inherit;}
       <button class="hdr-play" id="hdrPlay" onclick="toggleHdrMetro()">▶</button>
     </div>
     <button class="icon-btn" onclick="toggleTheme()" id="themeBtn">🌙</button>
+    <button class="icon-btn" id="ghPullHdr" onclick="ghPullDirect()" title="Загрузить из GitHub">⬇️</button>
+    <button class="icon-btn" id="ghPushHdr" onclick="ghPushDirect()" title="Сохранить в GitHub">⬆️</button>
+    <button class="icon-btn" id="ghSettingsBtn" onclick="showGhModal()" title="Настройки GitHub">☁️</button>
     <button class="icon-btn" id="editModeBtn" onclick="toggleEditMode()">⚙️</button>
   </div>
 
@@ -381,6 +384,29 @@ input,textarea,select{font-family:inherit;}
   </div>
 
   <div class="lyrics-scroll" id="lyricsContainer"></div>
+</div>
+
+<!-- ══ GITHUB MODAL ══ -->
+<div class="overlay" id="ghOverlay">
+  <div class="modal">
+    <div class="modal-title">☁️ Настройки GitHub</div>
+    <div style="font-size:12px;color:var(--text2);margin-bottom:12px;line-height:1.5">
+      Введи один раз — потом используй ⬇️ и ⬆️ в шапке.<br>
+      Токен хранится только на этом устройстве.
+    </div>
+    <input class="m-field" id="ghUser" placeholder="GitHub username" type="text" autocomplete="off" autocorrect="off" spellcheck="false">
+    <input class="m-field" id="ghRepo" placeholder="Название репозитория (напр. songbook)" type="text" autocomplete="off" autocorrect="off" spellcheck="false">
+    <input class="m-field" id="ghToken" placeholder="Personal Access Token" type="password" autocomplete="off">
+    <div style="font-size:11px;color:var(--text2);margin-bottom:12px">
+      ⚠️ Токен нужен с правом <b>repo</b> (или <b>contents:write</b> для fine-grained)
+    </div>
+    <div id="ghStatus" style="font-size:12px;color:var(--text2);min-height:18px;margin-bottom:10px"></div>
+    <div class="m-row" style="flex-wrap:wrap;gap:8px">
+      <button class="m-btn" onclick="closeGhModal()">Закрыть</button>
+      <button class="m-btn" id="ghPullBtn" onclick="ghPull()">⬇️ Загрузить</button>
+      <button class="m-btn primary" id="ghPushBtn" onclick="ghPush()">☁️ Сохранить</button>
+    </div>
+  </div>
 </div>
 
 <!-- ══ ADD MODAL ══ -->
@@ -926,6 +952,156 @@ function demo(){
      ]},
   ];
 }
+
+// ═══════════════════════════════════════
+// GITHUB SYNC
+// ═══════════════════════════════════════
+let ghSha = null; // SHA of current data.json in repo
+
+function ghCreds(){
+  return {
+    user:  localStorage.getItem('gh_user')||'',
+    repo:  localStorage.getItem('gh_repo')||'',
+    token: localStorage.getItem('gh_token')||''
+  };
+}
+function ghSaveCreds(){
+  const u=document.getElementById('ghUser').value.trim();
+  const r=document.getElementById('ghRepo').value.trim();
+  const t=document.getElementById('ghToken').value.trim();
+  if(u) localStorage.setItem('gh_user',u);
+  if(r) localStorage.setItem('gh_repo',r);
+  if(t) localStorage.setItem('gh_token',t);
+  return {user:u,repo:r,token:t};
+}
+function showGhModal(){
+  const c=ghCreds();
+  document.getElementById('ghUser').value=c.user;
+  document.getElementById('ghRepo').value=c.repo;
+  document.getElementById('ghToken').value=c.token;
+  document.getElementById('ghStatus').textContent='';
+  document.getElementById('ghOverlay').classList.add('show');
+}
+function closeGhModal(){ document.getElementById('ghOverlay').classList.remove('show'); }
+
+function ghApiUrl(c){ return `https://api.github.com/repos/${c.user}/${c.repo}/contents/data.json`; }
+
+function ghSetStatus(msg,color='var(--text2)'){
+  const el=document.getElementById('ghStatus');
+  el.textContent=msg; el.style.color=color;
+}
+
+async function ghPull(silent=false){
+  const c=ghSaveCreds();
+  if(!c.user||!c.repo||!c.token){ if(!silent) ghSetStatus('Заполни все поля','var(--danger)'); return; }
+  if(!silent) ghSetStatus('Загружаю...');
+  if(!silent) document.getElementById('ghPullBtn').disabled=true;
+  try{
+    const res = await fetch(ghApiUrl(c)+'?t='+Date.now(),{
+      headers:{ Authorization:'token '+c.token, Accept:'application/vnd.github.v3+json' }
+    });
+    if(res.status===404){
+      if(!silent) ghSetStatus('Файл data.json не найден — сначала сохрани данные ⬆️','var(--text2)');
+      else toast('☁️ data.json не найден — сначала сохрани ⬆️');
+      if(!silent) document.getElementById('ghPullBtn').disabled=false; return;
+    }
+    if(!res.ok){ const msg='Ошибка '+res.status+': '+res.statusText; if(!silent) ghSetStatus(msg,'var(--danger)'); else toast(msg); if(!silent) document.getElementById('ghPullBtn').disabled=false; return; }
+    const json=await res.json();
+    ghSha=json.sha;
+    const data=JSON.parse(atob(json.content.replace(/\n/g,'')));
+    if(data.songs) songs=data.songs;
+    if(data.cfg) cfg=Object.assign(cfg,data.cfg);
+    save(); applyAll(); renderToc();
+    if(!silent) ghSetStatus('✓ Загружено!','#2e7d32');
+    toast('⬇️ Загружено из GitHub');
+  }catch(e){ const msg='Ошибка: '+e.message; if(!silent) ghSetStatus(msg,'var(--danger)'); else toast(msg); }
+  if(!silent) document.getElementById('ghPullBtn').disabled=false;
+}
+
+async function ghPush(silent=false){
+  const c=ghSaveCreds();
+  if(!c.user||!c.repo||!c.token){ if(!silent) ghSetStatus('Заполни все поля','var(--danger)'); return; }
+  if(!silent) ghSetStatus('Сохраняю...');
+  if(!silent) document.getElementById('ghPushBtn').disabled=true;
+
+  if(!ghSha){
+    try{
+      const r=await fetch(ghApiUrl(c),{ headers:{ Authorization:'token '+c.token, Accept:'application/vnd.github.v3+json' } });
+      if(r.ok){ const j=await r.json(); ghSha=j.sha; }
+    }catch(e){}
+  }
+
+  const content = btoa(unescape(encodeURIComponent(JSON.stringify({songs,cfg},null,2))));
+  const body = { message:'Update songbook data', content };
+  if(ghSha) body.sha=ghSha;
+
+  try{
+    const res=await fetch(ghApiUrl(c),{
+      method:'PUT',
+      headers:{ Authorization:'token '+c.token, 'Content-Type':'application/json', Accept:'application/vnd.github.v3+json' },
+      body: JSON.stringify(body)
+    });
+    if(!res.ok){
+      const err=await res.json();
+      const msg='Ошибка: '+(err.message||res.status);
+      if(!silent) ghSetStatus(msg,'var(--danger)'); else toast(msg);
+      if(!silent) document.getElementById('ghPushBtn').disabled=false; return;
+    }
+    const j=await res.json();
+    ghSha=j.content.sha;
+    if(!silent) ghSetStatus('✓ Сохранено!','#2e7d32');
+    toast('⬆️ Сохранено в GitHub');
+  }catch(e){ const msg='Ошибка: '+e.message; if(!silent) ghSetStatus(msg,'var(--danger)'); else toast(msg); }
+  if(!silent) document.getElementById('ghPushBtn').disabled=false;
+}
+
+// Direct header button actions — show modal if not configured
+async function ghPullDirect(){
+  const c=ghCreds();
+  if(!c.user||!c.repo||!c.token){ showGhModal(); ghSetStatus('Сначала введи настройки ниже','var(--accent)'); return; }
+  setHdrLoading('pull',true);
+  await ghPull(true);
+  setHdrLoading('pull',false);
+}
+async function ghPushDirect(){
+  const c=ghCreds();
+  if(!c.user||!c.repo||!c.token){ showGhModal(); ghSetStatus('Сначала введи настройки ниже','var(--accent)'); return; }
+  setHdrLoading('push',true);
+  await ghPush(true);
+  setHdrLoading('push',false);
+}
+function setHdrLoading(dir,on){
+  const btn=document.getElementById(dir==='pull'?'ghPullHdr':'ghPushHdr');
+  if(!btn) return;
+  btn.disabled=on;
+  btn.style.opacity=on?'0.5':'1';
+}
+
+
+window.addEventListener('load', async ()=>{
+  const c=ghCreds();
+  if(c.user&&c.repo&&c.token){
+    document.getElementById('ghSettingsBtn').title='GitHub: '+c.user+'/'+c.repo;
+    // Silent pull
+    try{
+      const res=await fetch(ghApiUrl(c)+'?t='+Date.now(),{
+        headers:{ Authorization:'token '+c.token, Accept:'application/vnd.github.v3+json' }
+      });
+      if(res.ok){
+        const json=await res.json();
+        ghSha=json.sha;
+        const data=JSON.parse(atob(json.content.replace(/\n/g,'')));
+        if(data.songs) songs=data.songs;
+        if(data.cfg) cfg=Object.assign(cfg,data.cfg);
+        save(); applyAll(); renderToc();
+        toast('☁️ Данные обновлены из GitHub');
+      }
+    }catch(e){}
+  }
+});
+
+// close on outside click
+document.getElementById('ghOverlay').addEventListener('click',function(e){ if(e.target===this) closeGhModal(); });
 
 // ═══════════════════════════════════════
 // INIT
