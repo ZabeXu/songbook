@@ -984,6 +984,22 @@ function demo(){
 }
 
 // ═══════════════════════════════════════
+// BASE64 UNICODE HELPERS
+// ═══════════════════════════════════════
+function toBase64(str){
+  const bytes = new TextEncoder().encode(str);
+  let binary = '';
+  bytes.forEach(b => binary += String.fromCharCode(b));
+  return btoa(binary);
+}
+function fromBase64(str){
+  const binary = atob(str);
+  const bytes = new Uint8Array(binary.length);
+  for(let i=0;i<binary.length;i++) bytes[i]=binary.charCodeAt(i);
+  return new TextDecoder().decode(bytes);
+}
+
+// ═══════════════════════════════════════
 // GITHUB SYNC
 // ═══════════════════════════════════════
 let ghSha = null; // SHA of current data.json in repo
@@ -1038,7 +1054,7 @@ async function ghPull(silent=false){
     if(!res.ok){ const msg='Ошибка '+res.status+': '+res.statusText; if(!silent) ghSetStatus(msg,'var(--danger)'); else toast(msg); if(!silent) document.getElementById('ghPullBtn').disabled=false; return; }
     const json=await res.json();
     ghSha=json.sha;
-    const data=JSON.parse(atob(json.content.replace(/\n/g,'')));
+    const data=JSON.parse(fromBase64(json.content.replace(/\n/g,'')));
     if(data.songs) songs=data.songs;
     if(data.cfg) cfg=Object.assign(cfg,data.cfg);
     save(); applyAll(); renderToc();
@@ -1061,7 +1077,7 @@ async function ghPush(silent=false){
     }catch(e){}
   }
 
-  const content = btoa(unescape(encodeURIComponent(JSON.stringify({songs,cfg},null,2))));
+  const content = toBase64(JSON.stringify({songs,cfg},null,2));
   const body = { message:'Update songbook data', content };
   if(ghSha) body.sha=ghSha;
 
@@ -1120,7 +1136,7 @@ window.addEventListener('load', async ()=>{
       if(res.ok){
         const json=await res.json();
         ghSha=json.sha;
-        const data=JSON.parse(atob(json.content.replace(/\n/g,'')));
+        const data=JSON.parse(fromBase64(json.content.replace(/\n/g,'')));
         if(data.songs) songs=data.songs;
         if(data.cfg) cfg=Object.assign(cfg,data.cfg);
         save(); applyAll(); renderToc();
