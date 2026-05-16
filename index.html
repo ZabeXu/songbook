@@ -112,7 +112,19 @@ input,textarea,select{font-family:inherit;}
 .s-sub.hide{display:none;}
 .num-cell{text-align:center;font-size:calc(var(--list-font) * 0.75);color:var(--text2);}
 .right-cell{text-align:right;font-size:var(--list-font);color:var(--text2);}
-.bpm-cell{text-align:right;font-size:var(--list-font);font-weight:700;color:var(--accent);}
+.bpm-cell{text-align:right;}
+.bpm-btn{
+  display:inline-flex;align-items:center;gap:5px;
+  padding:4px 9px;border-radius:6px;border:1px solid var(--border);cursor:pointer;
+  font-family:inherit;font-size:var(--list-font);font-weight:700;
+  background:var(--surface2);color:var(--accent);
+  transition:background .15s,color .15s,border-color .15s;
+}
+.bpm-btn .bicon{font-size:10px;opacity:0.5;transition:opacity .15s;}
+.bpm-btn.playing{background:#e53935;color:#fff;border-color:#e53935;}
+.bpm-btn.playing .bicon{opacity:1;}
+@keyframes bpm-flash{0%{transform:scale(1);}40%{transform:scale(0.88);}100%{transform:scale(1);}}
+.bpm-btn.flash{animation:bpm-flash .18s ease-out;}
 .drag-handle{text-align:center;font-size:18px;color:var(--text2);cursor:grab;user-select:none;}
 .edit-inline{
   border:none;background:transparent;color:var(--text);font-family:inherit;
@@ -614,6 +626,37 @@ document.addEventListener('DOMContentLoaded',()=>{
   });
 });
 
+let listMetroPlaying = false;
+let listMetroBpm = null;
+
+function toggleListMetro(idx, e){
+  e.stopPropagation();
+  const s = songs[idx];
+  const btn = e.currentTarget;
+
+  // Flash animation
+  btn.classList.remove('flash');
+  void btn.offsetWidth; // reflow
+  btn.classList.add('flash');
+  setTimeout(()=>btn.classList.remove('flash'), 200);
+
+  if(listMetroPlaying && listMetroBpm === s.bpm){
+    // Same song — stop
+    stopMetro();
+    listMetroPlaying = false;
+    listMetroBpm = null;
+  } else {
+    // Start/switch to this song's BPM
+    listMetroPlaying = true;
+    listMetroBpm = s.bpm;
+    bpm = s.bpm || 120;
+    updateBpmUI();
+    if(playing) stopMetro();
+    startMetro();
+  }
+  renderToc();
+}
+
 // ═══════════════════════════════════════
 // RENDER TOC
 // ═══════════════════════════════════════
@@ -647,7 +690,7 @@ function renderToc(){
         </div></td>
         <td class="col-pad right-cell">${x(s.pad||'')}</td>
         <td class="col-voice right-cell">${x(s.voice||'')}</td>
-        <td class="col-bpm bpm-cell">${s.bpm||'—'}</td>`;
+        <td class="col-bpm bpm-cell"><button class="bpm-btn${listMetroBpm===s.bpm&&listMetroPlaying?' playing':''}" onclick="toggleListMetro(${i},event)""><span class="bicon">${listMetroBpm===s.bpm&&listMetroPlaying?'■':'▶'}</span>${s.bpm||'—'}</button></td>`;
       tr.addEventListener('click',()=>openSong(i));
     }
     // drop target
@@ -939,6 +982,7 @@ function startMetro(){
 }
 function stopMetro(){
   playing=false; clearInterval(mInterval); mInterval=null;
+  listMetroPlaying=false;
   document.getElementById('mPlay').textContent='▶';
   document.getElementById('mPlay').classList.remove('playing');
   document.getElementById('hdrPlay').textContent='▶';
