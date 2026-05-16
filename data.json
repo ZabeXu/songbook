@@ -3,7 +3,7 @@
     {
       "name": "Осень",
       "sub": "капо на 2 ладу",
-      "pad": "01",
+      "pad": "001",
       "voice": "042",
       "bpm": 76,
       "showChords": false,
@@ -21,43 +21,48 @@
       ]
     },
     {
-      "name": "BEP - Get started",
+      "name": "Дорога",
       "sub": "",
-      "pad": "",
-      "voice": "",
-      "bpm": 95,
+      "pad": "002",
+      "voice": "015",
+      "bpm": 112,
       "showChords": false,
       "verses": [
         {
-          "label": "Куплет 1",
-          "text": "In this context,\nthere's no disrespect\nSo when I bust my rhyme,\nyou (break ya necks)\nWe got five minutes for us to disconnect\nFrom all intellect, collect the rhythm effect\n\nTo lose your inhibition follow your intuition\nFree your inner soul and break away from tradition\nCause when we be out, girlies pull they weave out\nYou wouldn't believe how, we wow shit out\nBurn it 'til it's burned out, turn it 'til it's turned out\nAct up from north, west, east, south",
-          "chords": ""
-        },
+          "label": "Куплет",
+          "chords": "G      D       Em      C",
+          "text": "Фары режут темноту,\nТрасса пустая до утра.\nЯ нажму, перегоню\nЭту ночь — и снова в путь."
+        }
+      ]
+    },
+    {
+      "name": "Тихий вечер",
+      "sub": "",
+      "pad": "003",
+      "voice": "008",
+      "bpm": 63,
+      "showChords": false,
+      "verses": [
         {
-          "label": "Куплет 2",
-          "text": "Lose control, of body and soul\nDon't move too fast, people, just take it slow\nDon't get ahead, just jump into it\nY'all hear about it, the Peas will do it\n\nGet started, get stupid\nDon't worry about it, people will walk you through it\nStep by step like an infant new kid\nInch by inch with the new solution\nTransmit hits with no delusion\nThe feeling's irresistible and that's how we movin' ",
-          "chords": ""
-        },
-        {
-          "label": "Куплет 3",
-          "text": "Let's get ill, that's the deal\nAt the gate, and Will bring the bugged out drill\nLose your mind, this is the time\nY'all can't stand still, twist and bang your spine\nBob your head like me, apl.de\nUp inside the club or in your Bentley\nGet messy, loud and sick\nY'all mind pass normal on another head trip\nSo, come them now, do not correct it\nLet's get ignant, let's get hectic ",
-          "chords": ""
+          "label": "Куплет",
+          "chords": "D     A      Bm     G",
+          "text": "Чай остыл на подоконнике,\nКот свернулся у огня.\nВремя еле-еле движется —\nХорошо, что нет меня."
         }
       ]
     }
   ],
   "cfg": {
     "listName": "Мой песенник",
-    "theme": "dark",
+    "theme": "light",
     "lFontSize": 16,
     "lLineH": 1.4,
     "lRowH": 44,
-    "lTextColor": "#eeeeee",
-    "lBgColor": "#111111",
-    "sFontSize": 15,
-    "sLineH": 1.2,
-    "sTextColor": "#eeeeee",
-    "sTextAlign": "center",
+    "lTextColor": "#111111",
+    "lBgColor": "#ffffff",
+    "sFontSize": 18,
+    "sLineH": 1.1,
+    "sTextColor": "#111111",
+    "sTextAlign": "left",
     "metroSound": "click"
   }
 }
