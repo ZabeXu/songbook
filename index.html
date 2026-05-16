@@ -18,7 +18,7 @@
   --header-bg:#ffffff;--row-hover:#f0f4ff;--danger:#e53935;
   --metro-btn:#1a73e8;--row-height:44px;
   --list-font:16px;--list-lh:1.4;
-  --song-font:18px;--song-lh:1.8;--song-color:#111111;
+  --song-font:18px;--song-lh:1.1;--song-color:#111111;--song-align:left;
 }
 .dark{
   --bg:#111111;--surface:#1e1e1e;--surface2:#2a2a2a;--border:#383838;
@@ -227,6 +227,7 @@ input,textarea,select{font-family:inherit;}
 .chord-row[contenteditable=true]{border-bottom:1px dashed rgba(74,158,255,.4);}
 .lyric-area{
   font-size:var(--song-font);line-height:var(--song-lh);color:var(--song-color);
+  text-align:var(--song-align);
   border:none;background:transparent;outline:none;width:100%;
   resize:none;display:block;min-height:24px;white-space:pre-wrap;overflow:hidden;
 }
@@ -354,6 +355,11 @@ input,textarea,select{font-family:inherit;}
     <span class="eb-label">Цвет</span>
     <input class="eb-color" type="color" id="sTextColor" value="#111111" onchange="applySongStyle()">
     <div class="eb-sep"></div>
+    <span class="eb-label">Выравн.</span>
+    <button class="eb-btn" id="alignLeft" onclick="setAlign('left')">☰</button>
+    <button class="eb-btn" id="alignCenter" onclick="setAlign('center')">≡</button>
+    <button class="eb-btn" id="alignRight" onclick="setAlign('right')">☷</button>
+    <div class="eb-sep"></div>
     <button class="eb-btn" id="chordsBtn" onclick="toggleSongChords()">🎸 Аккорды</button>
     <button class="eb-btn" onclick="addVerse()">+ Куплет</button>
   </div>
@@ -438,7 +444,7 @@ let cfg = {
   listName:'Мой песенник', theme:'light',
   lFontSize:16, lLineH:1.4, lRowH:44,
   lTextColor:'#111111', lBgColor:'#ffffff',
-  sFontSize:18, sLineH:1.1, sTextColor:'#111111',
+  sFontSize:18, sLineH:1.1, sTextColor:'#111111', sTextAlign:'left',
   metroSound:'click'
 };
 let editMode = false;
@@ -529,13 +535,29 @@ function applyListStyle(sv=true){
 }
 function applySongStyle(sv=true){
   cfg.sFontSize = +gv('sFontSize')||18;
-  cfg.sLineH = +gv('sLineH')||1.8;
+  cfg.sLineH = +gv('sLineH')||1.1;
   cfg.sTextColor = gv('sTextColor');
   const r=document.documentElement.style;
   r.setProperty('--song-font', cfg.sFontSize+'px');
   r.setProperty('--song-lh', cfg.sLineH);
   r.setProperty('--song-color', cfg.sTextColor);
+  r.setProperty('--song-align', cfg.sTextAlign||'left');
   if(sv) save();
+}
+function setAlign(a){
+  cfg.sTextAlign=a;
+  document.documentElement.style.setProperty('--song-align',a);
+  ['Left','Center','Right'].forEach(d=>{
+    document.getElementById('align'+d).classList.toggle('on', a===d.toLowerCase());
+  });
+  save();
+}
+function updateAlignBtns(){
+  const a=cfg.sTextAlign||'left';
+  ['Left','Center','Right'].forEach(d=>{
+    const btn=document.getElementById('align'+d);
+    if(btn) btn.classList.toggle('on', a===d.toLowerCase());
+  });
 }
 function gv(id){ const el=document.getElementById(id); return el?el.value:''; }
 
@@ -677,9 +699,16 @@ function delSong(i){
 function openSong(i){
   curIdx=i;
   const s=songs[i];
-  bpm=s.bpm||120;
-  updateBpmUI();
-
+  // Load song's BPM into display, but only apply to metro if not currently playing
+  if(playing){
+    // Metro is running — show current song's BPM in UI but don't change tempo
+    // User must press play again to activate new BPM
+    document.getElementById('bpmNum').textContent=s.bpm||120;
+    // Keep hdrBpm showing the actually playing BPM
+  } else {
+    bpm=s.bpm||120;
+    updateBpmUI();
+  }
   document.getElementById('sTitleInput').value=s.name||'';
   document.getElementById('sSubInput').value=s.sub||'';
   document.getElementById('pvPad').textContent=s.pad||'—';
@@ -695,7 +724,7 @@ function openSong(i){
   document.getElementById('sTitleInput').readOnly=true;
   document.getElementById('sSubInput').readOnly=true;
 
-  if(playing){ stopMetro(); startMetro(); }
+  // Metro keeps playing at its current BPM — user presses play to start with new song's BPM
 
   renderLyrics();
   document.getElementById('sToc').classList.remove('active');
@@ -724,6 +753,7 @@ function toggleSongEdit(){
   document.getElementById('sEditBar').classList.toggle('show',songEditMode);
   document.getElementById('sTitleInput').readOnly=!songEditMode;
   document.getElementById('sSubInput').readOnly=!songEditMode;
+  if(songEditMode) updateAlignBtns();
   renderLyrics();
 }
 document.addEventListener('DOMContentLoaded',()=>{
@@ -900,7 +930,16 @@ function stopMetro(){
   document.getElementById('hdrPlay').textContent='▶';
   document.getElementById('hdrPlay').classList.remove('playing');
 }
-function toggleMetro(){ playing?stopMetro():startMetro(); }
+function toggleMetro(){
+  if(playing){
+    stopMetro();
+  } else {
+    // Activate the displayed BPM (current song's BPM)
+    if(curIdx!==null) bpm=songs[curIdx].bpm||120;
+    updateBpmUI();
+    startMetro();
+  }
+}
 function toggleHdrMetro(){ playing?stopMetro():startMetro(); }
 function updateBpmUI(){
   document.getElementById('bpmNum').textContent=bpm;
