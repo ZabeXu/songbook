@@ -632,29 +632,37 @@ let listMetroBpm = null;
 function toggleListMetro(idx, e){
   e.stopPropagation();
   const s = songs[idx];
-  const btn = e.currentTarget;
-
-  // Flash animation
-  btn.classList.remove('flash');
-  void btn.offsetWidth; // reflow
-  btn.classList.add('flash');
-  setTimeout(()=>btn.classList.remove('flash'), 200);
 
   if(listMetroPlaying && listMetroBpm === s.bpm){
-    // Same song — stop
+    // Same — stop
     stopMetro();
     listMetroPlaying = false;
     listMetroBpm = null;
+    renderToc();
   } else {
-    // Start/switch to this song's BPM
+    // Switch to new BPM — set state BEFORE stopMetro so it doesn't get wiped
     listMetroPlaying = true;
     listMetroBpm = s.bpm;
     bpm = s.bpm || 120;
     updateBpmUI();
-    if(playing) stopMetro();
+    // Stop without resetting listMetro state
+    playing=false; clearInterval(mInterval); mInterval=null;
+    document.getElementById('mPlay').textContent='▶';
+    document.getElementById('mPlay').classList.remove('playing');
+    document.getElementById('hdrPlay').textContent='▶';
+    document.getElementById('hdrPlay').classList.remove('playing');
+    const sw=document.getElementById('mSwitch');
+    if(sw) sw.classList.remove('active');
     startMetro();
+    renderToc();
+    // Flash after render — find the now-active button
+    const activeBtn = document.querySelector('.bpm-btn.playing');
+    if(activeBtn){
+      void activeBtn.offsetWidth;
+      activeBtn.classList.add('flash');
+      setTimeout(()=>activeBtn.classList.remove('flash'), 200);
+    }
   }
-  renderToc();
 }
 
 // ═══════════════════════════════════════
