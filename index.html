@@ -194,15 +194,6 @@ input,textarea,select{font-family:inherit;}
   padding:5px 10px;border-radius:4px;border:1px solid var(--border);
   background:var(--surface2);color:var(--text);font-size:12px;font-weight:700;
 }
-.m-switch{
-  width:34px;height:34px;border-radius:50%;border:none;
-  background:var(--metro-btn);color:#fff;font-size:18px;flex-shrink:0;
-  display:flex;align-items:center;justify-content:center;
-  box-shadow:0 2px 6px rgba(26,115,232,.3);
-  opacity:0.4;transition:opacity .15s,transform .15s;
-}
-.m-switch.active{opacity:1;}
-.m-switch:active{transform:scale(0.9);}
 .sound-sel{
   padding:4px 5px;border-radius:4px;border:1px solid var(--border);
   background:var(--bg);color:var(--text);font-size:11px;max-width:105px;
@@ -383,7 +374,6 @@ input,textarea,select{font-family:inherit;}
       </div>
       <button class="bpm-adj" onmousedown="holdStart(1,event)" onmouseup="holdStop()" ontouchstart="holdStart(1,event)" ontouchend="holdStop()">+</button>
       <button class="tap-btn" onclick="tapTempo()">TAP</button>
-      <button class="m-switch" id="mSwitch" onclick="switchToCurrent()" title="Переключить на BPM этой песни">↺</button>
     </div>
     <select class="sound-sel" id="soundSel" onchange="saveSound()">
       <option value="woodblock">Wood Block</option>
@@ -714,14 +704,10 @@ function openSong(i){
     // Metro is running — show current song's BPM in UI but don't change tempo
     // User must press play again to activate new BPM
     document.getElementById('bpmNum').textContent=s.bpm||120;
-    // Highlight switch button if BPM differs
-    const differs = (s.bpm||120) !== bpm;
-    document.getElementById('mSwitch').classList.toggle('active', differs);
     // Keep hdrBpm showing the actually playing BPM
   } else {
     bpm=s.bpm||120;
     updateBpmUI();
-    document.getElementById('mSwitch').classList.remove('active');
   }
   document.getElementById('sTitleInput').value=s.name||'';
   document.getElementById('sSubInput').value=s.sub||'';
@@ -943,16 +929,8 @@ function stopMetro(){
   document.getElementById('mPlay').classList.remove('playing');
   document.getElementById('hdrPlay').textContent='▶';
   document.getElementById('hdrPlay').classList.remove('playing');
-  document.getElementById('mSwitch').classList.remove('active');
 }
-function switchToCurrent(){
-  if(curIdx===null) return;
-  bpm=songs[curIdx].bpm||120;
-  updateBpmUI();
-  stopMetro();
-  startMetro();
-  document.getElementById('mSwitch').classList.remove('active');
-}
+function toggleMetro(){
   if(playing){
     stopMetro();
   } else {
