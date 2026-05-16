@@ -200,7 +200,8 @@ input,textarea,select{font-family:inherit;}
   display:flex;align-items:center;justify-content:center;
 }
 .bpm-display{text-align:center;cursor:pointer;}
-.bpm-num{font-size:22px;font-weight:700;color:var(--accent);display:block;font-variant-numeric:tabular-nums;}
+.bpm-num{font-size:22px;font-weight:700;color:#2e7d32;display:block;font-variant-numeric:tabular-nums;}
+.bpm-num.mismatch{color:#e53935;}
 .bpm-lbl{font-size:9px;color:var(--text2);display:block;}
 .tap-btn{
   padding:5px 10px;border-radius:4px;border:1px solid var(--border);
@@ -769,6 +770,7 @@ function openSong(i){
     document.getElementById('bpmNum').textContent=s.bpm||120;
     const differs=(s.bpm||120)!==bpm;
     document.getElementById('mSwitch').classList.toggle('active',differs);
+    updateBpmColor();
   } else {
     bpm=s.bpm||120;
     updateBpmUI();
@@ -1004,22 +1006,32 @@ function switchToCurrent(){
   updateBpmUI();
   stopMetro();
   startMetro();
+  updateBpmColor();
   document.getElementById('mSwitch').classList.remove('active');
 }
 function toggleMetro(){
   if(playing){
     stopMetro();
   } else {
-    // Activate the displayed BPM (current song's BPM)
     if(curIdx!==null) bpm=songs[curIdx].bpm||120;
     updateBpmUI();
     startMetro();
   }
+  updateBpmColor();
 }
 function toggleHdrMetro(){ playing?stopMetro():startMetro(); }
+function updateBpmColor(){
+  const el = document.getElementById('bpmNum');
+  if(!el) return;
+  // mismatch = metro is playing AND current playing BPM differs from this song's BPM
+  const songBpm = curIdx !== null ? (songs[curIdx].bpm || 120) : null;
+  const mismatch = playing && songBpm !== null && bpm !== songBpm;
+  el.classList.toggle('mismatch', mismatch);
+}
 function updateBpmUI(){
   document.getElementById('bpmNum').textContent=bpm;
   document.getElementById('hdrBpm').textContent=bpm;
+  updateBpmColor();
 }
 function setBpm(v){
   bpm=Math.max(30,Math.min(300,v));
