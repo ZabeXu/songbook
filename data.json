@@ -37,7 +37,7 @@
     }
   ],
   "cfg": {
-    "listName": "Сушка1",
+    "listName": "Песни",
     "theme": "dark",
     "lFontSize": 16,
     "lLineH": 1.4,
@@ -47,6 +47,7 @@
     "sFontSize": 18,
     "sLineH": 1.1,
     "sTextColor": "#eeeeee",
+    "sTextAlign": "center",
     "metroSound": "click"
   }
 }
