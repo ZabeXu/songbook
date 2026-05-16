@@ -19,20 +19,40 @@
           "text": "Осень, осень — рыжий огонь,\nПадают листья с клёна.\nТы уходи, но не тронь\nТо, что осталось сломанным."
         }
       ]
+    },
+    {
+      "name": "BEP - Get started",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 95,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "In this context,\nthere's no disrespect\nSo when I bust my rhyme,\nyou (break ya necks)\nWe got five minutes for us to disconnect\nFrom all intellect, collect the rhythm effect\n\nTo lose your inhibition follow your intuition\nFree your inner soul and break away from tradition\nCause when we be out, girlies pull they weave out\nYou wouldn't believe how, we wow shit out\nBurn it 'til it's burned out, turn it 'til it's turned out\nAct up from north, west, east, south",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Lose control, of body and soul\nDon't move too fast, people, just take it slow\nDon't get ahead, just jump into it\nY'all hear about it, the Peas will do it\n\nGet started, get stupid\nDon't worry about it, people will walk you through it\nStep by step like an infant new kid\nInch by inch with the new solution\nTransmit hits with no delusion\nThe feeling's irresistible and that's how we movin' ",
+          "chords": ""
+        }
+      ]
     }
   ],
   "cfg": {
     "listName": "Мой песенник",
-    "theme": "light",
+    "theme": "dark",
     "lFontSize": 16,
     "lLineH": 1.4,
     "lRowH": 44,
-    "lTextColor": "#111111",
-    "lBgColor": "#ffffff",
-    "sFontSize": 18,
-    "sLineH": 1.1,
-    "sTextColor": "#111111",
-    "sTextAlign": "left",
+    "lTextColor": "#eeeeee",
+    "lBgColor": "#111111",
+    "sFontSize": 15,
+    "sLineH": 1.2,
+    "sTextColor": "#eeeeee",
+    "sTextAlign": "center",
     "metroSound": "click"
   }
 }
