@@ -50,9 +50,30 @@
       "sub": "",
       "pad": "",
       "voice": "",
-      "bpm": 105,
+      "bpm": 110,
       "showChords": false,
-      "verses": []
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "This ain't a song for the broken-hearted\nNo silent prayer for the faith-departed\nI ain't gonna be just a face in the crowd\nYou're gonna hear my voice\nWhen I shout it out loud ",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "It's my life It's now or never\nI ain't gonna live forever\nI just want to live while I'm alive\nIt's my life My heart is like an open highway\nLike Frankie said, \"I did it my way.\"\nI just wanna live while I'm alive It's my life",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "This is for the ones who stood their ground\nFor Tommy and Gina who never backed down\nTomorrow's getting harder make no mistake \nLuck ain't even lucky\nGot to make your own breaks",
+          "chords": ""
+        },
+        {
+          "label": "Бридж",
+          "text": "Better stand tall when they're calling you out\nDon't bend, don't break, baby, don't back down",
+          "chords": ""
+        }
+      ]
     }
   ],
   "cfg": {
