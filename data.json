@@ -5,7 +5,7 @@
       "sub": "",
       "pad": "",
       "voice": "",
-      "bpm": 95,
+      "bpm": 100,
       "showChords": false,
       "verses": [
         {
@@ -44,6 +44,15 @@
           "chords": ""
         }
       ]
+    },
+    {
+      "name": "Bon Jovi - It's my life",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 105,
+      "showChords": false,
+      "verses": []
     }
   ],
   "cfg": {
