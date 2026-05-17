@@ -44,19 +44,28 @@
           "chords": ""
         }
       ]
+    },
+    {
+      "name": "BEP - Pump it",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 120,
+      "showChords": false,
+      "verses": []
     }
   ],
   "cfg": {
     "listName": "Мой песенник",
-    "theme": "dark",
+    "theme": "light",
     "lFontSize": 16,
     "lLineH": 1.4,
     "lRowH": 44,
-    "lTextColor": "#eeeeee",
-    "lBgColor": "#111111",
+    "lTextColor": "#111111",
+    "lBgColor": "#ffffff",
     "sFontSize": 15,
     "sLineH": 1.2,
-    "sTextColor": "#eeeeee",
+    "sTextColor": "#111111",
     "sTextAlign": "center",
     "metroSound": "click"
   }
