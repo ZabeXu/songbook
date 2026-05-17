@@ -52,7 +52,13 @@
       "voice": "",
       "bpm": 120,
       "showChords": false,
-      "verses": []
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Niggas wanna hate on us (who?)\nNiggas be envious (who?)\nI know why they hating on us (why?)\n'Cause that's so fabulous (what?)\n\nI'ma be real on us (c'mon)\nNobody got nothing on us (no)\nGirls be all on us From\nLondon back down to the U.S.\n\nS S We rockin' this (contagious)\nMonkey business (outrageous)\nJust confess, your girl admits that we the shit\nF-R-E-S-H we (fresh)\nD-E-F, that's right we def' (rock)\nWe definite,\nB-E-P we reppin' it So",
+          "chords": ""
+        }
+      ]
     }
   ],
   "cfg": {
