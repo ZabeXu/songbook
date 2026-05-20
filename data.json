@@ -381,7 +381,28 @@
       "voice": "",
       "bpm": 100,
       "showChords": false,
-      "verses": []
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Just shoot for the stars\nIf it feels right, then aim for my heart\nIf you feel like\nAnd take me away\nAnd make it OK\nI swear I'll behave\n\nYou wanted control, so we waited\nI put on a show, now I'm naked\nYou say I'm a kid\nMy ego is big\nI don't give a shit\nAnd it goes like this, uh",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Take me by the tongue and I'll know you (Uh)\nKiss me 'til you're drunk and I'll show you\nYou want the moves like Jagger\nI've got them moves like Jagger\nI've got them moves like Jagger (Uh)\nI don't need to try to control you (Uh)\nLook into my eyes and I'll own you\nWith them moves like Jagger\nI've got them moves like Jagger\nI've got them moves like Jagger",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Maybe it's hard, when you feel like\nYou're broken and scarred, nothing\nfeels right\nBut when you're with me\nI'll make you believe\nThat I've got the key\n\nOh, so get in the car, we can ride it\nWherever you want, get inside it\nAnd you wanna steer, but I'm shifting\ngears\nI'll take it from here (Oh, yeah, yeah)\nAnd it goes like this, uh",
+          "chords": ""
+        },
+        {
+          "label": "Бридж",
+          "text": "Uh, you wanna know, how to make me smile?\nTake control, own me just for the night\nAnd if I share my secret\nYou're gonna have to keep it\nNobody else can see this (Uh)\nSo watch and learn, I won't show you twice\nHead to toe, ooh baby, rub me right, yeah\nAnd if I share my secret\nYou're gonna have to keep it\nNobody else can see this\nHey, hey, hey, yeah",
+          "chords": ""
+        }
+      ]
     },
     {
       "name": "Sevak - Сияй",
@@ -390,7 +411,18 @@
       "voice": "",
       "bpm": 100,
       "showChords": false,
-      "verses": []
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Колкими фразами\nБезликими масками\nЖадными взглядами\nПровожают каждый твой шаг\nДумают они\nЗнают кто же ты\nНо не видят, что\nСпрятано от чужих глаз\nЧто там внутри\nЗнаешь только ты\nВ себя смотри\nВеру там найди\nИ ты непременно\nВ себя вновь поверишь\nИ ты увидишь\nЧто ты можешь сиять",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Ведь ты можешь сиять\nТак сияй\nБоль что внутри отпускай\nРади себя засияй\nЯрче звезд ты вновь засияй\nТак сияй\nБоль что внутри отпускай\nРади себя засияй\nЯрче звезд ты вновь засияй",
+          "chords": ""
+        }
+      ]
     },
     {
       "name": "Баста - Сансара",
@@ -402,7 +434,7 @@
       "verses": []
     },
     {
-      "name": "Бурито -–Мама",
+      "name": "Бурито - Мама",
       "sub": "",
       "pad": "",
       "voice": "",
