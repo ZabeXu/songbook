@@ -112,7 +112,33 @@
       "voice": "",
       "bpm": 110,
       "showChords": false,
-      "verses": []
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Turn your magic on\nUmi she'd say\nEverything you want's a dream away\nWe are legends every day\nThat's what she told me",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Now I feel my heart beating\nI feel my heart underneath my skin\nAnd I feel my heart beating\nOh, you make me feel\nLike I'm alive again\nAlive again\nOh, you make me feel\nLike I'm alive again",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Said I can't go on\nNot in this way\nI'm a dream that died by light of day\nGonna hold up half the sky and say\nOnly I own me",
+          "chords": ""
+        },
+        {
+          "label": "Бридж",
+          "text": "Turn your magic on\nUmi she'd say\nEverything you want's a dream away\nUnder this pressure under this weight\nWe are diamonds taking shape\nWe are diamonds taking shape",
+          "chords": ""
+        },
+        {
+          "label": "Аутро",
+          "text": "If we've only got this life\nThis adventure, oh, then I\nAnd if we've only got this life\nYou get me through\n\nIf we've only got this life\nIn this adventure, oh, then I\nWant to share it with you",
+          "chords": ""
+        }
+      ]
     },
     {
       "name": "Don Omar – Danza Kuduro",
@@ -121,10 +147,379 @@
       "voice": "",
       "bpm": 115,
       "showChords": false,
-      "verses": []
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "La mano arriba\nCintura sola\nDa media vuelta\nDanza kuduro\nNo te canse' ahora\nQue esto sólo empieza\nMueve la cabeza\nDanza kuduro",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Balança que é uma loucura\nMorena, vem a meu lado\nNinguém vai ficar parado\nQuero ver mexer kuduro\nBalança que é uma loucura\nMorena, vem a meu lado\nNinguém vai ficar parado, oh-oh-oh",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Oi, oi, oi\nOi, oi, oi, oi\nÉ pra quebrar kuduro\nVamos dançar kuduro\nOi, oi, oi\nOi, oi, oi, oi\nSeja morena ou loira\nVem balançar kuduro\nOi, oi, oi",
+          "chords": ""
+        }
+      ]
     },
     {
       "name": "Duke Dumont – Ocean Drive",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "We're riding down the boulevard\nWe're riding through the dark night, night\nWith half the tank and empty heart\nPretending we're in love, but it's never enough, nah\nAs the sirens fill the lonely air\nOh, how did we get here now now now babe\nWe see a storm is closing in\nPretending we ain't scared",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Don't say a word while we dance with the devil\nYou brought a fire to a world so cold\nWe're out of time on the highway to never\nHold on (hold on), hold on (hold on)\nDon't say a word while we dance with the devil\nYou brought a fire to a world so cold\nWe're out of time on the highway to never\nHold on (hold on), hold on (hold on)",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "We're running all the red lights down\nNo way that we can stop, nah nah\nA quarter tank and almost gone\nPretending we're in love, but it's never enough, nah\nI wish we could take it back in time\nBefore we crossed the line, now now now, babe\nWe see a storm is closing in\nI reach out for your hand",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "HiFi – Не дано",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Нам не дано с тобой понять\nЧему так радуется ветер\nИ почему от доброты\nБывают так жестоки дети\nЗачем кому-то умирать\nЧтобы он нами был замечен\nТак много разных \"почему\"\nОставил Бог на этом свете",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "День уходящий не вернуть\nНе торопись пройти свой путь\nНеосторожный сделав шаг\nПросто скажи\nПросто скажи: \"Да будет так\"\nПросто пусть будет так",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Но всё же солнце дарит свет\nА ночь покоем укрывает\nЗаботы тянут новый день\nИ тополь головой качает\nВесь этот мир и этот свет\nВсё то, что ветер напевает\nНемного стоят без любви\nИ ты и я об этом знаем",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Шура - Ты не верь слезам",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": []
+    },
+    {
+      "name": "IOWA - Улыбайся",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Я птицу счастья свою отпускаю на юг.\nТеперь я сам так пою, теперь я сам летаю.\nВ открытый космос лечу, кометы огибая.\nТебя мечтать научу, теперь одна мы стая.",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Только улыбайся, улыбайся!\nНевесомости поверь и отдайся!\nУлыбайся, улыбайся!\nUh! Uh! Uh! Uh! Улыбайся!",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Закинув лески в дали, ловим мы корабли.\nРисуем время в пыли, мы — Сальвадоры Дали.\nНад этой бездной во ржи мне глаза завяжи.\nРискуя, с ветром дыши, его за крылья держи.",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "IOWA - 140",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Наш след засыпал снег\nИ для всех нас три недели нет\nЗвёзд пыль, свет комет\nВели по трассе в полной темноте",
+          "chords": ""
+        },
+        {
+          "label": "преПрипев",
+          "text": "Я не считаю минуты, я не считаю года\nЯ не считаю минуты, сколько мы вместе\nЯ не считаю минуты, я не считаю года\nЯ не считаю минуты, просто мы вместе\n\nОхрипла, нет голоса\nСвет фар освещает лица\nИ пыль летит в глаза\nНо нет, не остановиться",
+          "chords": ""
+        },
+        {
+          "label": "припев",
+          "text": "140 — скорость на край света в направлении ветра\nБыли связанные лентой красного заката",
+          "chords": ""
+        },
+        {
+          "label": "куплет 2",
+          "text": "Вот здесь останови\nХочу почувствовать запах вишни\nНе лей, дождь, подожди\nВсё скажу тебе, всё-всё тебе",
+          "chords": ""
+        },
+        {
+          "label": "преприпев",
+          "text": "Мокрые волосы\nИ мы не можем согреться\nС тобою неважно куда\nДорогу подскажет нам сердце",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Jony - Комета",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "припев",
+          "text": "Всё без тебя не так\nЛечу к тебе я словно комета\nИ даже под дулом пистолета\nЯ найду тебя, я найду тебя\n\nВедь без тебя дико мне так\nТы просто подойди ко мне, да\nЯ знаю будет наше это лето\nВедь ты моя, да, ведь ты моя, да\n\nВсё без тебя не так\nЛечу к тебе я словно комета\nИ даже под дулом пистолета\nЯ найду тебя, я найду тебя",
+          "chords": ""
+        },
+        {
+          "label": "Куплет",
+          "text": "Буря мглою небо кроет\nВихри снежные крутя\nТо как зверь она завоет\nТо заплачет как дитя\n\nИ если ты найдёшь мгновенье\nОстанови это мучение\nВ тот миг когда я потерял тебя\nТам вдали падала луна\n(Падала луна)",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "John Newman – Love me again",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Know I’ve done wrong,\nLeft your heart torn\nIs that what devils do?\n\nTook you so low,\nWhere only fools go\nI shook the angel in you\n\nNow I’m rising from the ground\nRising up to you\nFilled with all the strength I found\nThere's nothing I can’t do!",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "I need to know now, know now\nCan you love me again?",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "It’s unforgivable,\nI stole and burnt your soul\nIs that what demons do?\n\nThey rule the worst of me\nDestroy everything,\nThey bring down angels like you\n\nNow I’m rising from the ground\nRising up to you\nFilled with all the strength I've found\nThere's nothing I can’t do!",
+          "chords": ""
+        },
+        {
+          "label": "Бридж",
+          "text": "I told you once I can't do this again, do this again, oh, no\nI told you once I can't do this again, do this again, oh, no",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Justin Timberlake – What goes around",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Hey girl, is he everything you wanted in a man\nYou know I gave you the world\nYou had me in the palm of your hand\nSo why your love went away\nI just can't seem to understand\nThought it was me and you baby\nMe and you until the end\nBut I guess I was wrong",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Don't want to think about it\nDon't want to talk about it\nI'm just so sick about it\nCan't believe it's ending this way\nJust so confused about it\nFeeling the blues about it\nI just can't do without ya\nTell me is this fair?\n\nIs this the way it's really going down?\nIs this how we say goodbye?\nShould've known better when you came around\nThat you were gonna make me cry\nIt's breaking my heart to watch you run around\n'Cause I know that you're living a lie\nThat's okay baby 'cause in time you will find...\n\nWhat goes around, goes around, goes around\nComes all the way back around",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Now girl, I remember everything that you claimed\nYou said that you were moving on now\nAnd maybe I should do the same\nFunny thing about that is\nI was ready to give you my name\nThought it was me and you, babe\nAnd now, it's all just a shame\nAnd I guess I was wrong",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Maneskin - Beggin",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Riding high when I was king\nI played it hard and fast, 'cause I had everything\nI walked away, you won me then\nBut easy come and easy go and it would end\n\nSo, anytime I bleed, you let me go\nYah, anytime I feed, you get me know\nAnytime I seek, you let me know\nBut I planted that seed, just let me go\nI'm on my knees when I'm beggin'\n'Cause I don't wanna lose you\nHey, yeah, ra-ta-ta-ta!\n\nI need you to understand\nTried so hard to be your man\nThe kind of man you want in the end\nOnly then can I begin to live again\n\nAn empty shell, I used to be\nThe shadow of my life was hangin' over me\nA broken man that I don't know\nWon't even stand the devil's dance to win my soul\n\nWhat we doin'? What we chasin'?\nWhy the bottom? Why the basement?\nWhy we got good shit, don't embrace it?\nWhy the feel for the need to replace me?\nYou're the wrong way track from the good\nI want to paint a picture tellin' where we could be at\nLike a heart in the best way should\nYou can give it away, you had it and you took the pay\nBut I keep walkin' on, keep openin' doors\nKeep hopin' for, now the door is yours\nKeep also home\n'Cause I don't want to live in a broken home, girl, I'm beggin'\n\nI'm fighting hard to hold my own\nJust can't make it all alone\nI'm holding on, I can't fall back\nI'm just a calm, 'bout to fade to black",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Maroon 5 – Moves like Jagger",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": []
+    },
+    {
+      "name": "Sevak - Сияй",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": []
+    },
+    {
+      "name": "Баста - Сансара",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": []
+    },
+    {
+      "name": "Бурито -–Мама",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": []
+    },
+    {
+      "name": "Градусы - Добрая",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": []
+    },
+    {
+      "name": "Градусы – Кто ты",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": []
+    },
+    {
+      "name": "Дима Билан - Держи",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": []
+    },
+    {
+      "name": "Женя Трофимов - Поезда",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": []
+    },
+    {
+      "name": "Женя Трофимов - Привет",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": []
+    },
+    {
+      "name": "Женя Трофимов - Самолеты",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": []
+    },
+    {
+      "name": "Леприконсы - Хали Гали",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": []
+    },
+    {
+      "name": "Меладзе – Текила-Любовь",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": []
+    },
+    {
+      "name": "Не пара – Другая причина",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": []
+    },
+    {
+      "name": "Николай Носков – Паранойя",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": []
+    },
+    {
+      "name": "Сосо Павлиашвили – Небо на ладони",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": []
+    },
+    {
+      "name": "Темур Темиров – Небо над землей",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": []
+    },
+    {
+      "name": "Чумаков – Счастье",
       "sub": "",
       "pad": "",
       "voice": "",
@@ -142,8 +537,8 @@
     "lTextColor": "#111111",
     "lBgColor": "#ffffff",
     "sFontSize": 15,
-    "sLineH": 1.2,
-    "sTextColor": "#111111",
+    "sLineH": 1.6,
+    "sTextColor": "#000000",
     "sTextAlign": "center",
     "metroSound": "click"
   }
