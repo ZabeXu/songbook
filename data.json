@@ -1,93 +1,68 @@
 {
   "songs": [
     {
-      "name": "BEP - Get started",
-      "sub": "",
-      "pad": "",
-      "voice": "",
-      "bpm": 100,
+      "name": "Осень",
+      "sub": "капо на 2 ладу",
+      "pad": "001",
+      "voice": "042",
+      "bpm": 76,
       "showChords": false,
       "verses": [
         {
           "label": "Куплет 1",
-          "text": "In this context,\nthere's no disrespect\nSo when I bust my rhyme,\nyou (break ya necks)\nWe got five minutes for us to disconnect\nFrom all intellect, collect the rhythm effect\n\nTo lose your inhibition follow your intuition\nFree your inner soul and break away from tradition\nCause when we be out, girlies pull they weave out\nYou wouldn't believe how, we wow shit out\nBurn it 'til it's burned out, turn it 'til it's turned out\nAct up from north, west, east, south",
-          "chords": ""
-        },
-        {
-          "label": "Куплет 2",
-          "text": "Lose control, of body and soul\nDon't move too fast, people, just take it slow\nDon't get ahead, just jump into it\nY'all hear about it, the Peas will do it\n\nGet started, get stupid\nDon't worry about it, people will walk you through it\nStep by step like an infant new kid\nInch by inch with the new solution\nTransmit hits with no delusion\nThe feeling's irresistible and that's how we movin' ",
-          "chords": ""
-        },
-        {
-          "label": "Куплет 3",
-          "text": "Let's get ill, that's the deal\nAt the gate, and Will bring the bugged out drill\nLose your mind, this is the time\nY'all can't stand still, twist and bang your spine\nBob your head like me, apl.de\nUp inside the club or in your Bentley\nGet messy, loud and sick\nY'all mind pass normal on another head trip\nSo, come them now, do not correct it\nLet's get ignant, let's get hectic ",
-          "chords": ""
-        }
-      ]
-    },
-    {
-      "name": "BEP - Pump it",
-      "sub": "",
-      "pad": "",
-      "voice": "",
-      "bpm": 120,
-      "showChords": false,
-      "verses": [
-        {
-          "label": "Куплет 1",
-          "text": "Niggas wanna hate on us (who?)\nNiggas be envious (who?)\nI know why they hating on us (why?)\n'Cause that's so fabulous (what?)\n\nI'ma be real on us (c'mon)\nNobody got nothing on us (no)\nGirls be all on us From\nLondon back down to the U.S.\n\nS S We rockin' this (contagious)\nMonkey business (outrageous)\nJust confess, your girl admits that we the shit\nF-R-E-S-H we (fresh)\nD-E-F, that's right we def' (rock)\nWe definite,\nB-E-P we reppin' it So",
-          "chords": ""
-        },
-        {
-          "label": "Припев 2",
-          "text": "Apl.de.ap from the Philippines\nLive and direct, rocking this scene\nBreaking on down for the B-boys\nAnd B-girls waiting to do they thing\nPump it, louder come on\nDon't stop, and keep it goin'\nDo it, let's get it on Move it! ",
-          "chords": ""
-        }
-      ]
-    },
-    {
-      "name": "Bon Jovi - It's my life",
-      "sub": "",
-      "pad": "",
-      "voice": "",
-      "bpm": 110,
-      "showChords": false,
-      "verses": [
-        {
-          "label": "Куплет 1",
-          "text": "This ain't a song for the broken-hearted\nNo silent prayer for the faith-departed\nI ain't gonna be just a face in the crowd\nYou're gonna hear my voice\nWhen I shout it out loud ",
-          "chords": ""
+          "chords": "Am         F          C      E",
+          "text": "Листья жгут костры во дворе,\nПахнет дымом и сентябрём.\nЯ стою один на горе,\nДумаю о том, о сём."
         },
         {
           "label": "Припев",
-          "text": "It's my life It's now or never\nI ain't gonna live forever\nI just want to live while I'm alive\nIt's my life My heart is like an open highway\nLike Frankie said, \"I did it my way.\"\nI just wanna live while I'm alive It's my life",
-          "chords": ""
-        },
+          "chords": "Am    F       C       E7",
+          "text": "Осень, осень — рыжий огонь,\nПадают листья с клёна.\nТы уходи, но не тронь\nТо, что осталось сломанным."
+        }
+      ]
+    },
+    {
+      "name": "Дорога",
+      "sub": "",
+      "pad": "002",
+      "voice": "015",
+      "bpm": 112,
+      "showChords": false,
+      "verses": [
         {
-          "label": "Куплет 2",
-          "text": "This is for the ones who stood their ground\nFor Tommy and Gina who never backed down\nTomorrow's getting harder make no mistake \nLuck ain't even lucky\nGot to make your own breaks",
-          "chords": ""
-        },
+          "label": "Куплет",
+          "chords": "G      D       Em      C",
+          "text": "Фары режут темноту,\nТрасса пустая до утра.\nЯ нажму, перегоню\nЭту ночь — и снова в путь."
+        }
+      ]
+    },
+    {
+      "name": "Тихий вечер",
+      "sub": "",
+      "pad": "003",
+      "voice": "008",
+      "bpm": 63,
+      "showChords": false,
+      "verses": [
         {
-          "label": "Бридж",
-          "text": "Better stand tall when they're calling you out\nDon't bend, don't break, baby, don't back down",
-          "chords": ""
+          "label": "Куплет",
+          "chords": "D     A      Bm     G",
+          "text": "Чай остыл на подоконнике,\nКот свернулся у огня.\nВремя еле-еле движется —\nХорошо, что нет меня."
         }
       ]
     }
   ],
   "cfg": {
-    "listName": "Сетлист",
+    "listName": "Мой песенник",
     "theme": "light",
     "lFontSize": 16,
     "lLineH": 1.4,
     "lRowH": 44,
     "lTextColor": "#111111",
     "lBgColor": "#ffffff",
-    "sFontSize": 15,
-    "sLineH": 1.2,
+    "sFontSize": 18,
+    "sLineH": 1.1,
     "sTextColor": "#111111",
-    "sTextAlign": "center",
+    "sTextAlign": "left",
     "metroSound": "click"
   }
 }
