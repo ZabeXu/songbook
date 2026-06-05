@@ -18,7 +18,7 @@
   --header-bg:#ffffff;--row-hover:#f0f4ff;--danger:#e53935;
   --metro-btn:#1a73e8;--row-height:44px;
   --list-font:16px;--list-lh:1.4;
-  --song-font:18px;--song-lh:1.1;--song-color:#111111;--song-align:left;--song-align-flex:flex-start;
+  --song-font:18px;--song-lh:1.1;--song-color:#111111;--song-align:left;
 }
 .dark{
   --bg:#111111;--surface:#1e1e1e;--surface2:#2a2a2a;--border:#383838;
@@ -112,16 +112,17 @@ input,textarea,select{font-family:inherit;}
 .s-sub.hide{display:none;}
 .num-cell{text-align:center;font-size:calc(var(--list-font) * 0.75);color:var(--text2);}
 .right-cell{text-align:right;font-size:var(--list-font);color:var(--text2);}
-.bpm-cell{text-align:right;}
+.bpm-cell{text-align:right;padding:0!important;}
 .bpm-btn{
-  display:inline-flex;align-items:center;gap:5px;
-  padding:4px 9px;border-radius:6px;border:1px solid var(--border);cursor:pointer;
-  font-family:inherit;font-size:var(--list-font);font-weight:700;
+  width:100%;height:var(--row-height);
+  display:flex;align-items:center;justify-content:flex-end;
+  gap:5px;padding:0 8px;border-radius:0;border:none;
+  cursor:pointer;font-family:inherit;font-size:var(--list-font);font-weight:700;
   background:var(--surface2);color:var(--accent);
-  transition:background .15s,color .15s,border-color .15s;
+  transition:background .15s,color .15s;
 }
 .bpm-btn .bicon{font-size:10px;opacity:0.5;transition:opacity .15s;}
-.bpm-btn.playing{background:#e53935;color:#fff;border-color:#e53935;}
+.bpm-btn.playing{background:#e53935;color:#fff;}
 .bpm-btn.playing .bicon{opacity:1;}
 @keyframes bpm-flash{0%{transform:scale(1);}40%{transform:scale(0.88);}100%{transform:scale(1);}}
 .bpm-btn.flash{animation:bpm-flash .18s ease-out;}
@@ -200,46 +201,47 @@ input,textarea,select{font-family:inherit;}
   display:flex;align-items:center;justify-content:center;
 }
 .bpm-display{text-align:center;cursor:pointer;}
-.bpm-num{font-size:22px;font-weight:700;color:#2e7d32;display:block;font-variant-numeric:tabular-nums;}
-.bpm-num.mismatch{color:#e53935;}
+.bpm-num{font-size:22px;font-weight:700;color:var(--accent);display:block;font-variant-numeric:tabular-nums;}
 .bpm-lbl{font-size:9px;color:var(--text2);display:block;}
 .tap-btn{
   padding:5px 10px;border-radius:4px;border:1px solid var(--border);
   background:var(--surface2);color:var(--text);font-size:12px;font-weight:700;
 }
-.m-switch{
-  width:34px;height:34px;border-radius:50%;border:none;
-  background:var(--metro-btn);color:#fff;font-size:18px;flex-shrink:0;
-  display:flex;align-items:center;justify-content:center;
-  box-shadow:0 2px 6px rgba(26,115,232,.3);
-  opacity:0.35;transition:opacity .15s,transform .15s;
-}
-.m-switch.active{opacity:1;}
-.m-switch:active{transform:scale(0.9);}
 .sound-sel{
   padding:4px 5px;border-radius:4px;border:1px solid var(--border);
   background:var(--bg);color:var(--text);font-size:11px;max-width:105px;
 }
 
 /* ══ LYRICS ══ */
-.lyrics-scroll{flex:1;overflow-y:auto;padding:14px 12px 40px;}
+.lyrics-scroll{flex:1;overflow-y:auto;padding:10px 12px 40px;}
 .lyrics-scroll::-webkit-scrollbar{width:3px;}
 .lyrics-scroll::-webkit-scrollbar-thumb{background:var(--border);}
-.verse-block{margin-bottom:10px;}
-.verse-lbl-row{display:flex;align-items:center;gap:8px;margin-bottom:5px;justify-content:var(--song-align-flex);}
-.verse-lbl{
-  font-size:10px;font-weight:700;text-transform:uppercase;
-  letter-spacing:.12em;color:var(--text2);
-}
+.verse-block{margin-bottom:12px;}
+.verse-cols{column-count:2;column-gap:16px;}
+.verse-lbl-row{display:flex;align-items:center;gap:8px;margin-bottom:4px;}
+.verse-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--text2);}
+.verse-lbl.hide{display:none;}
 .verse-lbl-input{
   font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;
-  color:var(--text2);border:none;background:transparent;outline:none;width:110px;
+  color:var(--text2);border:none;background:transparent;outline:none;width:100px;
 }
 .rm-verse{
   width:18px;height:18px;border-radius:3px;border:none;
   background:var(--danger);color:#fff;font-size:13px;
   display:flex;align-items:center;justify-content:center;
 }
+/* Verse toolbar */
+.verse-toolbar{
+  display:flex;flex-wrap:wrap;gap:4px;align-items:center;
+  padding:5px 7px;margin-bottom:6px;
+  background:var(--surface);border:1px solid var(--border);border-radius:6px;
+}
+.vt-input{padding:2px 5px;border-radius:3px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:11px;width:46px;}
+.vt-btn{padding:2px 7px;border-radius:3px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:11px;cursor:pointer;white-space:nowrap;}
+.vt-btn.on{background:var(--accent);color:#fff;border-color:var(--accent);}
+.vt-color{width:24px;height:22px;border-radius:3px;border:1px solid var(--border);padding:1px;cursor:pointer;background:none;}
+.vt-sep{width:1px;height:16px;background:var(--border);margin:0 1px;flex-shrink:0;}
+.vt-label{font-size:10px;color:var(--text2);white-space:nowrap;}
 .chord-row{
   font-family:monospace;font-size:13px;color:var(--accent);
   min-height:16px;margin-bottom:1px;white-space:pre;overflow-x:auto;
@@ -248,13 +250,13 @@ input,textarea,select{font-family:inherit;}
 .chord-row.hide{display:none;}
 .chord-row[contenteditable=true]{border-bottom:1px dashed rgba(74,158,255,.4);}
 .lyric-area{
+  font-family:'Times New Roman',Times,serif;
   font-size:var(--song-font);line-height:var(--song-lh);color:var(--song-color);
   text-align:var(--song-align);
   border:none;background:transparent;outline:none;width:100%;
   resize:none;display:block;min-height:24px;white-space:pre-wrap;overflow:hidden;
 }
 .lyric-area[contenteditable=true]{border-left:2px solid var(--border);padding-left:6px;}
-.lyric-area textarea{width:100%;font-size:inherit;line-height:inherit;color:inherit;border:none;background:transparent;outline:none;resize:none;font-family:inherit;}
 .add-verse-btn{
   display:flex;align-items:center;gap:6px;padding:8px 12px;
   border-radius:6px;border:1px dashed var(--border);
@@ -382,6 +384,10 @@ input,textarea,select{font-family:inherit;}
     <button class="eb-btn" id="alignCenter" onclick="setAlign('center')">≡</button>
     <button class="eb-btn" id="alignRight" onclick="setAlign('right')">☷</button>
     <div class="eb-sep"></div>
+    <span class="eb-label">Аккорды</span>
+    <input class="eb-input" id="sChordSize" type="number" min="8" max="30" value="13" onchange="applySongStyle()">
+    <input class="eb-color" type="color" id="sChordColor" value="#1a73e8" onchange="applySongStyle()">
+    <div class="eb-sep"></div>
     <button class="eb-btn" id="chordsBtn" onclick="toggleSongChords()">🎸 Аккорды</button>
     <button class="eb-btn" onclick="addVerse()">+ Куплет</button>
   </div>
@@ -396,7 +402,6 @@ input,textarea,select{font-family:inherit;}
       </div>
       <button class="bpm-adj" onmousedown="holdStart(1,event)" onmouseup="holdStop()" ontouchstart="holdStart(1,event)" ontouchend="holdStop()">+</button>
       <button class="tap-btn" onclick="tapTempo()">TAP</button>
-      <button class="m-switch" id="mSwitch" onclick="switchToCurrent()" title="Переключить на BPM этой песни">↺</button>
     </div>
     <select class="sound-sel" id="soundSel" onchange="saveSound()">
       <option value="woodblock">Wood Block</option>
@@ -409,7 +414,11 @@ input,textarea,select{font-family:inherit;}
       <option value="kick">Kick</option>
       <option value="triangle">Triangle</option>
       <option value="clave">Clave</option>
+      <option value="stick">Sticks</option>
+      <option value="snap">Snap</option>
+      <option value="ping">Ping</option>
     </select>
+    <button class="eb-btn" id="accentBtn" onclick="toggleAccent()" title="Акцент на 1-й доле">А1</button>
   </div>
 
   <div class="lyrics-scroll" id="lyricsContainer"></div>
@@ -468,7 +477,7 @@ let cfg = {
   lFontSize:16, lLineH:1.4, lRowH:44,
   lTextColor:'#111111', lBgColor:'#ffffff',
   sFontSize:18, sLineH:1.1, sTextColor:'#111111', sTextAlign:'left',
-  metroSound:'click'
+  metroSound:'click', accentEnabled:true
 };
 let editMode = false;
 let songEditMode = false;
@@ -537,6 +546,8 @@ function applyAll(){
   setVal('sLineH', cfg.sLineH);
   setVal('sTextColor', cfg.sTextColor);
   setVal('soundSel', cfg.metroSound||'click');
+  const ab=document.getElementById('accentBtn');
+  if(ab) ab.classList.toggle('on', cfg.accentEnabled!==false);
   applyListStyle(false);
   applySongStyle(false);
 }
@@ -559,7 +570,7 @@ function applyListStyle(sv=true){
 function applySongStyle(sv=true){
   cfg.sFontSize = +gv('sFontSize')||18;
   cfg.sLineH = +gv('sLineH')||1.1;
-  cfg.sTextColor = gv('sTextColor');
+  cfg.sTextColor = gv('sTextColor')||'#111111';
   const r=document.documentElement.style;
   r.setProperty('--song-font', cfg.sFontSize+'px');
   r.setProperty('--song-lh', cfg.sLineH);
@@ -567,13 +578,19 @@ function applySongStyle(sv=true){
   r.setProperty('--song-align', cfg.sTextAlign||'left');
   const flex=(cfg.sTextAlign==='center')?'center':(cfg.sTextAlign==='right')?'flex-end':'flex-start';
   r.setProperty('--song-align-flex',flex);
+  // chord style per song
+  if(curIdx!==null){
+    const csz=+gv('sChordSize')||13;
+    const ccl=gv('sChordColor')||'#1a73e8';
+    if(!songs[curIdx].chordStyle) songs[curIdx].chordStyle={};
+    songs[curIdx].chordStyle.fontSize=csz;
+    songs[curIdx].chordStyle.color=ccl;
+  }
   if(sv) save();
 }
 function setAlign(a){
   cfg.sTextAlign=a;
-  const flex=a==='center'?'center':a==='right'?'flex-end':'flex-start';
   document.documentElement.style.setProperty('--song-align',a);
-  document.documentElement.style.setProperty('--song-align-flex',flex);
   ['Left','Center','Right'].forEach(d=>{
     document.getElementById('align'+d).classList.toggle('on', a===d.toLowerCase());
   });
@@ -627,45 +644,6 @@ document.addEventListener('DOMContentLoaded',()=>{
   });
 });
 
-let listMetroPlaying = false;
-let listMetroBpm = null;
-
-function toggleListMetro(idx, e){
-  e.stopPropagation();
-  const s = songs[idx];
-
-  if(listMetroPlaying && listMetroBpm === s.bpm){
-    // Same — stop
-    stopMetro();
-    listMetroPlaying = false;
-    listMetroBpm = null;
-    renderToc();
-  } else {
-    // Switch to new BPM — set state BEFORE stopMetro so it doesn't get wiped
-    listMetroPlaying = true;
-    listMetroBpm = s.bpm;
-    bpm = s.bpm || 120;
-    updateBpmUI();
-    // Stop without resetting listMetro state
-    playing=false; clearInterval(mInterval); mInterval=null;
-    document.getElementById('mPlay').textContent='▶';
-    document.getElementById('mPlay').classList.remove('playing');
-    document.getElementById('hdrPlay').textContent='▶';
-    document.getElementById('hdrPlay').classList.remove('playing');
-    const sw=document.getElementById('mSwitch');
-    if(sw) sw.classList.remove('active');
-    startMetro();
-    renderToc();
-    // Flash after render — find the now-active button
-    const activeBtn = document.querySelector('.bpm-btn.playing');
-    if(activeBtn){
-      void activeBtn.offsetWidth;
-      activeBtn.classList.add('flash');
-      setTimeout(()=>activeBtn.classList.remove('flash'), 200);
-    }
-  }
-}
-
 // ═══════════════════════════════════════
 // RENDER TOC
 // ═══════════════════════════════════════
@@ -699,7 +677,7 @@ function renderToc(){
         </div></td>
         <td class="col-pad right-cell">${x(s.pad||'')}</td>
         <td class="col-voice right-cell">${x(s.voice||'')}</td>
-        <td class="col-bpm bpm-cell"><button class="bpm-btn${listMetroBpm===s.bpm&&listMetroPlaying?' playing':''}" onclick="toggleListMetro(${i},event)""><span class="bicon">${listMetroBpm===s.bpm&&listMetroPlaying?'■':'▶'}</span>${s.bpm||'—'}</button></td>`;
+        <td class="col-bpm bpm-cell">${s.bpm||'—'}</td>`;
       tr.addEventListener('click',()=>openSong(i));
     }
     // drop target
@@ -767,14 +745,13 @@ function openSong(i){
   const s=songs[i];
   // Load song's BPM into display, but only apply to metro if not currently playing
   if(playing){
+    // Metro is running — show current song's BPM in UI but don't change tempo
+    // User must press play again to activate new BPM
     document.getElementById('bpmNum').textContent=s.bpm||120;
-    const differs=(s.bpm||120)!==bpm;
-    document.getElementById('mSwitch').classList.toggle('active',differs);
-    updateBpmColor();
+    // Keep hdrBpm showing the actually playing BPM
   } else {
     bpm=s.bpm||120;
     updateBpmUI();
-    document.getElementById('mSwitch').classList.remove('active');
   }
   document.getElementById('sTitleInput').value=s.name||'';
   document.getElementById('sSubInput').value=s.sub||'';
@@ -783,8 +760,9 @@ function openSong(i){
   setVal('sFontSize', cfg.sFontSize);
   setVal('sLineH', cfg.sLineH);
   setVal('sTextColor', cfg.sTextColor);
-
-  // reset song edit mode
+  const cs=s.chordStyle||{};
+  setVal('sChordSize', cs.fontSize||13);
+  setVal('sChordColor', cs.color||'#1a73e8');
   songEditMode=false;
   document.getElementById('sEditBtn').classList.remove('on');
   document.getElementById('sEditBar').classList.remove('show');
@@ -835,54 +813,141 @@ document.addEventListener('DOMContentLoaded',()=>{
 // ═══════════════════════════════════════
 // LYRICS
 // ═══════════════════════════════════════
+function vStyle(v){
+  // Returns inline style string for lyric area based on verse overrides
+  const s = v.style||{};
+  const parts = [];
+  if(s.fontSize) parts.push(`font-size:${s.fontSize}px`);
+  if(s.lineH) parts.push(`line-height:${s.lineH}`);
+  if(s.color) parts.push(`color:${s.color}`);
+  if(s.align) parts.push(`text-align:${s.align}`);
+  if(s.bold) parts.push('font-weight:bold');
+  return parts.join(';');
+}
+function cStyle(song){
+  const cs = song.chordStyle||{};
+  const parts = [];
+  if(cs.fontSize) parts.push(`font-size:${cs.fontSize}px`);
+  if(cs.color) parts.push(`color:${cs.color}`);
+  return parts.join(';');
+}
+
 function renderLyrics(){
   const el=document.getElementById('lyricsContainer');
   const s=songs[curIdx];
   const sc=s.showChords||false;
   updateChordsBtn(sc);
   let h='';
+
   (s.verses||[]).forEach((v,vi)=>{
+    const vs = v.style||{};
+    const showLbl = v.showLabel!==false; // default true
+    const cols = v.cols||1;
+    const align = vs.align||cfg.sTextAlign||'left';
+    const alignFlex = align==='center'?'center':align==='right'?'flex-end':'flex-start';
+
     h+=`<div class="verse-block">`;
-    // label row
-    h+=`<div class="verse-lbl-row">`;
+
+    // ── Verse toolbar (edit mode) ──
     if(songEditMode){
-      h+=`<input class="verse-lbl-input" value="${x(v.label||'')}" oninput="songs[curIdx].verses[${vi}].label=this.value;save()">
-          <button class="rm-verse" onclick="rmVerse(${vi})">×</button>`;
+      const csz = (s.chordStyle&&s.chordStyle.fontSize)||13;
+      const ccl = (s.chordStyle&&s.chordStyle.color)||'#1a73e8';
+      h+=`<div class="verse-toolbar">
+        <span class="vt-label">Шрифт</span>
+        <input class="vt-input" type="number" min="10" max="40" value="${vs.fontSize||''}" placeholder="${cfg.sFontSize||18}"
+          oninput="setVerseStyle(${vi},'fontSize',this.value?+this.value:null)">
+        <span class="vt-label">Инт.</span>
+        <input class="vt-input" type="number" min="0.8" max="4" step="0.1" value="${vs.lineH||''}" placeholder="${cfg.sLineH||1.1}"
+          oninput="setVerseStyle(${vi},'lineH',this.value?+this.value:null)">
+        <input class="vt-color" type="color" value="${vs.color||cfg.sTextColor||'#111111'}"
+          oninput="setVerseStyle(${vi},'color',this.value)">
+        <div class="vt-sep"></div>
+        <button class="vt-btn${vs.bold?' on':''}" onclick="setVerseStyle(${vi},'bold',${!vs.bold})">Ж</button>
+        <button class="vt-btn${align==='left'?' on':''}" onclick="setVerseStyle(${vi},'align','left')">☰</button>
+        <button class="vt-btn${align==='center'?' on':''}" onclick="setVerseStyle(${vi},'align','center')">≡</button>
+        <button class="vt-btn${align==='right'?' on':''}" onclick="setVerseStyle(${vi},'align','right')">☷</button>
+        <div class="vt-sep"></div>
+        <button class="vt-btn${cols===2?' on':''}" onclick="setVerseCols(${vi},${cols===2?1:2})">║║</button>
+        <div class="vt-sep"></div>
+        <span class="vt-label">Загол.</span>
+        <button class="vt-btn${showLbl?' on':''}" onclick="toggleVerseLabel(${vi})">${showLbl?'Вкл':'Выкл'}</button>
+        <div class="vt-sep"></div>
+        <span class="vt-label">Аккорды</span>
+        <input class="vt-input" type="number" min="8" max="30" value="${csz}" oninput="setSongChordStyle('fontSize',+this.value)">
+        <input class="vt-color" type="color" value="${ccl}" oninput="setSongChordStyle('color',this.value)">
+        <div class="vt-sep"></div>
+        <button class="rm-verse" onclick="rmVerse(${vi})">×</button>
+      </div>`;
+    }
+
+    // ── Label row ──
+    h+=`<div class="verse-lbl-row" style="justify-content:${alignFlex}">`;
+    if(songEditMode){
+      h+=`<input class="verse-lbl-input" value="${x(v.label||'')}" oninput="songs[curIdx].verses[${vi}].label=this.value;save()">`;
     } else {
-      h+=`<div class="verse-lbl">${x(v.label||'')}</div>`;
+      h+=`<div class="verse-lbl${showLbl?'':' hide'}">${x(v.label||'')}</div>`;
     }
     h+=`</div>`;
-    // chord row
+
+    // ── Chord row ──
+    const chordInlineStyle = cStyle(s);
     if(songEditMode){
-      h+=`<input type="text" class="chord-row${sc?'':' hide'}" value="${x(v.chords||'')}"
-            placeholder="Am  G  F  E7..."
+      h+=`<input type="text" class="chord-row${sc?'':' hide'}" style="${chordInlineStyle}"
+            value="${x(v.chords||'')}" placeholder="Am  G  F  E7..."
             oninput="songs[curIdx].verses[${vi}].chords=this.value;save()"
             onclick="event.stopPropagation()">`;
     } else {
-      h+=`<div class="chord-row${sc?'':' hide'}">${x(v.chords||'')}</div>`;
+      h+=`<div class="chord-row${sc?'':' hide'}" style="${chordInlineStyle}">${x(v.chords||'')}</div>`;
     }
-    // lyric
+
+    // ── Text ──
+    const lyricInlineStyle = vStyle(v);
+    const colsClass = cols===2?' verse-cols':'';
     if(songEditMode){
-      h+=`<textarea class="lyric-area" rows="${Math.max(2,(v.text||'').split('\n').length+1)}"
+      h+=`<textarea class="lyric-area${colsClass}" style="${lyricInlineStyle}"
+            rows="${Math.max(2,(v.text||'').split('\n').length+1)}"
             oninput="songs[curIdx].verses[${vi}].text=this.value;save();autoH(this)"
             >${x(v.text||'')}</textarea>`;
     } else {
-      h+=`<div class="lyric-area">${(v.text||'').split('\n').map(l=>x(l)).join('<br>')}</div>`;
+      h+=`<div class="lyric-area${colsClass}" style="${lyricInlineStyle}">${(v.text||'').split('\n').map(l=>x(l)).join('<br>')}</div>`;
     }
+
     h+=`</div>`;
   });
+
   if(songEditMode){
     h+=`<button class="add-verse-btn" onclick="addVerse()">＋ Добавить куплет / припев</button>`;
   }
   el.innerHTML=h;
-  // auto-height textareas
   el.querySelectorAll('textarea').forEach(autoH);
 }
+
+function setVerseStyle(vi, prop, val){
+  const v=songs[curIdx].verses[vi];
+  if(!v.style) v.style={};
+  v.style[prop]=val;
+  save(); renderLyrics();
+}
+function setVerseCols(vi, cols){
+  songs[curIdx].verses[vi].cols=cols;
+  save(); renderLyrics();
+}
+function toggleVerseLabel(vi){
+  const v=songs[curIdx].verses[vi];
+  v.showLabel = v.showLabel===false ? true : false;
+  save(); renderLyrics();
+}
+function setSongChordStyle(prop, val){
+  if(!songs[curIdx].chordStyle) songs[curIdx].chordStyle={};
+  songs[curIdx].chordStyle[prop]=val;
+  save(); renderLyrics();
+}
+
 function autoH(ta){ ta.style.height='auto'; ta.style.height=ta.scrollHeight+'px'; }
 function addVerse(){
   const s=songs[curIdx]; if(!s.verses) s.verses=[];
   const lbls=['Куплет 1','Припев','Куплет 2','Бридж','Аутро','Вступление'];
-  s.verses.push({label:lbls[s.verses.length]||'Куплет',text:'',chords:''});
+  s.verses.push({label:lbls[s.verses.length]||'Куплет',text:'',chords:'',showLabel:true,cols:1,style:{}});
   save(); renderLyrics();
 }
 function rmVerse(vi){ songs[curIdx].verses.splice(vi,1); save(); renderLyrics(); }
@@ -977,10 +1042,36 @@ function playClick(accent){
       const s=c.createBufferSource(),g=c.createGain();
       s.buffer=buf;g.gain.value=vol;
       s.connect(g);g.connect(c.destination);s.start(t);
+    } else if(snd==='stick'){
+      const buf=c.createBuffer(1,~~(c.sampleRate*.03),c.sampleRate);
+      const d=buf.getChannelData(0);
+      for(let i=0;i<d.length;i++) d[i]=(Math.random()*2-1)*0.3*Math.exp(-i/(c.sampleRate*.004))+Math.sin(i/c.sampleRate*3200*Math.PI*2)*0.7*Math.exp(-i/(c.sampleRate*.005));
+      const s=c.createBufferSource(),g=c.createGain();
+      s.buffer=buf;g.gain.value=vol;
+      s.connect(g);g.connect(c.destination);s.start(t);
+    } else if(snd==='snap'){
+      const buf=c.createBuffer(1,~~(c.sampleRate*.025),c.sampleRate);
+      const d=buf.getChannelData(0);
+      for(let i=0;i<d.length;i++) d[i]=(Math.random()*2-1)*Math.exp(-i/(c.sampleRate*.005));
+      const s=c.createBufferSource(),g=c.createGain(),f=c.createBiquadFilter();
+      f.type='bandpass';f.frequency.value=2800;f.Q.value=2;
+      s.buffer=buf;g.gain.value=vol*0.8;
+      s.connect(f);f.connect(g);g.connect(c.destination);s.start(t);
+    } else if(snd==='ping'){
+      const o=c.createOscillator(),g=c.createGain();
+      o.type='sine';o.frequency.value=accent?3500:2800;
+      g.gain.setValueAtTime(vol*0.4,t);g.gain.exponentialRampToValueAtTime(0.001,t+0.3);
+      o.connect(g);g.connect(c.destination);o.start(t);o.stop(t+0.31);
     }
   }catch(e){}
 }
-function tick(){ playClick(beatN%4===0); beatN++; }
+function tick(){ playClick(cfg.accentEnabled && beatN%4===0); beatN++; }
+function toggleAccent(){
+  cfg.accentEnabled=!cfg.accentEnabled;
+  const btn=document.getElementById('accentBtn');
+  if(btn) btn.classList.toggle('on',cfg.accentEnabled);
+  save();
+}
 function startMetro(){
   playing=true; beatN=0; tick();
   mInterval=setInterval(tick,60000/bpm);
@@ -992,46 +1083,32 @@ function startMetro(){
 }
 function stopMetro(){
   playing=false; clearInterval(mInterval); mInterval=null;
-  listMetroPlaying=false;
   document.getElementById('mPlay').textContent='▶';
   document.getElementById('mPlay').classList.remove('playing');
   document.getElementById('hdrPlay').textContent='▶';
   document.getElementById('hdrPlay').classList.remove('playing');
-  const sw=document.getElementById('mSwitch');
-  if(sw) sw.classList.remove('active');
-}
-function switchToCurrent(){
-  if(curIdx===null) return;
-  bpm=songs[curIdx].bpm||120;
-  updateBpmUI();
-  stopMetro();
-  startMetro();
-  updateBpmColor();
-  document.getElementById('mSwitch').classList.remove('active');
 }
 function toggleMetro(){
   if(playing){
     stopMetro();
   } else {
+    // Activate the displayed BPM (current song's BPM)
     if(curIdx!==null) bpm=songs[curIdx].bpm||120;
     updateBpmUI();
     startMetro();
   }
-  updateBpmColor();
 }
-function toggleHdrMetro(){ playing?stopMetro():startMetro(); }
-function updateBpmColor(){
-  const el = document.getElementById('bpmNum');
-  if(!el) return;
-  // mismatch = metro is playing AND current playing BPM differs from this song's BPM
-  const songBpm = curIdx !== null ? (songs[curIdx].bpm || 120) : null;
-  const mismatch = playing && songBpm !== null && bpm !== songBpm;
-  el.classList.toggle('mismatch', mismatch);
+function toggleHdrMetro(){
+  if(playing){
+    stopMetro();
+    renderToc();
+  } else {
+    startMetro();
+  }
 }
 function updateBpmUI(){
   document.getElementById('bpmNum').textContent=bpm;
   document.getElementById('hdrBpm').textContent=bpm;
-  updateBpmColor();
 }
 function setBpm(v){
   bpm=Math.max(30,Math.min(300,v));
@@ -1051,12 +1128,18 @@ function editBpmInline(){
   const inp=document.createElement('input');
   inp.type='number'; inp.min=30; inp.max=300;
   inp.value=bpm;
-  inp.style.cssText='width:54px;font-size:22px;font-weight:700;color:var(--accent);border:none;border-bottom:2px solid var(--accent);background:transparent;outline:none;text-align:center;font-variant-numeric:tabular-nums;';
+  inp.style.cssText='width:54px;font-size:22px;font-weight:700;color:green;border:none;border-bottom:2px solid green;background:transparent;outline:none;text-align:center;font-variant-numeric:tabular-nums;';
   el.replaceWith(inp);
   inp.focus(); inp.select();
-  function commit(){ const v=parseInt(inp.value); if(!isNaN(v)) setBpm(v); inp.replaceWith(el); updateBpmUI(); }
+  let committed=false;
+  function commit(){
+    if(committed) return; committed=true;
+    const v=parseInt(inp.value);
+    if(!isNaN(v)) setBpm(v);
+    setTimeout(()=>{ inp.replaceWith(el); updateBpmUI(); },0);
+  }
   inp.addEventListener('blur', commit);
-  inp.addEventListener('keydown', e=>{ if(e.key==='Enter') inp.blur(); if(e.key==='Escape'){ inp.replaceWith(el); } });
+  inp.addEventListener('keydown', e=>{ if(e.key==='Enter') inp.blur(); if(e.key==='Escape'){ committed=true; inp.replaceWith(el); } });
 }
 function editHdrBpm(){
   const el=document.getElementById('hdrBpm');
@@ -1067,9 +1150,15 @@ function editHdrBpm(){
   inp.style.cssText='width:42px;font-size:13px;font-weight:700;color:var(--accent);border:none;border-bottom:1px solid var(--accent);background:transparent;outline:none;text-align:center;';
   el.replaceWith(inp);
   inp.focus(); inp.select();
-  function commit(){ const v=parseInt(inp.value); if(!isNaN(v)) setBpm(v); inp.replaceWith(el); updateBpmUI(); }
+  let committed=false;
+  function commit(){
+    if(committed) return; committed=true;
+    const v=parseInt(inp.value);
+    if(!isNaN(v)) setBpm(v);
+    setTimeout(()=>{ inp.replaceWith(el); updateBpmUI(); },0);
+  }
   inp.addEventListener('blur', commit);
-  inp.addEventListener('keydown', e=>{ if(e.key==='Enter') inp.blur(); if(e.key==='Escape') inp.replaceWith(el); });
+  inp.addEventListener('keydown', e=>{ if(e.key==='Enter') inp.blur(); if(e.key==='Escape'){ committed=true; inp.replaceWith(el); } });
 }
 function tapTempo(){
   const now=Date.now();
