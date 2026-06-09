@@ -102,6 +102,21 @@ input,textarea,select{font-family:inherit;}
 .col-pad{white-space:nowrap;}
 .col-voice{white-space:nowrap;}
 .col-bpm{white-space:nowrap;}
+.bpm-cell{text-align:right;padding:0!important;}
+.bpm-btn{
+  width:100%;height:var(--row-height);
+  display:flex;align-items:center;justify-content:flex-end;
+  gap:5px;padding:0 8px;border-radius:0;border:none;
+  cursor:pointer;font-family:inherit;font-size:var(--list-font);font-weight:700;
+  background:var(--surface2);color:var(--accent);
+  transition:background .15s,color .15s;
+}
+.bpm-btn .bicon{font-size:10px;opacity:0.5;transition:opacity .15s;}
+.bpm-btn.playing{background:#e53935;color:#fff;}
+.bpm-btn.playing .bicon{opacity:1;}
+.bpm-btn.pending{background:#e65100;color:#fff;}
+@keyframes bpm-flash{0%{transform:scale(1);}40%{transform:scale(0.88);}100%{transform:scale(1);}}
+.bpm-btn.flash{animation:bpm-flash .18s ease-out;}
 .col-drag{width:28px;}
 .song-row{cursor:pointer;}
 .song-row:hover{background:var(--row-hover);}
@@ -207,6 +222,24 @@ input,textarea,select{font-family:inherit;}
   padding:5px 10px;border-radius:4px;border:1px solid var(--border);
   background:var(--surface2);color:var(--text);font-size:12px;font-weight:700;
 }
+.m-switch{
+  width:32px;height:32px;border-radius:50%;border:none;
+  background:var(--metro-btn);color:#fff;font-size:15px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  opacity:0.3;transition:opacity .15s,transform .15s;
+}
+.m-switch.active{opacity:1;}
+.m-switch.pending{opacity:1;animation:sw-pulse .45s infinite alternate;}
+.m-switch:active{transform:scale(0.88);}
+@keyframes sw-pulse{from{opacity:1;}to{opacity:0.4;}}
+.hdr-switch{
+  width:20px;height:20px;border-radius:50%;border:none;
+  background:var(--metro-btn);color:#fff;font-size:11px;
+  display:flex;align-items:center;justify-content:center;
+  opacity:0.3;transition:opacity .15s;cursor:pointer;
+}
+.hdr-switch.active{opacity:1;}
+.hdr-switch.pending{opacity:1;animation:sw-pulse .45s infinite alternate;}
 .sound-sel{
   padding:4px 5px;border-radius:4px;border:1px solid var(--border);
   background:var(--bg);color:var(--text);font-size:11px;max-width:105px;
@@ -305,6 +338,7 @@ input,textarea,select{font-family:inherit;}
     <div class="hdr-metro">
       <span class="hdr-bpm" id="hdrBpm" onclick="editHdrBpm()" style="cursor:pointer" title="Нажми для ввода BPM">—</span>
       <button class="hdr-play" id="hdrPlay" onclick="toggleHdrMetro()">▶</button>
+      <button class="hdr-switch" id="hdrSwitch" onclick="hdrSwitchSmooth()" title="Плавно перейти на BPM выбранной песни">↺</button>
     </div>
     <button class="icon-btn" onclick="toggleTheme()" id="themeBtn">🌙</button>
     <button class="icon-btn" id="ghPullHdr" onclick="ghPullDirect()" title="Загрузить из GitHub">⬇️</button>
@@ -402,6 +436,7 @@ input,textarea,select{font-family:inherit;}
       </div>
       <button class="bpm-adj" onmousedown="holdStart(1,event)" onmouseup="holdStop()" ontouchstart="holdStart(1,event)" ontouchend="holdStop()">+</button>
       <button class="tap-btn" onclick="tapTempo()">TAP</button>
+      <button class="m-switch" id="mSwitch" onclick="switchBpmSmooth()" title="Плавно перейти на BPM этой песни">↺</button>
     </div>
     <select class="sound-sel" id="soundSel" onchange="saveSound()">
       <option value="woodblock">Wood Block</option>
@@ -489,6 +524,8 @@ let audioCtx = null;
 let tapTimes = [];
 let holdTimer = null;
 let beatN = 0;
+let pendingBpm = null;   // BPM to apply at next measure boundary
+let listMetroIdx = null; // which song row is active in list
 
 // ═══════════════════════════════════════
 // STORAGE
@@ -677,7 +714,7 @@ function renderToc(){
         </div></td>
         <td class="col-pad right-cell">${x(s.pad||'')}</td>
         <td class="col-voice right-cell">${x(s.voice||'')}</td>
-        <td class="col-bpm bpm-cell">${s.bpm||'—'}</td>`;
+        <td class="col-bpm bpm-cell"><button class="bpm-btn${playing&&listMetroIdx===i?' playing':pendingBpm!==null&&listMetroIdx===i?' pending':''}" data-idx="${i}" onclick="toggleListBpm(${i},event)"><span class="bicon">${playing&&listMetroIdx===i?'■':'▶'}</span>${s.bpm||'—'}</button></td>`;
       tr.addEventListener('click',()=>openSong(i));
     }
     // drop target
@@ -745,14 +782,12 @@ function openSong(i){
   const s=songs[i];
   // Load song's BPM into display, but only apply to metro if not currently playing
   if(playing){
-    // Metro is running — show current song's BPM in UI but don't change tempo
-    // User must press play again to activate new BPM
     document.getElementById('bpmNum').textContent=s.bpm||120;
-    // Keep hdrBpm showing the actually playing BPM
   } else {
     bpm=s.bpm||120;
     updateBpmUI();
   }
+  updateSwitchBtns();
   document.getElementById('sTitleInput').value=s.name||'';
   document.getElementById('sSubInput').value=s.sub||'';
   document.getElementById('pvPad').textContent=s.pad||'—';
@@ -1065,7 +1100,19 @@ function playClick(accent){
     }
   }catch(e){}
 }
-function tick(){ playClick(cfg.accentEnabled && beatN%4===0); beatN++; }
+function tick(){
+  const isFirstBeat = beatN%4===0;
+  // Apply pending BPM smoothly at start of measure
+  if(isFirstBeat && pendingBpm!==null){
+    bpm=pendingBpm; pendingBpm=null;
+    clearInterval(mInterval);
+    mInterval=setInterval(tick,60000/bpm);
+    updateBpmUI();
+    updateSwitchBtns();
+  }
+  playClick(cfg.accentEnabled && isFirstBeat);
+  beatN++;
+}
 function toggleAccent(){
   cfg.accentEnabled=!cfg.accentEnabled;
   const btn=document.getElementById('accentBtn');
@@ -1080,35 +1127,100 @@ function startMetro(){
   document.getElementById('hdrPlay').textContent='■';
   document.getElementById('hdrPlay').classList.add('playing');
   document.getElementById('hdrBpm').textContent=bpm;
+  updateSwitchBtns();
 }
 function stopMetro(){
-  playing=false; clearInterval(mInterval); mInterval=null;
+  playing=false; pendingBpm=null; listMetroIdx=null;
+  clearInterval(mInterval); mInterval=null;
   document.getElementById('mPlay').textContent='▶';
   document.getElementById('mPlay').classList.remove('playing');
   document.getElementById('hdrPlay').textContent='▶';
   document.getElementById('hdrPlay').classList.remove('playing');
+  updateSwitchBtns();
 }
 function toggleMetro(){
-  if(playing){
-    stopMetro();
-  } else {
-    // Activate the displayed BPM (current song's BPM)
+  if(playing){ stopMetro(); }
+  else {
     if(curIdx!==null) bpm=songs[curIdx].bpm||120;
-    updateBpmUI();
-    startMetro();
+    updateBpmUI(); startMetro();
   }
 }
 function toggleHdrMetro(){
-  if(playing){
-    stopMetro();
-    renderToc();
-  } else {
-    startMetro();
-  }
+  if(playing){ stopMetro(); renderToc(); }
+  else startMetro();
 }
 function updateBpmUI(){
   document.getElementById('bpmNum').textContent=bpm;
   document.getElementById('hdrBpm').textContent=bpm;
+  updateSwitchBtns();
+}
+
+// Update visual state of all ↺ buttons
+function updateSwitchBtns(){
+  const sw=document.getElementById('mSwitch');
+  const hs=document.getElementById('hdrSwitch');
+  const songBpm=curIdx!==null?(songs[curIdx].bpm||120):null;
+  const mismatch=playing&&songBpm!==null&&bpm!==songBpm;
+  const hasPending=pendingBpm!==null;
+  if(sw){
+    sw.classList.toggle('pending', hasPending);
+    sw.classList.toggle('active', !hasPending&&mismatch);
+  }
+  if(hs){
+    hs.classList.toggle('pending', hasPending);
+    hs.classList.toggle('active', !hasPending&&listMetroIdx!==null&&playing);
+  }
+}
+
+// Schedule smooth BPM change at next measure boundary
+function scheduleBpm(newBpm){
+  pendingBpm=newBpm;
+  updateSwitchBtns();
+}
+
+// ↺ in song screen — smooth switch to this song's BPM
+function switchBpmSmooth(){
+  if(curIdx===null) return;
+  const songBpm=songs[curIdx].bpm||120;
+  if(!playing){ bpm=songBpm; updateBpmUI(); startMetro(); }
+  else if(bpm!==songBpm||pendingBpm!==null){ scheduleBpm(songBpm); }
+}
+
+// ↺ in list header — smooth switch to active list BPM button's song
+function hdrSwitchSmooth(){
+  if(listMetroIdx!==null&&playing){
+    const songBpm=songs[listMetroIdx].bpm||120;
+    if(bpm!==songBpm) scheduleBpm(songBpm);
+  }
+}
+
+// BPM button click in list row
+function toggleListBpm(idx,e){
+  e.stopPropagation();
+  const s=songs[idx];
+  if(playing&&listMetroIdx===idx){
+    // Same — stop
+    stopMetro(); renderToc();
+  } else if(playing){
+    // Different song — smooth transition
+    listMetroIdx=idx;
+    scheduleBpm(s.bpm||120);
+    renderToc();
+    // Flash the new active button
+    setTimeout(()=>{
+      const btn=document.querySelector(`.bpm-btn[data-idx="${idx}"]`);
+      if(btn){ void btn.offsetWidth; btn.classList.add('flash'); setTimeout(()=>btn.classList.remove('flash'),200); }
+    },10);
+  } else {
+    // Not playing — start instantly
+    listMetroIdx=idx;
+    bpm=s.bpm||120; updateBpmUI();
+    startMetro(); renderToc();
+    setTimeout(()=>{
+      const btn=document.querySelector(`.bpm-btn[data-idx="${idx}"]`);
+      if(btn){ void btn.offsetWidth; btn.classList.add('flash'); setTimeout(()=>btn.classList.remove('flash'),200); }
+    },10);
+  }
 }
 function setBpm(v){
   bpm=Math.max(30,Math.min(300,v));
