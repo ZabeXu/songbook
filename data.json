@@ -227,7 +227,11 @@
           "text": "Привет, я тебя очень ждал\nЯ столько хотел сказать\nСлова как страницы листал\nЧтоб просто молчать\n\nПривет, есть у любви закон\nПостроенный рай в шалаше\nХоть берег и хоть балкон\nГлавное, что б по душе",
           "chords": ""
         }
-      ]
+      ],
+      "chordStyle": {
+        "fontSize": 13,
+        "color": "#1a73e8"
+      }
     },
     {
       "name": "Женя Трофимов - Самолеты",
@@ -782,7 +786,11 @@
           "text": "Oi, oi, oi\nOi, oi, oi, oi\nÉ pra quebrar kuduro\nVamos dançar kuduro\nOi, oi, oi\nOi, oi, oi, oi\nSeja morena ou loira\nVem balançar kuduro\nOi, oi, oi",
           "chords": ""
         }
-      ]
+      ],
+      "chordStyle": {
+        "fontSize": 13,
+        "color": "#1a73e8"
+      }
     },
     {
       "name": "Duke Dumont – Ocean Drive",
@@ -1126,7 +1134,7 @@
   "cfg": {
     "listName": "Сетлист",
     "theme": "light",
-    "lFontSize": 16,
+    "lFontSize": 24,
     "lLineH": 1.4,
     "lRowH": 44,
     "lTextColor": "#111111",
