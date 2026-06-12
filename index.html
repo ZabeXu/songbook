@@ -17,7 +17,7 @@
   --text:#111111;--text2:#666666;--accent:#1a73e8;
   --header-bg:#ffffff;--row-hover:#f0f4ff;--danger:#e53935;
   --metro-btn:#1a73e8;--row-height:44px;
-  --list-font:16px;--list-lh:1.4;
+  --list-font:16px;--list-lh:1.4;--list-align:left;
   --song-font:18px;--song-lh:1.1;--song-color:#111111;--song-align:left;
 }
 .dark{
@@ -121,9 +121,9 @@ input,textarea,select{font-family:inherit;}
 .song-row{cursor:pointer;}
 .song-row:hover{background:var(--row-hover);}
 .song-row td{height:var(--row-height);}
-.song-name-wrap{line-height:1.2;}
-.s-name{font-size:var(--list-font);color:var(--text);display:block;line-height:1.2;}
-.s-sub{font-size:calc(var(--list-font) * 0.72);color:var(--text2);display:block;margin-top:calc((var(--list-lh) - 1) * 0.5em);}
+.song-name-wrap{line-height:1.2;text-align:var(--list-align);}
+.s-name{font-size:var(--list-font);color:var(--text);display:block;line-height:1.2;text-align:var(--list-align);}
+.s-sub{font-size:calc(var(--list-font) * 0.72);color:var(--text2);display:block;margin-top:calc((var(--list-lh) - 1) * 0.5em);text-align:var(--list-align);}
 .s-sub.hide{display:none;}
 .num-cell{text-align:center;font-size:calc(var(--list-font) * 0.75);color:var(--text2);}
 .right-cell{text-align:right;font-size:var(--list-font);color:var(--text2);}
@@ -365,6 +365,10 @@ input,textarea,select{font-family:inherit;}
     <button class="eb-btn" onclick="sortAlpha()">А→Я</button>
     <button class="eb-btn" onclick="showAddModal()">+ Песня</button>
     <div class="eb-sep"></div>
+    <span class="eb-label">Выравн.</span>
+    <button class="eb-btn" id="lAlignLeft" onclick="setListAlign('left')">☰</button>
+    <button class="eb-btn" id="lAlignCenter" onclick="setListAlign('center')">≡</button>
+    <div class="eb-sep"></div>
     <span class="eb-label">Ред. название</span>
     <button class="eb-btn" id="editTitleBtn" onclick="toggleEditTitle()">✎</button>
   </div>
@@ -437,6 +441,7 @@ input,textarea,select{font-family:inherit;}
       <button class="bpm-adj" onmousedown="holdStart(1,event)" onmouseup="holdStop()" ontouchstart="holdStart(1,event)" ontouchend="holdStop()">+</button>
       <button class="tap-btn" onclick="tapTempo()">TAP</button>
       <button class="m-switch" id="mSwitch" onclick="switchBpmSmooth()" title="Плавно перейти на BPM этой песни">↺</button>
+      <button class="eb-btn" id="switchModeBtn" onclick="toggleSwitchMode()" title="Режим смены BPM: 〰 плавно / ▮ по такту" style="font-size:11px;padding:3px 7px;">↺▮</button>
     </div>
     <select class="sound-sel" id="soundSel" onchange="saveSound()">
       <option value="woodblock">Wood Block</option>
@@ -510,9 +515,9 @@ let songs = [];
 let cfg = {
   listName:'Мой песенник', theme:'light',
   lFontSize:16, lLineH:1.4, lRowH:44,
-  lTextColor:'#111111', lBgColor:'#ffffff',
+  lTextColor:'#111111', lBgColor:'#ffffff', lTextAlign:'left',
   sFontSize:18, sLineH:1.1, sTextColor:'#111111', sTextAlign:'left',
-  metroSound:'click', accentEnabled:true
+  metroSound:'click', accentEnabled:true, switchMode:2
 };
 let editMode = false;
 let songEditMode = false;
@@ -524,8 +529,9 @@ let audioCtx = null;
 let tapTimes = [];
 let holdTimer = null;
 let beatN = 0;
-let pendingBpm = null;   // BPM to apply at next measure boundary
-let listMetroIdx = null; // which song row is active in list
+let pendingBpm = null;
+let targetBpm = null;    // for gradual mode (variant 1)
+let listMetroIdx = null;
 
 // ═══════════════════════════════════════
 // STORAGE
@@ -587,6 +593,8 @@ function applyAll(){
   if(ab) ab.classList.toggle('on', cfg.accentEnabled!==false);
   applyListStyle(false);
   applySongStyle(false);
+  updateSwitchBtns();
+  updateListAlignBtns();
 }
 function setVal(id,v){ const el=document.getElementById(id); if(el) el.value=v; }
 
@@ -600,9 +608,26 @@ function applyListStyle(sv=true){
   r.setProperty('--list-font', cfg.lFontSize+'px');
   r.setProperty('--list-lh', cfg.lLineH);
   r.setProperty('--row-height', cfg.lRowH+'px');
+  r.setProperty('--list-align', cfg.lTextAlign||'left');
   document.getElementById('sToc').style.background=cfg.lBgColor;
   document.getElementById('sToc').style.color=cfg.lTextColor;
   if(sv) save();
+}
+function setListAlign(a){
+  cfg.lTextAlign=a;
+  document.documentElement.style.setProperty('--list-align',a);
+  ['Left','Center'].forEach(d=>{
+    const btn=document.getElementById('lAlign'+d);
+    if(btn) btn.classList.toggle('on', a===d.toLowerCase());
+  });
+  save();
+}
+function updateListAlignBtns(){
+  const a=cfg.lTextAlign||'left';
+  ['Left','Center'].forEach(d=>{
+    const btn=document.getElementById('lAlign'+d);
+    if(btn) btn.classList.toggle('on', a===d.toLowerCase());
+  });
 }
 function applySongStyle(sv=true){
   cfg.sFontSize = +gv('sFontSize')||18;
@@ -615,8 +640,14 @@ function applySongStyle(sv=true){
   r.setProperty('--song-align', cfg.sTextAlign||'left');
   const flex=(cfg.sTextAlign==='center')?'center':(cfg.sTextAlign==='right')?'flex-end':'flex-start';
   r.setProperty('--song-align-flex',flex);
-  // chord style per song
+  // Save per-song style
   if(curIdx!==null){
+    if(!songs[curIdx].songStyle) songs[curIdx].songStyle={};
+    songs[curIdx].songStyle.fontSize=cfg.sFontSize;
+    songs[curIdx].songStyle.lineH=cfg.sLineH;
+    songs[curIdx].songStyle.color=cfg.sTextColor;
+    songs[curIdx].songStyle.align=cfg.sTextAlign||'left';
+    // chord style
     const csz=+gv('sChordSize')||13;
     const ccl=gv('sChordColor')||'#1a73e8';
     if(!songs[curIdx].chordStyle) songs[curIdx].chordStyle={};
@@ -665,6 +696,7 @@ function toggleEditMode(){
   document.getElementById('editModeBtn').classList.toggle('on',editMode);
   document.getElementById('editBar').classList.toggle('show',editMode);
   document.getElementById('dragTh').style.display=editMode?'':'none';
+  if(editMode) updateListAlignBtns();
   renderToc();
 }
 let editingTitle=false;
@@ -792,9 +824,26 @@ function openSong(i){
   document.getElementById('sSubInput').value=s.sub||'';
   document.getElementById('pvPad').textContent=s.pad||'—';
   document.getElementById('pvVoice').textContent=s.voice||'—';
-  setVal('sFontSize', cfg.sFontSize);
-  setVal('sLineH', cfg.sLineH);
-  setVal('sTextColor', cfg.sTextColor);
+  // Load per-song style if saved, else use cfg defaults
+  const ss=s.songStyle||{};
+  const loadFontSize = ss.fontSize||cfg.sFontSize||18;
+  const loadLineH    = ss.lineH   ||cfg.sLineH   ||1.1;
+  const loadColor    = ss.color   ||cfg.sTextColor||'#111111';
+  const loadAlign    = ss.align   ||cfg.sTextAlign||'left';
+  cfg.sFontSize   = loadFontSize;
+  cfg.sLineH      = loadLineH;
+  cfg.sTextColor  = loadColor;
+  cfg.sTextAlign  = loadAlign;
+  setVal('sFontSize', loadFontSize);
+  setVal('sLineH',    loadLineH);
+  setVal('sTextColor',loadColor);
+  const r=document.documentElement.style;
+  r.setProperty('--song-font', loadFontSize+'px');
+  r.setProperty('--song-lh', loadLineH);
+  r.setProperty('--song-color', loadColor);
+  r.setProperty('--song-align', loadAlign);
+  const flex=(loadAlign==='center')?'center':(loadAlign==='right')?'flex-end':'flex-start';
+  r.setProperty('--song-align-flex',flex);
   const cs=s.chordStyle||{};
   setVal('sChordSize', cs.fontSize||13);
   setVal('sChordColor', cs.color||'#1a73e8');
@@ -1102,14 +1151,28 @@ function playClick(accent){
 }
 function tick(){
   const isFirstBeat = beatN%4===0;
-  // Apply pending BPM smoothly at start of measure
-  if(isFirstBeat && pendingBpm!==null){
-    bpm=pendingBpm; pendingBpm=null;
-    clearInterval(mInterval);
-    mInterval=setInterval(tick,60000/bpm);
-    updateBpmUI();
-    updateSwitchBtns();
+
+  if(cfg.switchMode===1){
+    // Вариант 1: плавное — сдвигаем BPM на 1 каждый удар
+    if(targetBpm!==null && bpm!==targetBpm){
+      bpm += bpm<targetBpm ? 1 : -1;
+      if(bpm===targetBpm){ targetBpm=null; }
+      clearInterval(mInterval);
+      mInterval=setInterval(tick,60000/bpm);
+      updateBpmUI();
+      updateSwitchBtns();
+    }
+  } else {
+    // Вариант 2: на границе такта
+    if(isFirstBeat && pendingBpm!==null){
+      bpm=pendingBpm; pendingBpm=null;
+      clearInterval(mInterval);
+      mInterval=setInterval(tick,60000/bpm);
+      updateBpmUI();
+      updateSwitchBtns();
+    }
   }
+
   playClick(cfg.accentEnabled && isFirstBeat);
   beatN++;
 }
@@ -1130,7 +1193,7 @@ function startMetro(){
   updateSwitchBtns();
 }
 function stopMetro(){
-  playing=false; pendingBpm=null; listMetroIdx=null;
+  playing=false; pendingBpm=null; targetBpm=null; listMetroIdx=null;
   clearInterval(mInterval); mInterval=null;
   document.getElementById('mPlay').textContent='▶';
   document.getElementById('mPlay').classList.remove('playing');
@@ -1155,26 +1218,35 @@ function updateBpmUI(){
   updateSwitchBtns();
 }
 
-// Update visual state of all ↺ buttons
 function updateSwitchBtns(){
   const sw=document.getElementById('mSwitch');
   const hs=document.getElementById('hdrSwitch');
   const songBpm=curIdx!==null?(songs[curIdx].bpm||120):null;
-  const mismatch=playing&&songBpm!==null&&bpm!==songBpm;
-  const hasPending=pendingBpm!==null;
+  const hasPending=pendingBpm!==null||targetBpm!==null;
+  const mismatch=playing&&songBpm!==null&&bpm!==songBpm&&!hasPending;
   if(sw){
-    sw.classList.toggle('pending', hasPending);
-    sw.classList.toggle('active', !hasPending&&mismatch);
+    sw.classList.toggle('pending',hasPending);
+    sw.classList.toggle('active',!hasPending&&mismatch);
   }
   if(hs){
-    hs.classList.toggle('pending', hasPending);
-    hs.classList.toggle('active', !hasPending&&listMetroIdx!==null&&playing);
+    hs.classList.toggle('pending',hasPending);
+    hs.classList.toggle('active',!hasPending&&listMetroIdx!==null&&playing);
   }
+  // Update mode button label
+  const mb=document.getElementById('switchModeBtn');
+  if(mb) mb.textContent='↺'+(cfg.switchMode===1?'〰':'▮');
 }
 
-// Schedule smooth BPM change at next measure boundary
+function toggleSwitchMode(){
+  cfg.switchMode = cfg.switchMode===1 ? 2 : 1;
+  save(); updateSwitchBtns();
+  toast(cfg.switchMode===1 ? '〰 Плавная смена BPM' : '▮ Смена на границе такта');
+}
+
+// Schedule BPM change — mode 1: gradual, mode 2: on beat boundary
 function scheduleBpm(newBpm){
-  pendingBpm=newBpm;
+  if(cfg.switchMode===1){ targetBpm=newBpm; pendingBpm=null; }
+  else { pendingBpm=newBpm; targetBpm=null; }
   updateSwitchBtns();
 }
 
@@ -1247,30 +1319,34 @@ function editBpmInline(){
   function commit(){
     if(committed) return; committed=true;
     const v=parseInt(inp.value);
+    inp.replaceWith(el); // restore FIRST
     if(!isNaN(v)) setBpm(v);
-    setTimeout(()=>{ inp.replaceWith(el); updateBpmUI(); },0);
+    else updateBpmUI();
   }
   inp.addEventListener('blur', commit);
-  inp.addEventListener('keydown', e=>{ if(e.key==='Enter') inp.blur(); if(e.key==='Escape'){ committed=true; inp.replaceWith(el); } });
+  inp.addEventListener('keydown', e=>{
+    if(e.key==='Enter'){ e.preventDefault(); commit(); }
+    if(e.key==='Escape'){ committed=true; inp.replaceWith(el); }
+  });
 }
 function editHdrBpm(){
   const el=document.getElementById('hdrBpm');
-  if(!el.textContent||el.textContent==='—') return;
+  if(!el||el.textContent==='—') return;
   const inp=document.createElement('input');
-  inp.type='number'; inp.min=30; inp.max=300;
-  inp.value=bpm;
+  inp.type='number'; inp.min=30; inp.max=300; inp.value=bpm;
   inp.style.cssText='width:42px;font-size:13px;font-weight:700;color:var(--accent);border:none;border-bottom:1px solid var(--accent);background:transparent;outline:none;text-align:center;';
   el.replaceWith(inp);
   inp.focus(); inp.select();
-  let committed=false;
-  function commit(){
-    if(committed) return; committed=true;
+  inp.onblur=()=>{
     const v=parseInt(inp.value);
-    if(!isNaN(v)) setBpm(v);
-    setTimeout(()=>{ inp.replaceWith(el); updateBpmUI(); },0);
-  }
-  inp.addEventListener('blur', commit);
-  inp.addEventListener('keydown', e=>{ if(e.key==='Enter') inp.blur(); if(e.key==='Escape'){ committed=true; inp.replaceWith(el); } });
+    if(inp.parentNode) inp.replaceWith(el);
+    if(!isNaN(v)&&v>=30&&v<=300) setBpm(v);
+    else document.getElementById('hdrBpm').textContent=bpm;
+  };
+  inp.onkeydown=e=>{
+    if(e.key==='Enter'){ e.preventDefault(); inp.blur(); }
+    if(e.key==='Escape'){ inp.onblur=null; if(inp.parentNode) inp.replaceWith(el); }
+  };
 }
 function tapTempo(){
   const now=Date.now();
