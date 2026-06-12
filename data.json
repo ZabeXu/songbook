@@ -832,6 +832,7 @@
     "sLineH": 1.6,
     "sTextColor": "#000000",
     "sTextAlign": "center",
-    "metroSound": "triangle"
+    "metroSound": "triangle",
+    "accentEnabled": false
   }
 }
