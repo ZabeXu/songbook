@@ -149,7 +149,17 @@
           "text": "Давай с тобой мы не уснём\nС тобой вдвоём, с тобой вдвоём\nМы эту ночь перевернем, с тобой вдвоём!\n(С тобой вдвоём!)\n\nСкажи, зачем нужны нам эти люди\nМы никому об этом не расскажем\nДавай с тобой мы отдохнём\nС тобой вдвоём! Ага!",
           "chords": ""
         }
-      ]
+      ],
+      "songStyle": {
+        "fontSize": 24,
+        "lineH": 1.5,
+        "color": "#000000",
+        "align": "center"
+      },
+      "chordStyle": {
+        "fontSize": 13,
+        "color": "#1a73e8"
+      }
     },
     {
       "name": "Дима Билан - Номер один",
@@ -1150,11 +1160,13 @@
     "lRowH": 44,
     "lTextColor": "#111111",
     "lBgColor": "#ffffff",
+    "lTextAlign": "center",
     "sFontSize": 24,
     "sLineH": 1.5,
     "sTextColor": "#000000",
     "sTextAlign": "center",
     "metroSound": "triangle",
-    "accentEnabled": false
+    "accentEnabled": false,
+    "switchMode": 1
   }
 }
