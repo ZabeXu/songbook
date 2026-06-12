@@ -885,7 +885,44 @@
       "voice": "",
       "bpm": 100,
       "showChords": false,
-      "verses": []
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Не открывая замки - я буду вспоминать\nКак горели огни и от любви умирать\nМожет, рядом с тобой Нам было хорошо\nЧто-то там за спиной меня так обожгло",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "преприпев",
+          "text": "Нежное \"Обними\", нежна я опять\nМою руку возьми, чтобы вместе упасть\nИ в объятиях твоих так хочу я дышать\nНе могу без тебя, и не могу ждать!",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "припев",
+          "text": "Я схожу с ума! Мне мало-мало-мало\nМне мало-мало-мало тебя!\nЗнаю я сама Мне мало-мало-мало\nМне мало-мало-мало тебя",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "куплет 2",
+          "text": "И я тебе прошепчу: \"Сейчас глаза закрой\nИ тихонечко в такт мне на ушко напой\"\nЭта тихая дрожь, но я же не одна\nДаже если всё - ложь, так будет не всегда",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        }
+      ]
     },
     {
       "name": "Отпетые мошенники - Люби меня люби",
@@ -894,7 +931,40 @@
       "voice": "",
       "bpm": 100,
       "showChords": false,
-      "verses": []
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Скоро весна, скоро весна\nСкоро эти ночи беспокойного сна\nСнова весна, снова любовь\nСнова в наших жилах заиграет кровь\nСнова рассвет, снова рассвет\nИ назад уже дороги нет\nСкоро печаль, скоро печаль\nВсё уйдет, и нам немного жаль",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "преПрипев",
+          "text": "Знаю ответ, знаю ответ\nНа вопрос «Ты есть или нет?»\nЗнаю обман, знаю обман\nЗнаю, нашей любви океан\nТы не одна, ты не одна\nБудешь этой ночью без сна\nСкоро любовь, скоро весна",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "куплет 2",
+          "text": "Скоро тепло, скоро тепло\nСкоро много нам воды натекло\nСкоро тепло, скоро экстаз\nИ эта музыка доходит до нас\nДелаю шаг, делаю два\nЗакружилась от любви голова\nЗнаю теперь, знаю теперь\nКак открыть эту тайную дверь",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "преприпев 2",
+          "text": "Время идёт, время идёт\nНам его уже никто не вернёт\nВремя летит, время летит\nДвигаясь с нами и танцуя в пути\nСнова вопрос, снова ответ\nСнова загорит невидимый свет\nС нами любовь, с нами игра",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
     },
     {
       "name": "Maneskin - Supermodel",
@@ -903,7 +973,52 @@
       "voice": "",
       "bpm": 100,
       "showChords": false,
-      "verses": []
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Alone at parties in a deadly silhouette\nShe loves the cocaine, but cocaine don't love her back\nWhen she's upset, she talks to Maury and takes deep breaths\nShe's a '90s supermodel, uh-uh-uh",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "куплет 2",
+          "text": "Way back in high school, when she was a good Christian\nI used to know her, but she's got a new best friend\nA drag queen named The Virgin Mary takes confessions\nShe's a '90s supermodel",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "преприпев",
+          "text": "Yeah, she's a master, my compliments\nIf you wanna love her, just deal with that\nShe'll never love you more than money and cigarettes\nEvery night's a heartbreak",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "припев",
+          "text": "Hey, don't think about it, hey, just let it go\n'Cause her boyfriend is the rock 'n' roll (hey)\nSavor every moment 'til she has to go\n'Cause her boyfriend is the rock 'n' roll",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "куплет 3",
+          "text": "Alone at parties, she's working around the clock\nWhen you're not looking, she's stealing your Basquiat\nLow-waisted pants on OnlyFans, I'd pay for that\nShe's a '90s supermodel",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
     },
     {
       "name": "Носков - Я тебя люблю",
@@ -912,7 +1027,32 @@
       "voice": "",
       "bpm": 100,
       "showChords": false,
-      "verses": []
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "От этого кpyгом идет голова,\nТолько тебя поцеловал.\nЭто словно кислотный pаспад,\nКак на асфальт с неба yпасть.\n\nЗачем мне это, зачем?\nС кем бы я был? Да мало ли с кем.\nОдевает их всех темнота,\nТолько с тобой было не так.\nТолько с тобой было не так.",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Припев",
+          "text": "Hо я тебя люблю, люблю, люблю.\nС тобой одной хочy, с тобой хочy.\nHо я тебя люблю, люблю, люблю.\nС тобой одной хочy, с тобой хочy.",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Словно лyна ты pождаешь пpилив\nВ сеpдце моем, в мыслях моих\nHо стонyт мои паpyса,\nВ штоpме твоем биться yстав.\n\nДай мне цепи поpвать\nДай мне тебя нежно обнять\nДа, я знаю, как сходят с yма\nХочешь, yзнай это сама.\nХочешь, yзнай это сама.",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
     },
     {
       "name": "Земляне - Трава у дома",
