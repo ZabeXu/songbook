@@ -220,7 +220,7 @@
       "sub": "",
       "pad": "",
       "voice": "",
-      "bpm": 115,
+      "bpm": 60,
       "showChords": false,
       "verses": [
         {
@@ -274,7 +274,7 @@
       "sub": "",
       "pad": "",
       "voice": "",
-      "bpm": 100,
+      "bpm": 123,
       "showChords": false,
       "verses": [
         {
@@ -530,7 +530,7 @@
       "sub": "",
       "pad": "",
       "voice": "",
-      "bpm": 100,
+      "bpm": 123,
       "showChords": false,
       "verses": [
         {
@@ -555,7 +555,7 @@
       "sub": "",
       "pad": "",
       "voice": "",
-      "bpm": 100,
+      "bpm": 90,
       "showChords": false,
       "verses": [
         {
@@ -993,7 +993,7 @@
       "sub": "",
       "pad": "",
       "voice": "",
-      "bpm": 120,
+      "bpm": 125,
       "showChords": false,
       "verses": [
         {
@@ -1008,7 +1008,7 @@
       "sub": "",
       "pad": "",
       "voice": "",
-      "bpm": 118,
+      "bpm": 120,
       "showChords": false,
       "verses": [
         {
@@ -1092,7 +1092,7 @@
       "sub": "",
       "pad": "",
       "voice": "",
-      "bpm": 115,
+      "bpm": 120,
       "showChords": false,
       "verses": [
         {
@@ -1112,7 +1112,7 @@
       "sub": "",
       "pad": "",
       "voice": "",
-      "bpm": 100,
+      "bpm": 123,
       "showChords": false,
       "verses": [
         {
@@ -1150,13 +1150,13 @@
     "lRowH": 44,
     "lTextColor": "#111111",
     "lBgColor": "#ffffff",
+    "lTextAlign": "left",
     "sFontSize": 24,
     "sLineH": 1.5,
     "sTextColor": "#000000",
     "sTextAlign": "center",
-    "metroSound": "triangle",
+    "metroSound": "ping",
     "accentEnabled": false,
-    "lTextAlign": "left",
     "switchMode": 2
   }
 }
