@@ -26,7 +26,17 @@
             "bold": true
           }
         }
-      ]
+      ],
+      "songStyle": {
+        "fontSize": 24,
+        "lineH": 1.5,
+        "color": "#000000",
+        "align": "center"
+      },
+      "chordStyle": {
+        "fontSize": 13,
+        "color": "#1a73e8"
+      }
     },
     {
       "name": "Баста - Сансара",
@@ -336,7 +346,7 @@
       "sub": "",
       "pad": "",
       "voice": "",
-      "bpm": 130,
+      "bpm": 135,
       "showChords": false,
       "verses": [
         {
@@ -1146,7 +1156,7 @@
       "sub": "",
       "pad": "",
       "voice": "",
-      "bpm": 100,
+      "bpm": 95,
       "showChords": false,
       "verses": [
         {
