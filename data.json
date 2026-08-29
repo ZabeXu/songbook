@@ -1174,6 +1174,48 @@
           }
         }
       ]
+    },
+    {
+      "name": "Weeknd - Starboy",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "",
+          "text": "I'm tryna put you in the worst mood, ah\nP1 cleaner than your church shoes, ah\nMilli point two just to hurt you, ah\nAll red Lamb' just to tease you, ah\nNone of these toys on lease too, ah\nMade your whole year in a week too, yeah\nMain bitch outta your league too, ah\nSide bitch outta your league too, ah",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "преПрипев",
+          "text": "House so empty, need a centerpiece\nTwenty racks a table, cut from ebony\nCut that ivory into skinny pieces\nThen she clean it with her face, man, I love my baby, ah\nYou talkin' money, need a hearing aid\nYou talkin' 'bout me, I don't see the shade\nSwitch up my style, I take any lane\nI switch up my cup, I kill any pain",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Every day, a nigga try to test me, ah\nEvery day, a nigga try to end me, ah\nPull off in that Roadster SV, ah\nPockets overweight, gettin' hefty, ah\nComing for the king, that's a far cry, I\nI come alive in the fall time, I\nThe competition, I don't really listen\nI'm in the blue Mulsanne bumpin' New Edition",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Бридж",
+          "text": "Let a nigga brag Pitt\nLegend of the fall, took the year like a bandit\nBought mama a crib and a brand new wagon\nNow she hit the grocery shop lookin' lavish\nStar Trek roof in that Wraith of Khan\nGirls get loose when they hear this song\nA hundred on the dash get me close to God\nWe don't pray for love, we just pray for cars",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
     }
   ],
   "cfg": {
