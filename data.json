@@ -1,6 +1,34 @@
 {
   "songs": [
     {
+      "name": "Баста - Выпускной",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Вся наша школа сошла с ума от этой новенькой\nВ мой класс она зашла, и сразу понял я\nИ Купидон мне в сердце не стрелою дал, а пулею\nСказала наша классная: \"Знакомьтесь с Юлею\"\n\nИ вот, я, словно тень, плетусь за Юлей\nПодойти боюсь я к Юле, вдруг меня она не любит\nА вдруг другого любит Юля, любит не меня?\nВедь в мечтах на двоих у меня с Юлей одна фамилия\n\nИ так полгода, днём — пожар, а ночью — бессонница\nСердце рвётся, но лёд никак не тронется\nНо как-то утром я решил сделать первый шаг\nКупил цветы и под подъезд, лишь бы ты пришла\n\nИ ты пришла, драма по классике\nНо не одна пришла, а под ручку с одноклассником\nИ ударились об землю небеса\nИ тогда я написал, Юля",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Припев",
+          "text": "Медлячок, чтобы ты заплакала\nИ пусть звучат они все одинаково\nИ пусть банально и не талантливо\nНо как сумел, на гитаре сыграл и спел\n\nВыпускной, и ты в красивом платьице\nИ тебе вот-вот 17 лет\nЯ хотел тебе просто понравиться\nИ как сумел, на гитаре сыграл",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        }
+      ]
+    },
+    {
       "name": "Баста - Сансара",
       "sub": "",
       "pad": "",
@@ -379,31 +407,6 @@
       ]
     },
     {
-      "name": "Николай Носков – Паранойя",
-      "sub": "",
-      "pad": "",
-      "voice": "",
-      "bpm": 120,
-      "showChords": false,
-      "verses": [
-        {
-          "label": "Куплет 1",
-          "text": "Похоже ты одичал, а ветер в бубен стучал\nНочью песни кричал о любви\nТебя волнует луна, танцует морем волна\nПросто это весна, посмотри\nДарит небо ультрамарин\nЖарит тело адреналин",
-          "chords": ""
-        },
-        {
-          "label": "Припев",
-          "text": "Вот она пришла весна, как паранойя\nВ грудь попал любви запал — будет взрыв\nВот она пришла весна, как паранойя\nПрозвучал весны сигнал — все в отрыв\nПаранойя",
-          "chords": ""
-        },
-        {
-          "label": "Куплет 2",
-          "text": "Снова трели скворца, снова стрелы в сердца\nПрочь обиды с лица, не грусти\nЗвенит последний звонок, любовь зовет на урок\nЗапиской в несколько строк — раз, два, три\nДарит небо ультрамарин\nЖарит тело адреналин",
-          "chords": ""
-        }
-      ]
-    },
-    {
       "name": "Николай Носков - Я тебя люблю",
       "sub": "",
       "pad": "",
@@ -434,6 +437,31 @@
           "showLabel": true,
           "cols": 1,
           "style": {}
+        }
+      ]
+    },
+    {
+      "name": "Николай Носков – Паранойя",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 120,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Похоже ты одичал, а ветер в бубен стучал\nНочью песни кричал о любви\nТебя волнует луна, танцует морем волна\nПросто это весна, посмотри\nДарит небо ультрамарин\nЖарит тело адреналин",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Вот она пришла весна, как паранойя\nВ грудь попал любви запал — будет взрыв\nВот она пришла весна, как паранойя\nПрозвучал весны сигнал — все в отрыв\nПаранойя",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Снова трели скворца, снова стрелы в сердца\nПрочь обиды с лица, не грусти\nЗвенит последний звонок, любовь зовет на урок\nЗапиской в несколько строк — раз, два, три\nДарит небо ультрамарин\nЖарит тело адреналин",
+          "chords": ""
         }
       ]
     },
@@ -1114,68 +1142,6 @@
       ]
     },
     {
-      "name": "Zucchero - Baila",
-      "sub": "",
-      "pad": "",
-      "voice": "",
-      "bpm": 123,
-      "showChords": false,
-      "verses": [
-        {
-          "label": "Куплет 1",
-          "text": "It blows my mind now that I found you\nDeep in the night of tequila boom, boom\nSlide by me, sexy thing, sexy and fine\nI got my eyes on you all of the time, yeah",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {}
-        },
-        {
-          "label": "Куплет 2",
-          "text": "Huh, you got to have chaos burnin' in you\nTo make you open like a flower in bloom\nHell lives inside you next to paradise\nThe moon and sun have come to watch your shine",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {}
-        },
-        {
-          "label": "Куплет 3",
-          "text": "Go chica, go cocca, keep it all shakin'\nYou know tonight somethin's up for the takin'\nMy heart is gold, heart of a saint\nWith you beside me girl, oh, then I ain't",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {}
-        }
-      ]
-    },
-    {
-      "name": "Баста - Выпускной",
-      "sub": "",
-      "pad": "",
-      "voice": "",
-      "bpm": 100,
-      "showChords": false,
-      "verses": [
-        {
-          "label": "Куплет 1",
-          "text": "Вся наша школа сошла с ума от этой новенькой\nВ мой класс она зашла, и сразу понял я\nИ Купидон мне в сердце не стрелою дал, а пулею\nСказала наша классная: \"Знакомьтесь с Юлею\"\n\nИ вот, я, словно тень, плетусь за Юлей\nПодойти боюсь я к Юле, вдруг меня она не любит\nА вдруг другого любит Юля, любит не меня?\nВедь в мечтах на двоих у меня с Юлей одна фамилия\n\nИ так полгода, днём — пожар, а ночью — бессонница\nСердце рвётся, но лёд никак не тронется\nНо как-то утром я решил сделать первый шаг\nКупил цветы и под подъезд, лишь бы ты пришла\n\nИ ты пришла, драма по классике\nНо не одна пришла, а под ручку с одноклассником\nИ ударились об землю небеса\nИ тогда я написал, Юля",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {}
-        },
-        {
-          "label": "Припев",
-          "text": "Медлячок, чтобы ты заплакала\nИ пусть звучат они все одинаково\nИ пусть банально и не талантливо\nНо как сумел, на гитаре сыграл и спел\n\nВыпускной, и ты в красивом платьице\nИ тебе вот-вот 17 лет\nЯ хотел тебе просто понравиться\nИ как сумел, на гитаре сыграл",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {
-            "bold": true
-          }
-        }
-      ]
-    },
-    {
       "name": "Weeknd - Starboy",
       "sub": "",
       "pad": "",
@@ -1210,6 +1176,40 @@
         {
           "label": "Бридж",
           "text": "Let a nigga brag Pitt\nLegend of the fall, took the year like a bandit\nBought mama a crib and a brand new wagon\nNow she hit the grocery shop lookin' lavish\nStar Trek roof in that Wraith of Khan\nGirls get loose when they hear this song\nA hundred on the dash get me close to God\nWe don't pray for love, we just pray for cars",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
+    },
+    {
+      "name": "Zucchero - Baila",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 123,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "It blows my mind now that I found you\nDeep in the night of tequila boom, boom\nSlide by me, sexy thing, sexy and fine\nI got my eyes on you all of the time, yeah",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Huh, you got to have chaos burnin' in you\nTo make you open like a flower in bloom\nHell lives inside you next to paradise\nThe moon and sun have come to watch your shine",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Куплет 3",
+          "text": "Go chica, go cocca, keep it all shakin'\nYou know tonight somethin's up for the takin'\nMy heart is gold, heart of a saint\nWith you beside me girl, oh, then I ain't",
           "chords": "",
           "showLabel": true,
           "cols": 1,
