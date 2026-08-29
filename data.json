@@ -1,71 +1,1196 @@
 {
   "songs": [
     {
-      "name": "Осень",
-      "sub": "капо на 2 ладу",
-      "pad": "001",
-      "voice": "042",
-      "bpm": 76,
+      "name": "Баста - Сансара",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
       "showChords": false,
       "verses": [
         {
           "label": "Куплет 1",
-          "chords": "Am         F          C      E",
-          "text": "Листья жгут костры во дворе,\nПахнет дымом и сентябрём.\nЯ стою один на горе,\nДумаю о том, о сём."
+          "text": "Делай вопреки, делай от руки\nМир переверни, небо опрокинь\nВ каждом наброске, в каждом черновике\nУчитель продолжается в своём ученике\nВсю мою жизнь я иду ко дну\nВсю мою жизнь я искал любовь, чтобы любить одну\nОни сказали, нас поздно спасать и поздно лечить\nПлевать, ведь наши дети будут лучше, чем мы",
+          "chords": ""
         },
         {
           "label": "Припев",
-          "chords": "Am    F       C       E7",
-          "text": "Осень, осень — рыжий огонь,\nПадают листья с клёна.\nТы уходи, но не тронь\nТо, что осталось сломанным."
+          "text": "Когда меня не станет, я буду петь голосами\nМоих детей и голосами их детей\nНас просто меняют местами\nТаков закон Сансары - круговорот людей\nОй, мама",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Нас не стереть, мы живём назло\nПусть не везёт, но мы своё возьмём\nЭто небо - вместо сцены, здесь всё вверх ногами\nИ эти звёзды в темноте - тобой зажжённый фонарик\nТысяча меня до меня и после меня будет\nТысяча меня и в тысячах не меня - тыща меня\nИ мы снова вдребезги и нас не починить\nПлевать, ведь наши дети будут лучше, чем мы",
+          "chords": ""
         }
       ]
     },
     {
-      "name": "Дорога",
+      "name": "Бурито - Мама",
       "sub": "",
-      "pad": "002",
-      "voice": "015",
-      "bpm": 112,
+      "pad": "",
+      "voice": "",
+      "bpm": 93,
       "showChords": false,
       "verses": [
         {
-          "label": "Куплет",
-          "chords": "G      D       Em      C",
-          "text": "Фары режут темноту,\nТрасса пустая до утра.\nЯ нажму, перегоню\nЭту ночь — и снова в путь."
+          "label": "Куплет 1",
+          "text": "Tам, где я был,\nтак долго не было света\nЯ оставался один\nна чужих берегах\nМоё Солнце не здесь,\nоно просто прячется где-то\nНо каждый новый мой шаг\nбудет шагом в его лучах",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Забери меня, забери\nЗабери меня с собой\nВ моём сердце так много любви\nРазреши мне быть рядом с тобой, мама, yeah\nЗабери меня, забери\nЗабери меня, мама, yeah\nПод небом другим остывать будут только наши следы, yeah",
+          "chords": "",
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "Куплет 2",
+          "text": "А где весна за снегами\nлегко скользила ко мне\nСедыми косами древних ветров\nстановились мечты о тебе\nВ моей памяти снег (снег),\nв моём сердце память о птицах\nЧто останется нам,\nкроме капель воды на ресницах?",
+          "chords": ""
+        },
+        {
+          "label": "Бридж",
+          "text": "Я наблюдаю под облаками душные сумерки\nЧто будет дальше, точно не знаю, я вспоминаю лишь твои руки\nТы далеко, ты так далеко, мне звать тебя не с руки\nЯ так давно сам себя забываю, но всё-таки, всё-таки",
+          "chords": "",
+          "style": {
+            "fontSize": 24,
+            "bold": true
+          }
+        }
+      ],
+      "chordStyle": {
+        "fontSize": 13,
+        "color": "#1a73e8"
+      }
+    },
+    {
+      "name": "Градусы - Добрая",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 125,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Нравится мне, когда ты добрая по квартире ходишь\nИ несомненно заводишь\nНравится мне, когда ты громко хохочешь\nНеважно, днём или ночью — это нравится мне\nНравится мне, когда мы смотрим с тобою фильмы\nХоть они и дебильны и даже во сне\nНравится мне, что ты с меня одеяло стянула\nИ меня даже продуло, но мне...",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Плевать, если я заболею\nЯ сам себе поставить банки сумею\nИ мне никого, блин, не надо\nЛишь бы ты ходила добрая рядом\nМне никогда не будет скучно с тобою\nЯ даже в твою честь планету открою\nА пока она тебе будет сниться\nЯ приготовлю для тебя огромную пиццу",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Нравится мне с тобой на заднем ряду смеяться\nИ ты не вздумай меняться\nНравится мне, что можем максимум пять минут ругаться\nИ только две обижаться\nНравится мне не замечать расстояний\nКогда безумно так тянет, это нравится мне\nНравится мне с тобой послушать Нирвану\nКогда нет денег в карманах, но мне...",
+          "chords": ""
+        },
+        {
+          "label": "Бридж",
+          "text": "Нравится с тобою из дома сутки не выходить\nЯ люблю тебя любую, с тобой всю ночь буду говорить\nЭто нравится, пусть останется с обострениями, е-е\nКаждый новый день пусть запарится впечатлениями, е-е",
+          "chords": ""
         }
       ]
     },
     {
-      "name": "Тихий вечер",
+      "name": "Градусы – Кто ты",
       "sub": "",
-      "pad": "003",
-      "voice": "008",
-      "bpm": 63,
+      "pad": "",
+      "voice": "",
+      "bpm": 105,
       "showChords": false,
       "verses": [
         {
+          "label": "Куплет 1",
+          "text": "Пешеходом уже быть достало,\nИ всего как обычно мало.\nЯ сижу понемногу вникаю\nНу зачем большие окна трамваю?",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Я думаю, я думаю, я…\nНичего опять не придумаю\nКто-то на балконе повис,\nКто-то быстро вверх, потом вниз.\nЯ пока рисую мосты,\nА ты? А ты? Кто ты?",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "У одних закипают моторы,\nЗакрывают глаза на приборы.\nЯ пытаюсь, но не понимаю:\nДля чего людей так много Китаю?\nНо не об этом щас",
+          "chords": ""
+        },
+        {
+          "label": "Бридж",
+          "text": "Утром встану, умоюсь с мылом,\nПогляжу в окно: вид онваг.\nПолистаю Net, посмотрю картинки.\nЧто меняет все? О! Блондинки.\nПозову из нижней Натаху,\nКто стучит? Сосед – иди на ...\nПять минут, готов, сижу думаю,\nНо опять ничего не придумаю.",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Дима Билан - Держи",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 115,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Давай с тобой мы отдохнём\nС тобой вдвоём, с тобой вдвоём\nМы этот мир перевернём, с тобой вдвоём\n(С тобой вдвоём!)\n\nСкажи, зачем нужны нам эти люди\nМы никому об этом не расскажем\nДавай с тобой мы отдохнём\nС тобой вдвоём! Ага!",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Держи! Держи! Руку мою держи!\nЧто хочешь, скажи! Получишь! Держи! Ага!\nДержи! Держи! Руку мою держи!\nЧто хочешь, скажи! Получишь! Держи! Ага!",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Давай с тобой мы не уснём\nС тобой вдвоём, с тобой вдвоём\nМы эту ночь перевернем, с тобой вдвоём!\n(С тобой вдвоём!)\n\nСкажи, зачем нужны нам эти люди\nМы никому об этом не расскажем\nДавай с тобой мы отдохнём\nС тобой вдвоём! Ага!",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Дима Билан - Номер один",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 110,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Взгляд твой как власть\nТа, что разжигает страсть,\nЯ, ты – Bad girl\nКто тебя сюда привел?\nА-А Автограф свой ногтями на спине\nЭтой ночью можешь ты оставить мне\n\nBaby, ты за мной иди\nЯ тот, кого так любишь ты\nЯ вижу блеск в твоих глазах\nТы – моя звезда",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "припев",
+          "text": "А я твой номер один, baby, я твой номер один\nЗнаешь, а я твой номер один, baby, я твой номер один\nА я твой номер один",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Куплет 2",
+          "text": "М-м-м от тебя схожу с ума\nТолько лишь с тобой, только твой Дима Билан\nТак владеешь делом, baby, ближе к делу\nА-а люби меня, в этой жизни ты моя\n\nBaby, ты за мной иди,\nЯ тот, кого так любишь ты,\nЯ вижу блеск в твоих глазах\nТы – моя звезда",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
+    },
+    {
+      "name": "Женя Трофимов - Поезда",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Тяни лотерейный билет\nЧтоб тамбур прокуренным был\nУ нас с тобой выигравших нет\nЛишь бы просто дорогу к тебе не забыл, и\nСтаканов гранёных шум\nТрещит, как любовь, по швам\nЯ каждый вокзал прошу:\n«Не пускай меня к поездам»",
+          "chords": ""
+        },
+        {
+          "label": "преПрипев",
+          "text": "И рельсы — сердечный пульс\nЖелезные струны души\nНаверное, скоро вернусь\nТы, пожалуйста, только пиши мне",
+          "chords": ""
+        },
+        {
+          "label": "припев",
+          "text": "И тянутся города\nЯ в каждом из них бывал\nНас ссорили поезда\nНо мирил нас пустой вокзал\nЧтоб быть с тобой навсегда\nЯ сразу билеты взял\nНас ссорили поезда\nНо мирил нас пустой вокзал\n(Ссорили поезда)",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Меняется в окнах день\nЗачеркнутый в календаре\nПроводницам здороваться лень\nНо сейчас они главные в нашей судьбе, и\nПестрят заголовки газет\nЧто против судьбы не пойдёшь\nЛюбви в этом городе нет\nНо я знаю, что ты меня ждёшь",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Женя Трофимов - Привет",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 60,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Привет, я тебя очень ждал\nЯ ждал, когда город уснёт\nКогда опустеет вокзал и время придёт\n\nПривет, я тебя жду давно\nЯ столько с собою взял\nВот море и вот вино\nВот берег и вот причал",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Дай мне влюбиться в тебя\nДай на тебя посмотреть\nПусть улицы снова не спят\nМы вместе встречаем рассвет\n\nКак же тебя я люблю\nСквозь ветер и дым сигарет\nЯ городу снова пою\nЧто мы вместе встречаем рассвет",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Привет, я тебя очень ждал\nЯ столько хотел сказать\nСлова как страницы листал\nЧтоб просто молчать\n\nПривет, есть у любви закон\nПостроенный рай в шалаше\nХоть берег и хоть балкон\nГлавное, что б по душе",
+          "chords": ""
+        }
+      ],
+      "chordStyle": {
+        "fontSize": 13,
+        "color": "#1a73e8"
+      }
+    },
+    {
+      "name": "Женя Трофимов - Самолеты",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 90,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Я с тобой спорить не хочу\nДа и выгляжу как дурак\nХочешь, я завтра же прилечу\nНо пока не знаю как\nЯ с тобой спорить не хочу\nИ доказывать кто и что ты\nХочешь, я завтра же прилечу\nТолько где они, самолёты?\nТолько где они, самолёты?\nТолько где они, самолёты?\nТолько где они?",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Всё думаю о тебе\nОт посадки и до полёта\nЧто несут они на хвосте\nЭти твои самолёты\nЯ вверх, а ты там внизу\nБелые вороны что там\nНа хвосте тебе принесут\nЭти твои самолёты\nТы слышишь эти твои самолёты\nЭти твои самолёты\nТы слышишь эти твои самолёты",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Я с тобой спорить не хочу\nЧто бы спор проиграть дважды\nСлово правды всё остальное чушь\nЯ поверил тебе однажды\nЯ с тобой спорить не хочу\nНа беззвучный режим полёта\nХочешь, я завтра же прилечу\nТолько где они, самолёты?\nТолько где они, самолёты?\nТолько где они, самолёты?\nТолько где они?",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Земляне - Трава у дома",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 123,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Земля в иллюминаторе, земля в иллюминаторе\nЗемля в иллюминаторе видна\nКак сын грустит о матери, как сын грустит о матери\nГрустим мы о Земле — она одна\n\nА звёзды тем не менее, а звёзды тем не менее\nЧуть ближе, но всё так же холодны\nИ как в часы затмения, и как в часы затмения\nЖдём света и земные видим сны",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Припев",
+          "text": "И снится нам не рокот космодрома\nНе эта ледяная синева\nА снится нам трава, трава у дома\nЗелёная, зелёная трава",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Куплет 2",
+          "text": "А мы летим орбитами, путями неизбитыми\nПрошит метеоритами простор\nОправдан риск и мужество, космическая музыка\nВплывает в деловой наш разговор\n\nВ какой-то дымке матовой земля в иллюминаторе\nВечерняя и ранняя заря\nА сын грустит о матери, а сын грустит о матери\nЖдёт сына мать, а сыновей Земля",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
+    },
+    {
+      "name": "Леприконсы - Хали Гали",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 130,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Помню, было мне десять лет\nИ я копил на новый велосипед\nЯ жил лишь этою мечтой\nПока как-то раз не встретился с тобой\nТы меня обворожила\nПогулять с собою предложила\nЯ бы взял копилку и разбил\nИ тебя в парк отдыха сводил",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "А когда мне было пятнадцать лет\nИ я копил на новенький мопед\nЯ жил лишь этою мечтой\nПока как-то раз не встретился с тобой\nТы меня обворожила\nНа дискач попсовый пригласила\nНапитков много разных было\nТы меня в ту ночь уговорила",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Меладзе – Текила-Любовь",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 125,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Она бредовая, она неверная\nИ от бессонницы когда-нибудь\nНаверное с ума сойдёт\nА я люблю её\nОна тигровая, она пещерная\nИ я убью её когда-нибудь\nНаверное под Новый Год\nИ воскрешу её",
+          "chords": ""
+        },
+        {
+          "label": "ПРЕПрипев",
+          "text": "Вместо слов про мою любовь\nЯ кричу от боли",
+          "chords": ""
+        },
+        {
+          "label": "припев",
+          "text": "Тропикана-женщина горяча и бешена\nА внутри солёная словно кровь текила-любовь",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Она река моя; я посреди неё\nСтою на якоре не видя берегов\nЛишь небо синее\nНевыносимое\nЧетыре танца с ней танцуют демоны\nНо этот пятый танец мой\nУже за облако зашла луна\nИгра окончена",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Не пара – Другая причина",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 120,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Сквозь туманы дорог\nЧто-то манит меня. Мне надо туда.\n(Ты) Отпустила сама,\nВиновата сама. Ругаешь себя.\nЗнаю, что не сумел\nЯ понять, что надо мне\nИ винить бы себя,\nНо причина — другая семья.",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Только знаешь, пролетают дни мимо (Что со мной?).\nЯ не замечаю улыбок (Я не твой).\nЭто как в конце того фильма (Так нельзя).\nВ жизни стало все так уныло (Без тебя).\nЗнаешь, пролетают дни мимо (Что со мной?).\nЯ не замечаю улыбок (Я не твой).\nЭто как в конце того фильма (Без тебя).\nТолько не хотелось бы так.",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "В свете плачущих фар\nПо дороге иду туда, в никуда.\nТы всю ночь не спала,\nИ везде, где была, искала меня.\nЗнаю, что не сумел\nЯ понять, что надо мне\nИ винить бы себя,\nНо причина — другая семья.",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Николай Носков – Паранойя",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 120,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Похоже ты одичал, а ветер в бубен стучал\nНочью песни кричал о любви\nТебя волнует луна, танцует морем волна\nПросто это весна, посмотри\nДарит небо ультрамарин\nЖарит тело адреналин",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Вот она пришла весна, как паранойя\nВ грудь попал любви запал — будет взрыв\nВот она пришла весна, как паранойя\nПрозвучал весны сигнал — все в отрыв\nПаранойя",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Снова трели скворца, снова стрелы в сердца\nПрочь обиды с лица, не грусти\nЗвенит последний звонок, любовь зовет на урок\nЗапиской в несколько строк — раз, два, три\nДарит небо ультрамарин\nЖарит тело адреналин",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Николай Носков - Я тебя люблю",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "От этого кpyгом идет голова,\nТолько тебя поцеловал.\nЭто словно кислотный pаспад,\nКак на асфальт с неба yпасть.\n\nЗачем мне это, зачем?\nС кем бы я был? Да мало ли с кем.\nОдевает их всех темнота,\nТолько с тобой было не так.\nТолько с тобой было не так.",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Припев",
+          "text": "Hо я тебя люблю, люблю, люблю.\nС тобой одной хочy, с тобой хочy.\nHо я тебя люблю, люблю, люблю.\nС тобой одной хочy, с тобой хочy.",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Словно лyна ты pождаешь пpилив\nВ сеpдце моем, в мыслях моих\nHо стонyт мои паpyса,\nВ штоpме твоем биться yстав.\n\nДай мне цепи поpвать\nДай мне тебя нежно обнять\nДа, я знаю, как сходят с yма\nХочешь, yзнай это сама.\nХочешь, yзнай это сама.",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
+    },
+    {
+      "name": "Отпетые мошенники - Люби меня люби",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Скоро весна, скоро весна\nСкоро эти ночи беспокойного сна\nСнова весна, снова любовь\nСнова в наших жилах заиграет кровь\nСнова рассвет, снова рассвет\nИ назад уже дороги нет\nСкоро печаль, скоро печаль\nВсё уйдет, и нам немного жаль",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "преПрипев",
+          "text": "Знаю ответ, знаю ответ\nНа вопрос «Ты есть или нет?»\nЗнаю обман, знаю обман\nЗнаю, нашей любви океан\nТы не одна, ты не одна\nБудешь этой ночью без сна\nСкоро любовь, скоро весна",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "куплет 2",
+          "text": "Скоро тепло, скоро тепло\nСкоро много нам воды натекло\nСкоро тепло, скоро экстаз\nИ эта музыка доходит до нас\nДелаю шаг, делаю два\nЗакружилась от любви голова\nЗнаю теперь, знаю теперь\nКак открыть эту тайную дверь",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "преприпев 2",
+          "text": "Время идёт, время идёт\nНам его уже никто не вернёт\nВремя летит, время летит\nДвигаясь с нами и танцуя в пути\nСнова вопрос, снова ответ\nСнова загорит невидимый свет\nС нами любовь, с нами игра",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
+    },
+    {
+      "name": "Серебро - Мало тебя",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 125,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Не открывая замки - я буду вспоминать\nКак горели огни и от любви умирать\nМожет, рядом с тобой Нам было хорошо\nЧто-то там за спиной меня так обожгло",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "преприпев",
+          "text": "Нежное \"Обними\", нежна я опять\nМою руку возьми, чтобы вместе упасть\nИ в объятиях твоих так хочу я дышать\nНе могу без тебя, и не могу ждать!",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "припев",
+          "text": "Я схожу с ума! Мне мало-мало-мало\nМне мало-мало-мало тебя!\nЗнаю я сама Мне мало-мало-мало\nМне мало-мало-мало тебя",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "куплет 2",
+          "text": "И я тебе прошепчу: \"Сейчас глаза закрой\nИ тихонечко в такт мне на ушко напой\"\nЭта тихая дрожь, но я же не одна\nДаже если всё - ложь, так будет не всегда",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "Сосо Павлиашвили – Небо на ладони",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 123,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Небо на ладони\nТолько сердцу веря\nНебо на ладони\nНежно нес тебе я\n\nИ Луну и звезды\nПополам делили\nКак же было просто\nЖить в огромном мире\n\nНебо на ладони в\nПлатье белоснежном\nНебо на ладони\nТы несла мне нежно\n\nРазве было мало\nЖить небесным браком?\nНу, зачем, гадала\nНа любовь богато?",
+          "chords": "",
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "Припев",
+          "text": "Не гадайте на любовь\nЕсли счастливы глаза\nНе гадайте на любовь\nВсе решают небеса\n\nНе гадайте на любовь\nДайте сердцу подсказать\nС кем делить все тайны снов\nС кем парить, кому отдать",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Небо на ладони\nОчень осторожно\nесли только тронуть\nВсе разрушить можно\n\nСвяты кто не верит\nГлупому разврату\nЕсли сердце бредит\nЗначит так и надо",
+          "chords": "",
+          "style": {
+            "bold": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "Темур Темиров – Небо над землей",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 90,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Небо над землёй цветными красками\nМы идём с тобой в поход за сказками\nВ мире суеты нам больше места нет\nМы идём встречать с тобой рассвет\n\nПосмотри в окно-природа щедрая\nДарит красоту неимоверную\nЛёгкий ветерок нам дует с берега\nЭту красоту тебе дарю",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Всё хочу делить с тобою поровну\nКак мне дальше жить теперь мне всё равно\nЯ тебя нашёл на свою беду 3р.\nЗвёзды и луна поют мне песни вновь\nПро мою судьбу, про мою любовь\nЖизнь благодарю за то, что я тебя люблю.",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Как мне описать то состояние\nВ час, когда спешу я на свидание\nВстретиться с тобой мне так не терпится\nМысленно я время тороплю\n\nВ парке у пруда стою с букетом роз\nВдруг ты не придёшь и на душе мороз\nСтройный силуэт я вижу издали\nВетер треплет волосы твои",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Чумаков – Счастье",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Старая гитара, И горячий кофе,\nИ закатное вино.\nМедленно листаю, Книжечку стихов я,\nВсе они лишь об одном.\n\nМежду строчек,\nЗамечаю, как скучаю по тебе,\nПо нежной красоте твоей.\nТой, что наполняет,\nновым смыслом каждый день.",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Счастье — это когда, ты без звонка,\nМожешь войти в мой дом, и в любовь мою.\nЗнай, что всегда, наверняка,\nДаже когда не жду, — я тебя люблю!",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Запахами бриза, музыками ветра,\nи цветущею луной.\nТы вошла без визы, поселилась в сердце,\nдаже если не со мной.\n\nЮжный берег,\nты открыла не закрыть его теперь,\nна нереальной высоте.\nЗвезды и планеты,\nосвещают путь тебе.",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Шура - Ты не верь слезам",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Сколько нам с тобой неба синего\nМоря пенного тела бренного\nЧашу полную жизнь отмерила\nВыбирай, выбирай у реки два берега",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Припев",
+          "text": "Ты не верь слезам, всё вернётся\nПосле долгих ночей\nБылью сладкий сон обернётся\nПосле долгих ночей",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Растекается свет невидимаый\nВсё отмечено старым именем\nРуки скованы вечным холодом\nТолько губы непокорные\nНепокорные",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
+    },
+    {
+      "name": "Black Eyed Peas - Lets Get started",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 103,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "In this context,\nthere's no disrespect\nSo when I bust my rhyme,\nyou (break ya necks)\nWe got five minutes for us to disconnect\nFrom all intellect, collect the rhythm effect\n\nTo lose your inhibition follow your intuition\nFree your inner soul and break away from tradition\nCause when we be out, girlies pull they weave out\nYou wouldn't believe how, we wow shit out\nBurn it 'til it's burned out, turn it 'til it's turned out\nAct up from north, west, east, south",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Lose control, of body and soul\nDon't move too fast, people, just take it slow\nDon't get ahead, just jump into it\nY'all hear about it, the Peas will do it\n\nGet started, get stupid\nDon't worry about it, people will walk you through it\nStep by step like an infant new kid\nInch by inch with the new solution\nTransmit hits with no delusion\nThe feeling's irresistible and that's how we movin' ",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 3",
+          "text": "Let's get ill, that's the deal\nAt the gate, and Will bring the bugged out drill\nLose your mind, this is the time\nY'all can't stand still, twist and bang your spine\nBob your head like me, apl.de\nUp inside the club or in your Bentley\nGet messy, loud and sick\nY'all mind pass normal on another head trip\nSo, come them now, do not correct it\nLet's get ignant, let's get hectic ",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Black Eyed Peas - Pump it",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 125,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Niggas wanna hate on us (who?)\nNiggas be envious (who?)\nI know why they hating on us (why?)\n'Cause that's so fabulous (what?)\n\nI'ma be real on us (c'mon)\nNobody got nothing on us (no)\nGirls be all on us From\nLondon back down to the U.S.\n\nS S We rockin' this (contagious)\nMonkey business (outrageous)\nJust confess, your girl admits that we the shit\nF-R-E-S-H we (fresh)\nD-E-F, that's right we def' (rock)\nWe definite,\nB-E-P we reppin' it So",
+          "chords": ""
+        },
+        {
+          "label": "Припев 2",
+          "text": "Apl.de.ap from the Philippines\nLive and direct, rocking this scene\nBreaking on down for the B-boys\nAnd B-girls waiting to do they thing\nPump it, louder come on\nDon't stop, and keep it goin'\nDo it, let's get it on Move it! ",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Bon Jovi - It's my life",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 120,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "This ain't a song for the broken-hearted\nNo silent prayer for the faith-departed\nI ain't gonna be just a face in the crowd\nYou're gonna hear my voice\nWhen I shout it out loud ",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "It's my life It's now or never\nI ain't gonna live forever\nI just want to live while I'm alive\nIt's my life My heart is like an open highway\nLike Frankie said, \"I did it my way.\"\nI just wanna live while I'm alive It's my life",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "This is for the ones who stood their ground\nFor Tommy and Gina who never backed down\nTomorrow's getting harder make no mistake \nLuck ain't even lucky\nGot to make your own breaks",
+          "chords": ""
+        },
+        {
+          "label": "Бридж",
+          "text": "Better stand tall when they're calling you out\nDon't bend, don't break, baby, don't back down",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Bruno Mars - Uptown funk",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 115,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "This hit That ice cold\nMichelle Pfeiffer That white gold\nThis one for them hood girls\nThem good girls\nStraight masterpieces\nStylin', wiling Livin' it up in the city\nGot Chucks on with Saint Laurent\nGotta kiss myself I'm so pretty",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "I'm too hot (hot damn)\nCall the police and the fireman\nI'm too hot (hot damn)\nMake a dragon wanna retire, man\nI'm too hot (hot damn)\nSay my name you know who I am\nI'm too hot (hot damn)\nAnd my band 'bout that money\nBreak it down...",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Wait a minute\nFill my cup put some liquor in it\nTake a sip, sign the check\nJulio, get the stretch!\nRide to Harlem, Hollywood, Jackson,\nMississippi\nIf we show up, we gon' show out\nSmoother than a fresh jar of Skippy",
+          "chords": ""
+        },
+        {
+          "label": "Бридж",
+          "text": "Come on, dance\nJump on it\nIf you sexy then flaunt it\nIf you freaky then own it\nDon't brag about it, come show me\nCome on, dance\nJump on it\nIf you sexy then flaunt it\nWell it's Saturday night and we in the spot\nDon't believe me just watch (come on)",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Coldplay – Adventure of a lifetime",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 110,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Turn your magic on\nUmi she'd say\nEverything you want's a dream away\nWe are legends every day\nThat's what she told me",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Now I feel my heart beating\nI feel my heart underneath my skin\nAnd I feel my heart beating\nOh, you make me feel\nLike I'm alive again\nAlive again\nOh, you make me feel\nLike I'm alive again",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Said I can't go on\nNot in this way\nI'm a dream that died by light of day\nGonna hold up half the sky and say\nOnly I own me",
+          "chords": ""
+        },
+        {
+          "label": "Бридж",
+          "text": "Turn your magic on\nUmi she'd say\nEverything you want's a dream away\nUnder this pressure under this weight\nWe are diamonds taking shape\nWe are diamonds taking shape",
+          "chords": ""
+        },
+        {
+          "label": "Аутро",
+          "text": "If we've only got this life\nThis adventure, oh, then I\nAnd if we've only got this life\nYou get me through\n\nIf we've only got this life\nIn this adventure, oh, then I\nWant to share it with you",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Don Omar – Danza Kuduro",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 115,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "La mano arriba\nCintura sola\nDa media vuelta\nDanza kuduro\nNo te canse' ahora\nQue esto sólo empieza\nMueve la cabeza\nDanza kuduro",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Balança que é uma loucura\nMorena, vem a meu lado\nNinguém vai ficar parado\nQuero ver mexer kuduro\nBalança que é uma loucura\nMorena, vem a meu lado\nNinguém vai ficar parado, oh-oh-oh",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Oi, oi, oi\nOi, oi, oi, oi\nÉ pra quebrar kuduro\nVamos dançar kuduro\nOi, oi, oi\nOi, oi, oi, oi\nSeja morena ou loira\nVem balançar kuduro\nOi, oi, oi",
+          "chords": ""
+        }
+      ],
+      "chordStyle": {
+        "fontSize": 13,
+        "color": "#1a73e8"
+      }
+    },
+    {
+      "name": "Duke Dumont – Ocean Drive",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 117,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "We're riding down the boulevard\nWe're riding through the dark night, night\nWith half the tank and empty heart\nPretending we're in love, but it's never enough, nah\nAs the sirens fill the lonely air\nOh, how did we get here now now now babe\nWe see a storm is closing in\nPretending we ain't scared",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Don't say a word while we dance with the devil\nYou brought a fire to a world so cold\nWe're out of time on the highway to never\nHold on (hold on), hold on (hold on)\nDon't say a word while we dance with the devil\nYou brought a fire to a world so cold\nWe're out of time on the highway to never\nHold on (hold on), hold on (hold on)",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "We're running all the red lights down\nNo way that we can stop, nah nah\nA quarter tank and almost gone\nPretending we're in love, but it's never enough, nah\nI wish we could take it back in time\nBefore we crossed the line, now now now, babe\nWe see a storm is closing in\nI reach out for your hand",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "HiFi – Не дано",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Нам не дано с тобой понять\nЧему так радуется ветер\nИ почему от доброты\nБывают так жестоки дети\nЗачем кому-то умирать\nЧтобы он нами был замечен\nТак много разных \"почему\"\nОставил Бог на этом свете",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "День уходящий не вернуть\nНе торопись пройти свой путь\nНеосторожный сделав шаг\nПросто скажи\nПросто скажи: \"Да будет так\"\nПросто пусть будет так",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Но всё же солнце дарит свет\nА ночь покоем укрывает\nЗаботы тянут новый день\nИ тополь головой качает\nВесь этот мир и этот свет\nВсё то, что ветер напевает\nНемного стоят без любви\nИ ты и я об этом знаем",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "IOWA - 140",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 123,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Наш след засыпал снег\nИ для всех нас три недели нет\nЗвёзд пыль, свет комет\nВели по трассе в полной темноте",
+          "chords": ""
+        },
+        {
+          "label": "преПрипев",
+          "text": "Я не считаю минуты, я не считаю года\nЯ не считаю минуты, сколько мы вместе\nЯ не считаю минуты, я не считаю года\nЯ не считаю минуты, просто мы вместе\n\nОхрипла, нет голоса\nСвет фар освещает лица\nИ пыль летит в глаза\nНо нет, не остановиться",
+          "chords": ""
+        },
+        {
+          "label": "припев",
+          "text": "140 — скорость на край света в направлении ветра\nБыли связанные лентой красного заката",
+          "chords": ""
+        },
+        {
+          "label": "куплет 2",
+          "text": "Вот здесь останови\nХочу почувствовать запах вишни\nНе лей, дождь, подожди\nВсё скажу тебе, всё-всё тебе",
+          "chords": ""
+        },
+        {
+          "label": "преприпев",
+          "text": "Мокрые волосы\nИ мы не можем согреться\nС тобою неважно куда\nДорогу подскажет нам сердце",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "IOWA - Улыбайся",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 120,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Я птицу счастья свою отпускаю на юг.\nТеперь я сам так пою, теперь я сам летаю.\nВ открытый космос лечу, кометы огибая.\nТебя мечтать научу, теперь одна мы стая.",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Только улыбайся, улыбайся!\nНевесомости поверь и отдайся!\nУлыбайся, улыбайся!\nUh! Uh! Uh! Uh! Улыбайся!",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Закинув лески в дали, ловим мы корабли.\nРисуем время в пыли, мы — Сальвадоры Дали.\nНад этой бездной во ржи мне глаза завяжи.\nРискуя, с ветром дыши, его за крылья держи.",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "John Newman – Love me again",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Know I’ve done wrong,\nLeft your heart torn\nIs that what devils do?\n\nTook you so low,\nWhere only fools go\nI shook the angel in you\n\nNow I’m rising from the ground\nRising up to you\nFilled with all the strength I found\nThere's nothing I can’t do!",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "I need to know now, know now\nCan you love me again?",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "It’s unforgivable,\nI stole and burnt your soul\nIs that what demons do?\n\nThey rule the worst of me\nDestroy everything,\nThey bring down angels like you\n\nNow I’m rising from the ground\nRising up to you\nFilled with all the strength I've found\nThere's nothing I can’t do!",
+          "chords": ""
+        },
+        {
+          "label": "Бридж",
+          "text": "I told you once I can't do this again, do this again, oh, no\nI told you once I can't do this again, do this again, oh, no",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Jony - Комета",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 125,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "припев",
+          "text": "Всё без тебя не так\nЛечу к тебе я словно комета\nИ даже под дулом пистолета\nЯ найду тебя, я найду тебя\n\nВедь без тебя дико мне так\nТы просто подойди ко мне, да\nЯ знаю будет наше это лето\nВедь ты моя, да, ведь ты моя, да\n\nВсё без тебя не так\nЛечу к тебе я словно комета\nИ даже под дулом пистолета\nЯ найду тебя, я найду тебя",
+          "chords": ""
+        },
+        {
           "label": "Куплет",
-          "chords": "D     A      Bm     G",
-          "text": "Чай остыл на подоконнике,\nКот свернулся у огня.\nВремя еле-еле движется —\nХорошо, что нет меня."
+          "text": "Буря мглою небо кроет\nВихри снежные крутя\nТо как зверь она завоет\nТо заплачет как дитя\n\nИ если ты найдёшь мгновенье\nОстанови это мучение\nВ тот миг когда я потерял тебя\nТам вдали падала луна\n(Падала луна)",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Justin Timberlake – What goes around",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 75,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Hey girl, is he everything you wanted in a man\nYou know I gave you the world\nYou had me in the palm of your hand\nSo why your love went away\nI just can't seem to understand\nThought it was me and you baby\nMe and you until the end\nBut I guess I was wrong",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Don't want to think about it\nDon't want to talk about it\nI'm just so sick about it\nCan't believe it's ending this way\nJust so confused about it\nFeeling the blues about it\nI just can't do without ya\nTell me is this fair?\n\nIs this the way it's really going down?\nIs this how we say goodbye?\nShould've known better when you came around\nThat you were gonna make me cry\nIt's breaking my heart to watch you run around\n'Cause I know that you're living a lie\nThat's okay baby 'cause in time you will find...\n\nWhat goes around, goes around, goes around\nComes all the way back around",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Now girl, I remember everything that you claimed\nYou said that you were moving on now\nAnd maybe I should do the same\nFunny thing about that is\nI was ready to give you my name\nThought it was me and you, babe\nAnd now, it's all just a shame\nAnd I guess I was wrong",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Maneskin - Beggin",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 125,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Riding high when I was king\nI played it hard and fast, 'cause I had everything\nI walked away, you won me then\nBut easy come and easy go and it would end\n\nSo, anytime I bleed, you let me go\nYah, anytime I feed, you get me know\nAnytime I seek, you let me know\nBut I planted that seed, just let me go\nI'm on my knees when I'm beggin'\n'Cause I don't wanna lose you\nHey, yeah, ra-ta-ta-ta!\n\nI need you to understand\nTried so hard to be your man\nThe kind of man you want in the end\nOnly then can I begin to live again\n\nAn empty shell, I used to be\nThe shadow of my life was hangin' over me\nA broken man that I don't know\nWon't even stand the devil's dance to win my soul\n\nWhat we doin'? What we chasin'?\nWhy the bottom? Why the basement?\nWhy we got good shit, don't embrace it?\nWhy the feel for the need to replace me?\nYou're the wrong way track from the good\nI want to paint a picture tellin' where we could be at\nLike a heart in the best way should\nYou can give it away, you had it and you took the pay\nBut I keep walkin' on, keep openin' doors\nKeep hopin' for, now the door is yours\nKeep also home\n'Cause I don't want to live in a broken home, girl, I'm beggin'\n\nI'm fighting hard to hold my own\nJust can't make it all alone\nI'm holding on, I can't fall back\nI'm just a calm, 'bout to fade to black",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Maneskin - Supermodel",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 120,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Alone at parties in a deadly silhouette\nShe loves the cocaine, but cocaine don't love her back\nWhen she's upset, she talks to Maury and takes deep breaths\nShe's a '90s supermodel, uh-uh-uh",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "куплет 2",
+          "text": "Way back in high school, when she was a good Christian\nI used to know her, but she's got a new best friend\nA drag queen named The Virgin Mary takes confessions\nShe's a '90s supermodel",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "преприпев",
+          "text": "Yeah, she's a master, my compliments\nIf you wanna love her, just deal with that\nShe'll never love you more than money and cigarettes\nEvery night's a heartbreak",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "припев",
+          "text": "Hey, don't think about it, hey, just let it go\n'Cause her boyfriend is the rock 'n' roll (hey)\nSavor every moment 'til she has to go\n'Cause her boyfriend is the rock 'n' roll",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "куплет 3",
+          "text": "Alone at parties, she's working around the clock\nWhen you're not looking, she's stealing your Basquiat\nLow-waisted pants on OnlyFans, I'd pay for that\nShe's a '90s supermodel",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
+    },
+    {
+      "name": "Maroon 5 – Moves like Jagger",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 125,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Just shoot for the stars\nIf it feels right, then aim for my heart\nIf you feel like\nAnd take me away\nAnd make it OK\nI swear I'll behave\n\nYou wanted control, so we waited\nI put on a show, now I'm naked\nYou say I'm a kid\nMy ego is big\nI don't give a shit\nAnd it goes like this, uh",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Take me by the tongue and I'll know you (Uh)\nKiss me 'til you're drunk and I'll show you\nYou want the moves like Jagger\nI've got them moves like Jagger\nI've got them moves like Jagger (Uh)\nI don't need to try to control you (Uh)\nLook into my eyes and I'll own you\nWith them moves like Jagger\nI've got them moves like Jagger\nI've got them moves like Jagger",
+          "chords": ""
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Maybe it's hard, when you feel like\nYou're broken and scarred, nothing\nfeels right\nBut when you're with me\nI'll make you believe\nThat I've got the key\n\nOh, so get in the car, we can ride it\nWherever you want, get inside it\nAnd you wanna steer, but I'm shifting\ngears\nI'll take it from here (Oh, yeah, yeah)\nAnd it goes like this, uh",
+          "chords": ""
+        },
+        {
+          "label": "Бридж",
+          "text": "Uh, you wanna know, how to make me smile?\nTake control, own me just for the night\nAnd if I share my secret\nYou're gonna have to keep it\nNobody else can see this (Uh)\nSo watch and learn, I won't show you twice\nHead to toe, ooh baby, rub me right, yeah\nAnd if I share my secret\nYou're gonna have to keep it\nNobody else can see this\nHey, hey, hey, yeah",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Sevak - Сияй",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 120,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Колкими фразами\nБезликими масками\nЖадными взглядами\nПровожают каждый твой шаг\nДумают они\nЗнают кто же ты\nНо не видят, что\nСпрятано от чужих глаз\nЧто там внутри\nЗнаешь только ты\nВ себя смотри\nВеру там найди\nИ ты непременно\nВ себя вновь поверишь\nИ ты увидишь\nЧто ты можешь сиять",
+          "chords": ""
+        },
+        {
+          "label": "Припев",
+          "text": "Ведь ты можешь сиять\nТак сияй\nБоль что внутри отпускай\nРади себя засияй\nЯрче звезд ты вновь засияй\nТак сияй\nБоль что внутри отпускай\nРади себя засияй\nЯрче звезд ты вновь засияй",
+          "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Zucchero - Baila",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 123,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "It blows my mind now that I found you\nDeep in the night of tequila boom, boom\nSlide by me, sexy thing, sexy and fine\nI got my eyes on you all of the time, yeah",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Huh, you got to have chaos burnin' in you\nTo make you open like a flower in bloom\nHell lives inside you next to paradise\nThe moon and sun have come to watch your shine",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Куплет 3",
+          "text": "Go chica, go cocca, keep it all shakin'\nYou know tonight somethin's up for the takin'\nMy heart is gold, heart of a saint\nWith you beside me girl, oh, then I ain't",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
+    },
+    {
+      "name": "Баста - Выпускной",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Вся наша школа сошла с ума от этой новенькой\nВ мой класс она зашла, и сразу понял я\nИ Купидон мне в сердце не стрелою дал, а пулею\nСказала наша классная: \"Знакомьтесь с Юлею\"\n\nИ вот, я, словно тень, плетусь за Юлей\nПодойти боюсь я к Юле, вдруг меня она не любит\nА вдруг другого любит Юля, любит не меня?\nВедь в мечтах на двоих у меня с Юлей одна фамилия\n\nИ так полгода, днём — пожар, а ночью — бессонница\nСердце рвётся, но лёд никак не тронется\nНо как-то утром я решил сделать первый шаг\nКупил цветы и под подъезд, лишь бы ты пришла\n\nИ ты пришла, драма по классике\nНо не одна пришла, а под ручку с одноклассником\nИ ударились об землю небеса\nИ тогда я написал, Юля",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Припев",
+          "text": "Медлячок, чтобы ты заплакала\nИ пусть звучат они все одинаково\nИ пусть банально и не талантливо\nНо как сумел, на гитаре сыграл и спел\n\nВыпускной, и ты в красивом платьице\nИ тебе вот-вот 17 лет\nЯ хотел тебе просто понравиться\nИ как сумел, на гитаре сыграл",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
         }
       ]
     }
   ],
   "cfg": {
-    "listName": "Мой песенник",
+    "listName": "Сетлист",
     "theme": "light",
-    "lFontSize": 16,
+    "lFontSize": 30,
     "lLineH": 1.4,
     "lRowH": 44,
     "lTextColor": "#111111",
     "lBgColor": "#ffffff",
     "lTextAlign": "left",
-    "sFontSize": 18,
-    "sLineH": 1.1,
-    "sTextColor": "#111111",
-    "sTextAlign": "left",
-    "metroSound": "click",
-    "accentEnabled": true,
-    "switchMode": 2
+    "sFontSize": 24,
+    "sLineH": 1.5,
+    "sTextColor": "#000000",
+    "sTextAlign": "center",
+    "metroSound": "triangle",
+    "accentEnabled": false,
+    "switchMode": 1
   }
 }
