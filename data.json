@@ -724,7 +724,17 @@
           "text": "Apl.de.ap from the Philippines\nLive and direct, rocking this scene\nBreaking on down for the B-boys\nAnd B-girls waiting to do they thing\nPump it, louder come on\nDon't stop, and keep it goin'\nDo it, let's get it on Move it! ",
           "chords": ""
         }
-      ]
+      ],
+      "songStyle": {
+        "fontSize": 24,
+        "lineH": 1.5,
+        "color": "#000000",
+        "align": "center"
+      },
+      "chordStyle": {
+        "fontSize": 13,
+        "color": "#1a73e8"
+      }
     },
     {
       "name": "Bon Jovi - It's my life",
@@ -819,7 +829,17 @@
           "text": "If we've only got this life\nThis adventure, oh, then I\nAnd if we've only got this life\nYou get me through\n\nIf we've only got this life\nIn this adventure, oh, then I\nWant to share it with you",
           "chords": ""
         }
-      ]
+      ],
+      "songStyle": {
+        "fontSize": 24,
+        "lineH": 1.5,
+        "color": "#000000",
+        "align": "center"
+      },
+      "chordStyle": {
+        "fontSize": 13,
+        "color": "#1a73e8"
+      }
     },
     {
       "name": "Don Omar – Danza Kuduro",
@@ -965,7 +985,7 @@
       "sub": "",
       "pad": "",
       "voice": "",
-      "bpm": 120,
+      "bpm": 125,
       "showChords": false,
       "verses": [
         {
