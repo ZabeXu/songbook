@@ -1507,6 +1507,42 @@
           "style": {}
         }
       ]
+    },
+    {
+      "name": "Amy Macdonald - This is the life",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Oh, the wind whistles down the cold, dark street tonight\nAnd the people, they were dancin' to the music vibe\nAnd the boys chase the girls with the curls in their hair\nWhile the shy, tormented youth sit way over there\nAnd the songs, they get louder, each one better than before",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Припев",
+          "text": "And you're singin' the songs, thinkin' this is the life\nAnd you wake up in the mornin', and your head feels twice the size\nWhere you gonna go, where you gonna go?\nWhere you gonna sleep tonight?\nAnd you're singin' the songs, thinkin' this is the life\nAnd you wake up in the mornin', and your head feels twice the size\nWhere you gonna go, where you gonna go?\nWhere you gonna sleep tonight?",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "Куплет 2",
+          "text": "So you're headin' down the road in your taxi for four\nAnd you're waitin' outside Jimmy's front door\nBut nobody's in, and nobody's home till four\nSo you're sittin' there with nothin' to do\nTalkin' about Robert Riger and his motley crew\nAnd where you gonna go, and where you gonna sleep tonight",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
     }
   ],
   "cfg": {
