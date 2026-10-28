@@ -862,6 +862,42 @@
       ]
     },
     {
+      "name": "Amy Macdonald - This is the life",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Oh, the wind whistles down the cold, dark street tonight\nAnd the people, they were dancin' to the music vibe\nAnd the boys chase the girls with the curls in their hair\nWhile the shy, tormented youth sit way over there\nAnd the songs, they get louder, each one better than before",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Припев",
+          "text": "And you're singin' the songs, thinkin' this is the life\nAnd you wake up in the mornin', and your head feels twice the size\nWhere you gonna go, where you gonna go?\nWhere you gonna sleep tonight?\nAnd you're singin' the songs, thinkin' this is the life\nAnd you wake up in the mornin', and your head feels twice the size\nWhere you gonna go, where you gonna go?\nWhere you gonna sleep tonight?",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "Куплет 2",
+          "text": "So you're headin' down the road in your taxi for four\nAnd you're waitin' outside Jimmy's front door\nBut nobody's in, and nobody's home till four\nSo you're sittin' there with nothin' to do\nTalkin' about Robert Riger and his motley crew\nAnd where you gonna go, and where you gonna sleep tonight",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
+    },
+    {
       "name": "Black Eyed Peas - Lets Get started",
       "sub": "",
       "pad": "",
@@ -1072,6 +1108,70 @@
           "label": "Куплет 2",
           "text": "We're running all the red lights down\nNo way that we can stop, nah nah\nA quarter tank and almost gone\nPretending we're in love, but it's never enough, nah\nI wish we could take it back in time\nBefore we crossed the line, now now now, babe\nWe see a storm is closing in\nI reach out for your hand",
           "chords": ""
+        }
+      ]
+    },
+    {
+      "name": "Gnarls Barkley - Crazy",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "I remember when\nI remember, I remember when I lost my mind\nThere was something so pleasant about that place\nEven your emotions have an echo in so much space\n\nAnd when you're out there, without care\nYeah, I was out of touch\nBut it wasn't because I didn't know enough\nI just knew too much",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Припев",
+          "text": "Does that make me crazy?\nPossibly",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "Куплет 2",
+          "text": "And I hope that you are having the time of your life\nBut think twice\nThat's my only advice\n\nCome on now, who do you\nWho do you, who do you\nWho do you think you are?\nHahaha, bless your soul\nYou really think you're in control?",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "припев",
+          "text": "I think you're crazy\nJust like me",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "Куплет 3",
+          "text": "My heroes had the heart\nTo lose their lives out on a limb\nAnd all I remember, is thinking\nI wanna be like them\n\nEver since I was little\nEver since I was little it looked like fun\nAnd there's no coincidence I've come\nAnd I can die when I'm done",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Куплет",
+          "text": "Maybe we're crazy\nProbably",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
         }
       ]
     },
@@ -1501,42 +1601,6 @@
         {
           "label": "Куплет 3",
           "text": "Go chica, go cocca, keep it all shakin'\nYou know tonight somethin's up for the takin'\nMy heart is gold, heart of a saint\nWith you beside me girl, oh, then I ain't",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {}
-        }
-      ]
-    },
-    {
-      "name": "Amy Macdonald - This is the life",
-      "sub": "",
-      "pad": "",
-      "voice": "",
-      "bpm": 100,
-      "showChords": false,
-      "verses": [
-        {
-          "label": "Куплет 1",
-          "text": "Oh, the wind whistles down the cold, dark street tonight\nAnd the people, they were dancin' to the music vibe\nAnd the boys chase the girls with the curls in their hair\nWhile the shy, tormented youth sit way over there\nAnd the songs, they get louder, each one better than before",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {}
-        },
-        {
-          "label": "Припев",
-          "text": "And you're singin' the songs, thinkin' this is the life\nAnd you wake up in the mornin', and your head feels twice the size\nWhere you gonna go, where you gonna go?\nWhere you gonna sleep tonight?\nAnd you're singin' the songs, thinkin' this is the life\nAnd you wake up in the mornin', and your head feels twice the size\nWhere you gonna go, where you gonna go?\nWhere you gonna sleep tonight?",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {
-            "bold": true
-          }
-        },
-        {
-          "label": "Куплет 2",
-          "text": "So you're headin' down the road in your taxi for four\nAnd you're waitin' outside Jimmy's front door\nBut nobody's in, and nobody's home till four\nSo you're sittin' there with nothin' to do\nTalkin' about Robert Riger and his motley crew\nAnd where you gonna go, and where you gonna sleep tonight",
           "chords": "",
           "showLabel": true,
           "cols": 1,
