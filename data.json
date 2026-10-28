@@ -1439,7 +1439,7 @@
       "sub": "",
       "pad": "",
       "voice": "",
-      "bpm": 100,
+      "bpm": 75,
       "showChords": false,
       "verses": [
         {
@@ -1476,7 +1476,17 @@
           "cols": 1,
           "style": {}
         }
-      ]
+      ],
+      "songStyle": {
+        "fontSize": 22,
+        "lineH": 1.5,
+        "color": "#000000",
+        "align": "center"
+      },
+      "chordStyle": {
+        "fontSize": 13,
+        "color": "#1a73e8"
+      }
     },
     {
       "name": "Justin Timberlake – What goes around",
@@ -1886,7 +1896,7 @@
     "lTextColor": "#111111",
     "lBgColor": "#ffffff",
     "lTextAlign": "left",
-    "sFontSize": 24,
+    "sFontSize": 22,
     "sLineH": 1.5,
     "sTextColor": "#000000",
     "sTextAlign": "center",
