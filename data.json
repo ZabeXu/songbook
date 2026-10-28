@@ -1607,6 +1607,132 @@
           "style": {}
         }
       ]
+    },
+    {
+      "name": "Eagle-eye cherry - Save tonight",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Go on and close the curtains\n'Cause all we need is candlelight\nYou and me, and a bottle of wine\nGonna hold you tonight, uh, yeah\n\nWell, we know I'm going away\nAnd how I wish, I wish it weren't so\nSo take this wine and drink with me\nLet's delay our misery",
+          "chords": "",
+          "showLabel": true,
+          "cols": 2,
+          "style": {
+            "align": "center"
+          }
+        },
+        {
+          "label": "Припев",
+          "text": "Save tonight\nAnd fight the break of dawn\nCome tomorrow\nTomorrow I'll be gone",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "Куплет 2",
+          "text": "There's a log on the fire\nAnd it burns like me for you\nTomorrow comes with one desire\nTo take me away, oh, it's true\n\nIt ain't easy to say goodbye\nDarlin', please, don't start to cry\n'Cause, girl, you know I've got to go, oh\nAnd, Lord, I wish it wasn't so",
+          "chords": "",
+          "showLabel": true,
+          "cols": 2,
+          "style": {}
+        },
+        {
+          "label": "Бридж",
+          "text": "Tomorrow comes to take me away\nI wish that I, that I could stay\nBut, girl, you know I've got to go, oh\nAnd, Lord, I wish it wasn't so",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
+    },
+    {
+      "name": "Zivert - Wake up",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Логика никак\nВ мои речи не вернётся\nВажные слова\nПрячу до захода солнца\nСчастье дуракам\nЭти будут молча улыбаться\n\nМы хотели бы\nСтать чуть лучше, чем умеем\nНо по телеку\nПривлекательней злодеи\nПеред теми ли\nМы стоим у наших отражений\n",
+          "chords": "",
+          "showLabel": true,
+          "cols": 2,
+          "style": {}
+        },
+        {
+          "label": "Припев",
+          "text": "А нам\nПо барабану\nЕсли всё не по плану\nТо мы переиграем\nПлавно\nИ по барабану\nНе надо даром\nЕсли всё не по плану\nТо мы переиграем",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "Куплет 2",
+          "text": "В Питере мосты\nПо ночам уходят в небо\nРадости просты\nЕсли ценятся моменты\nСытые коты\nНе дают высокие оценки\n\nКто-то выдумал\nЧто сегодня в моде худи\nМожет это план\nТипа в них худее будем\nСчастье дуракам\nЭти не умеют же стесняться\nЗавидую\n",
+          "chords": "",
+          "showLabel": true,
+          "cols": 2,
+          "style": {}
+        }
+      ]
+    },
+    {
+      "name": "Spice girls - Viva forever",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Do you still remember how we used to be?\nFeeling together, believing whatever\nMy love has said to me\nBoth of us were dreamers\nYoung love in the sun\nFelt like my savior, my spirit I gave you\nWe'd only just begun\nHasta mañana, always be mine",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Припев",
+          "text": "Viva forever, I'll be waiting\nEverlasting, like the sun\nLive forever, for the moment\nEver searching for the one",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Yes, I still remember every whispered word\nThe touch of your skin, giving life from within\nLike a love song never heard\nSlippin' through our fingers, like the sands of time\nPromises made, every memory saved\nAs reflections in my mind\nHasta mañana, always be mine",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "куплет 3",
+          "text": "Back where I belong now, was it just a dream?\nFeelings unfold, they will never be sold\nAnd the secret's safe with me\nHasta mañana, always be mine",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
     }
   ],
   "cfg": {
