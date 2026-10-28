@@ -1112,6 +1112,52 @@
       ]
     },
     {
+      "name": "Eagle-eye cherry - Save tonight",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Go on and close the curtains\n'Cause all we need is candlelight\nYou and me, and a bottle of wine\nGonna hold you tonight, uh, yeah\n\nWell, we know I'm going away\nAnd how I wish, I wish it weren't so\nSo take this wine and drink with me\nLet's delay our misery",
+          "chords": "",
+          "showLabel": true,
+          "cols": 2,
+          "style": {
+            "align": "center"
+          }
+        },
+        {
+          "label": "Припев",
+          "text": "Save tonight\nAnd fight the break of dawn\nCome tomorrow\nTomorrow I'll be gone",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "Куплет 2",
+          "text": "There's a log on the fire\nAnd it burns like me for you\nTomorrow comes with one desire\nTo take me away, oh, it's true\n\nIt ain't easy to say goodbye\nDarlin', please, don't start to cry\n'Cause, girl, you know I've got to go, oh\nAnd, Lord, I wish it wasn't so",
+          "chords": "",
+          "showLabel": true,
+          "cols": 2,
+          "style": {}
+        },
+        {
+          "label": "Бридж",
+          "text": "Tomorrow comes to take me away\nI wish that I, that I could stay\nBut, girl, you know I've got to go, oh\nAnd, Lord, I wish it wasn't so",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
+    },
+    {
       "name": "Gnarls Barkley - Crazy",
       "sub": "",
       "pad": "",
@@ -1533,164 +1579,6 @@
       ]
     },
     {
-      "name": "Weeknd - Starboy",
-      "sub": "",
-      "pad": "",
-      "voice": "",
-      "bpm": 95,
-      "showChords": false,
-      "verses": [
-        {
-          "label": "",
-          "text": "I'm tryna put you in the worst mood, ah\nP1 cleaner than your church shoes, ah\nMilli point two just to hurt you, ah\nAll red Lamb' just to tease you, ah\nNone of these toys on lease too, ah\nMade your whole year in a week too, yeah\nMain bitch outta your league too, ah\nSide bitch outta your league too, ah",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {}
-        },
-        {
-          "label": "преПрипев",
-          "text": "House so empty, need a centerpiece\nTwenty racks a table, cut from ebony\nCut that ivory into skinny pieces\nThen she clean it with her face, man, I love my baby, ah\nYou talkin' money, need a hearing aid\nYou talkin' 'bout me, I don't see the shade\nSwitch up my style, I take any lane\nI switch up my cup, I kill any pain",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {}
-        },
-        {
-          "label": "Куплет 2",
-          "text": "Every day, a nigga try to test me, ah\nEvery day, a nigga try to end me, ah\nPull off in that Roadster SV, ah\nPockets overweight, gettin' hefty, ah\nComing for the king, that's a far cry, I\nI come alive in the fall time, I\nThe competition, I don't really listen\nI'm in the blue Mulsanne bumpin' New Edition",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {}
-        },
-        {
-          "label": "Бридж",
-          "text": "Let a nigga brag Pitt\nLegend of the fall, took the year like a bandit\nBought mama a crib and a brand new wagon\nNow she hit the grocery shop lookin' lavish\nStar Trek roof in that Wraith of Khan\nGirls get loose when they hear this song\nA hundred on the dash get me close to God\nWe don't pray for love, we just pray for cars",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {}
-        }
-      ]
-    },
-    {
-      "name": "Zucchero - Baila",
-      "sub": "",
-      "pad": "",
-      "voice": "",
-      "bpm": 123,
-      "showChords": false,
-      "verses": [
-        {
-          "label": "Куплет 1",
-          "text": "It blows my mind now that I found you\nDeep in the night of tequila boom, boom\nSlide by me, sexy thing, sexy and fine\nI got my eyes on you all of the time, yeah",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {}
-        },
-        {
-          "label": "Куплет 2",
-          "text": "Huh, you got to have chaos burnin' in you\nTo make you open like a flower in bloom\nHell lives inside you next to paradise\nThe moon and sun have come to watch your shine",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {}
-        },
-        {
-          "label": "Куплет 3",
-          "text": "Go chica, go cocca, keep it all shakin'\nYou know tonight somethin's up for the takin'\nMy heart is gold, heart of a saint\nWith you beside me girl, oh, then I ain't",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {}
-        }
-      ]
-    },
-    {
-      "name": "Eagle-eye cherry - Save tonight",
-      "sub": "",
-      "pad": "",
-      "voice": "",
-      "bpm": 100,
-      "showChords": false,
-      "verses": [
-        {
-          "label": "Куплет 1",
-          "text": "Go on and close the curtains\n'Cause all we need is candlelight\nYou and me, and a bottle of wine\nGonna hold you tonight, uh, yeah\n\nWell, we know I'm going away\nAnd how I wish, I wish it weren't so\nSo take this wine and drink with me\nLet's delay our misery",
-          "chords": "",
-          "showLabel": true,
-          "cols": 2,
-          "style": {
-            "align": "center"
-          }
-        },
-        {
-          "label": "Припев",
-          "text": "Save tonight\nAnd fight the break of dawn\nCome tomorrow\nTomorrow I'll be gone",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {
-            "bold": true
-          }
-        },
-        {
-          "label": "Куплет 2",
-          "text": "There's a log on the fire\nAnd it burns like me for you\nTomorrow comes with one desire\nTo take me away, oh, it's true\n\nIt ain't easy to say goodbye\nDarlin', please, don't start to cry\n'Cause, girl, you know I've got to go, oh\nAnd, Lord, I wish it wasn't so",
-          "chords": "",
-          "showLabel": true,
-          "cols": 2,
-          "style": {}
-        },
-        {
-          "label": "Бридж",
-          "text": "Tomorrow comes to take me away\nI wish that I, that I could stay\nBut, girl, you know I've got to go, oh\nAnd, Lord, I wish it wasn't so",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {}
-        }
-      ]
-    },
-    {
-      "name": "Zivert - Wake up",
-      "sub": "",
-      "pad": "",
-      "voice": "",
-      "bpm": 100,
-      "showChords": false,
-      "verses": [
-        {
-          "label": "Куплет 1",
-          "text": "Логика никак\nВ мои речи не вернётся\nВажные слова\nПрячу до захода солнца\nСчастье дуракам\nЭти будут молча улыбаться\n\nМы хотели бы\nСтать чуть лучше, чем умеем\nНо по телеку\nПривлекательней злодеи\nПеред теми ли\nМы стоим у наших отражений\n",
-          "chords": "",
-          "showLabel": true,
-          "cols": 2,
-          "style": {}
-        },
-        {
-          "label": "Припев",
-          "text": "А нам\nПо барабану\nЕсли всё не по плану\nТо мы переиграем\nПлавно\nИ по барабану\nНе надо даром\nЕсли всё не по плану\nТо мы переиграем",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {
-            "bold": true
-          }
-        },
-        {
-          "label": "Куплет 2",
-          "text": "В Питере мосты\nПо ночам уходят в небо\nРадости просты\nЕсли ценятся моменты\nСытые коты\nНе дают высокие оценки\n\nКто-то выдумал\nЧто сегодня в моде худи\nМожет это план\nТипа в них худее будем\nСчастье дуракам\nЭти не умеют же стесняться\nЗавидую\n",
-          "chords": "",
-          "showLabel": true,
-          "cols": 2,
-          "style": {}
-        }
-      ]
-    },
-    {
       "name": "Spice girls - Viva forever",
       "sub": "",
       "pad": "",
@@ -1735,6 +1623,118 @@
       ]
     },
     {
+      "name": "Weeknd - Starboy",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 95,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "",
+          "text": "I'm tryna put you in the worst mood, ah\nP1 cleaner than your church shoes, ah\nMilli point two just to hurt you, ah\nAll red Lamb' just to tease you, ah\nNone of these toys on lease too, ah\nMade your whole year in a week too, yeah\nMain bitch outta your league too, ah\nSide bitch outta your league too, ah",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "преПрипев",
+          "text": "House so empty, need a centerpiece\nTwenty racks a table, cut from ebony\nCut that ivory into skinny pieces\nThen she clean it with her face, man, I love my baby, ah\nYou talkin' money, need a hearing aid\nYou talkin' 'bout me, I don't see the shade\nSwitch up my style, I take any lane\nI switch up my cup, I kill any pain",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Every day, a nigga try to test me, ah\nEvery day, a nigga try to end me, ah\nPull off in that Roadster SV, ah\nPockets overweight, gettin' hefty, ah\nComing for the king, that's a far cry, I\nI come alive in the fall time, I\nThe competition, I don't really listen\nI'm in the blue Mulsanne bumpin' New Edition",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Бридж",
+          "text": "Let a nigga brag Pitt\nLegend of the fall, took the year like a bandit\nBought mama a crib and a brand new wagon\nNow she hit the grocery shop lookin' lavish\nStar Trek roof in that Wraith of Khan\nGirls get loose when they hear this song\nA hundred on the dash get me close to God\nWe don't pray for love, we just pray for cars",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
+    },
+    {
+      "name": "Zivert - Wake up",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Логика никак\nВ мои речи не вернётся\nВажные слова\nПрячу до захода солнца\nСчастье дуракам\nЭти будут молча улыбаться\n\nМы хотели бы\nСтать чуть лучше, чем умеем\nНо по телеку\nПривлекательней злодеи\nПеред теми ли\nМы стоим у наших отражений\n",
+          "chords": "",
+          "showLabel": true,
+          "cols": 2,
+          "style": {}
+        },
+        {
+          "label": "Припев",
+          "text": "А нам\nПо барабану\nЕсли всё не по плану\nТо мы переиграем\nПлавно\nИ по барабану\nНе надо даром\nЕсли всё не по плану\nТо мы переиграем",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "Куплет 2",
+          "text": "В Питере мосты\nПо ночам уходят в небо\nРадости просты\nЕсли ценятся моменты\nСытые коты\nНе дают высокие оценки\n\nКто-то выдумал\nЧто сегодня в моде худи\nМожет это план\nТипа в них худее будем\nСчастье дуракам\nЭти не умеют же стесняться\nЗавидую\n",
+          "chords": "",
+          "showLabel": true,
+          "cols": 2,
+          "style": {}
+        }
+      ]
+    },
+    {
+      "name": "Zucchero - Baila",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 123,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "It blows my mind now that I found you\nDeep in the night of tequila boom, boom\nSlide by me, sexy thing, sexy and fine\nI got my eyes on you all of the time, yeah",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Huh, you got to have chaos burnin' in you\nTo make you open like a flower in bloom\nHell lives inside you next to paradise\nThe moon and sun have come to watch your shine",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Куплет 3",
+          "text": "Go chica, go cocca, keep it all shakin'\nYou know tonight somethin's up for the takin'\nMy heart is gold, heart of a saint\nWith you beside me girl, oh, then I ain't",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
+    },
+    {
       "name": "Tito & Tarantula - After dark",
       "sub": "",
       "pad": "",
@@ -1769,7 +1769,7 @@
           "style": {}
         },
         {
-          "label": "припев",
+          "label": "Куплет 3",
           "text": "Burning, burning in the flame\nNow I know her secret name\nYou can tear her temple down\nBut she'll be back and rule again, yeah",
           "chords": "",
           "showLabel": true,
