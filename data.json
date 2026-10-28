@@ -1058,6 +1058,50 @@
       }
     },
     {
+      "name": "Daft punk - Get Lucky",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Like the legend of the phoenix, uh\nAll ends with beginnings\nWhat keeps the planet spinning, ah\nThe force of love beginning, uh, look",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Припев",
+          "text": "We've come too far to give up who we are\nSo, let's raise the bar and our cups to the stars",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Куплет 2",
+          "text": "She's up all night 'til the sun\nI'm up all night to get some\nShe's up all night for good fun\nI'm up all night to get lucky\n\nWe're up all night 'til the sun\nWe're up all night to get some\nWe're up all night for good fun\nWe're up all night to get lucky",
+          "chords": "",
+          "showLabel": true,
+          "cols": 2,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "куплет 2",
+          "text": "The present has no ribbon\nYour gift keeps on giving\nWhat is this I'm feeling?\nIf you wanna leave, I'm with it (ah)\n\nWe've come too far to give up who we are\nSo, let's raise the bar and our cups to the stars",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
+    },
+    {
       "name": "Don Omar – Danza Kuduro",
       "sub": "",
       "pad": "",
@@ -1623,6 +1667,60 @@
       ]
     },
     {
+      "name": "Tito & Tarantula - After dark",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Watching her strolling in the night, so white\nWondering why it's only after dark\nIn her eyes, a distant fire light burns bright\nWondering why it's only after dark",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Припев",
+          "text": "I find myself in her room\nFeel the fever of my doom\nFalling, falling through the floor\nI'm knocking on the devil's door, yeah",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "Куплет 2",
+          "text": "In the dawn I wake up to find her gone\nAnd the note says \"Only after dark\"",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Куплет 3",
+          "text": "Burning, burning in the flame\nNow I know her secret name\nYou can tear her temple down\nBut she'll be back and rule again, yeah",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "Аутро",
+          "text": "In my heart, a deep and dark and lonely part\nWants her and waits for after dark\nAfter dark, after dark\nAfter dark",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
+    },
+    {
       "name": "Weeknd - Starboy",
       "sub": "",
       "pad": "",
@@ -1735,7 +1833,7 @@
       ]
     },
     {
-      "name": "Tito & Tarantula - After dark",
+      "name": "Ed Sheeran - Bad habits",
       "sub": "",
       "pad": "",
       "voice": "",
@@ -1744,7 +1842,7 @@
       "verses": [
         {
           "label": "Куплет 1",
-          "text": "Watching her strolling in the night, so white\nWondering why it's only after dark\nIn her eyes, a distant fire light burns bright\nWondering why it's only after dark",
+          "text": "Every time you come around, you know I can't say no\nEvery time the sun goes down, I let you take control\nI can feel the paradise before my world implodes\nAnd tonight had something wonderful",
           "chords": "",
           "showLabel": true,
           "cols": 1,
@@ -1752,7 +1850,7 @@
         },
         {
           "label": "Припев",
-          "text": "I find myself in her room\nFeel the fever of my doom\nFalling, falling through the floor\nI'm knocking on the devil's door, yeah",
+          "text": "My bad habits lead to late nights endin' alone\nConversations with a stranger I barely know\nSwearin' this will be the last, but it probably won't\nI got nothin' left to lose, or use, or do\n\nMy bad habits lead to wide eyes stare into space\nAnd I know I lose control of the things that I say\nYeah, I was lookin' for a way out, now I can't escape\nNothin' happens after two, it's true, it's true\nMy bad habits lead to you",
           "chords": "",
           "showLabel": true,
           "cols": 1,
@@ -1762,69 +1860,15 @@
         },
         {
           "label": "Куплет 2",
-          "text": "In the dawn I wake up to find her gone\nAnd the note says \"Only after dark\"",
+          "text": "Every pure intention ends when the good times start\nFallin' over everything to reach the first time's spark\nIt started under neon lights, and then it all got dark\nI only know how to go too far\n",
           "chords": "",
           "showLabel": true,
           "cols": 1,
           "style": {}
         },
         {
-          "label": "Куплет 3",
-          "text": "Burning, burning in the flame\nNow I know her secret name\nYou can tear her temple down\nBut she'll be back and rule again, yeah",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {
-            "bold": true
-          }
-        },
-        {
-          "label": "Аутро",
-          "text": "In my heart, a deep and dark and lonely part\nWants her and waits for after dark\nAfter dark, after dark\nAfter dark",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {}
-        }
-      ]
-    },
-    {
-      "name": "Daft punk - Get Lucky",
-      "sub": "",
-      "pad": "",
-      "voice": "",
-      "bpm": 100,
-      "showChords": false,
-      "verses": [
-        {
-          "label": "Куплет 1",
-          "text": "Like the legend of the phoenix, uh\nAll ends with beginnings\nWhat keeps the planet spinning, ah\nThe force of love beginning, uh, look",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {}
-        },
-        {
-          "label": "Припев",
-          "text": "We've come too far to give up who we are\nSo, let's raise the bar and our cups to the stars",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {}
-        },
-        {
-          "label": "Куплет 2",
-          "text": "She's up all night 'til the sun\nI'm up all night to get some\nShe's up all night for good fun\nI'm up all night to get lucky\n\nWe're up all night 'til the sun\nWe're up all night to get some\nWe're up all night for good fun\nWe're up all night to get lucky",
-          "chords": "",
-          "showLabel": true,
-          "cols": 2,
-          "style": {
-            "bold": true
-          }
-        },
-        {
-          "label": "куплет 2",
-          "text": "The present has no ribbon\nYour gift keeps on giving\nWhat is this I'm feeling?\nIf you wanna leave, I'm with it (ah)\n\nWe've come too far to give up who we are\nSo, let's raise the bar and our cups to the stars",
+          "label": "Бридж",
+          "text": "We took the long way 'round\nAnd burned 'til the fun ran out, now",
           "chords": "",
           "showLabel": true,
           "cols": 1,
