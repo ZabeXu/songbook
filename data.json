@@ -1031,6 +1031,50 @@
       ]
     },
     {
+      "name": "Justin Timberlake - Cry me a river",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "You were my sun\nYou were my earth\nBut you didn't know all the ways I loved you, no\nSo you took a chance\nAnd made other plans\nBut I bet you didn't think that they would come crashing down, no\n\nYou don't have to say, what you did\nI already know, I found out from him\nNow there's just no chance\nFor you and me\nThere'll never be\nAnd don't it make you sad about it?",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "преПрипев",
+          "text": "You told me you love me\nWhy did you leave me all alone?\nNow you tell me you need me\nWhen you call me on the phone\nGirl, I refuse\nYou must have me confused with some other guy\nThe bridges were burned\nNow it's your turn, to cry",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "припев",
+          "text": "You know that they say that some things are better left unsaid\nAnd it wasn't like you only talked to him and you know it\nDon't act like you don't know it\nAnd all of these things people told me\nKeep messin' with my head (messin' with my head)\nShould've picked honesty\nThen you may not have blown it (yeah)\n\nYou don't have to say (don't have to say)\nWhat you did (what you did)\nI already know (I already know)\nI found out from him (uh)\nNow there's just no chance (no chance)\nFor you and me (you and me)\nThere'll never be\nDon't it make you sad about it?",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Бридж",
+          "text": "Oh (oh!)\nThe damage is done, so I guess I be leaving",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
+    },
+    {
       "name": "Justin Timberlake – What goes around",
       "sub": "",
       "pad": "",
