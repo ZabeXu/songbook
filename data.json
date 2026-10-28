@@ -1161,6 +1161,40 @@
       ]
     },
     {
+      "name": "James Young - Infinity",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Baby, this love\nI'll never let it die\nCan't be touched by no one\nI'd like to see 'em try\n\nI'm a mad man for your touch, girl, I've lost control\nI'm gonna make this last forever, don't tell me it's impossible",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Припев",
+          "text": "'Cause I love you for infinity (oh-oh-oh)\nI love you for infinity (oh-oh-oh)\n'Cause I love you for infinity (oh-oh-oh)\nI love you for infinity (oh-oh-oh)",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Oh, darling, my soul\nYou know it aches for yours\nAnd you've been filling this hole\nSince you were born, oh\n\n'Cause you're the reason I believe in fate, you're my paradise\nAnd I'll do anything to be your love or be your sacrifice",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
+    },
+    {
       "name": "John Newman – Love me again",
       "sub": "",
       "pad": "",
