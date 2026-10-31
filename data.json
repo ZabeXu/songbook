@@ -908,6 +908,42 @@
       ]
     },
     {
+      "name": "Avicii - Wake me up",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 112,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Feeling my way through the darkness\nGuided by a beating heart\nI can't tell where the journey will end\nBut I know where to start\n\nThey tell me I'm too young to understand\nThey say I'm caught up in a dream\nWell life will pass me by if I don't open up my eyes\nWell that's fine by me",
+          "chords": "",
+          "showLabel": true,
+          "cols": 2,
+          "style": {}
+        },
+        {
+          "label": "Припев",
+          "text": "So wake me up when it's all over\nWhen I'm wiser and I'm older\nAll this time I was finding myself, and I\nDidn't know I was lost",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "Куплет 2",
+          "text": "I tried carrying the weight of the world\nBut I only have two hands\nHope I get the chance to travel the world\nBut I don't have any plans\n\nWish that I could stay forever this young\nNot afraid to close my eyes\nLife's a game made for everyone\nAnd love is a prize",
+          "chords": "",
+          "showLabel": true,
+          "cols": 2,
+          "style": {}
+        }
+      ]
+    },
+    {
       "name": "Black Eyed Peas - Lets Get started",
       "sub": "",
       "pad": "",
@@ -1170,7 +1206,7 @@
       "sub": "",
       "pad": "",
       "voice": "",
-      "bpm": 110,
+      "bpm": 115,
       "showChords": false,
       "verses": [
         {
@@ -1465,7 +1501,7 @@
       "sub": "",
       "pad": "",
       "voice": "",
-      "bpm": 110,
+      "bpm": 125,
       "showChords": false,
       "verses": [
         {
