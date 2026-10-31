@@ -1729,6 +1729,50 @@
       ]
     },
     {
+      "name": "Maroon 5 - This love",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 90,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "I was so high I did not recognize\nThe fire burning in her eyes\nThe chaos that controlled my mind\nWhispered goodbye as she got on a plane\nNever to return again\nBut always in my heart, oh",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Припев",
+          "text": "This love has taken its toll on me\nShe said goodbye too many times before\nAnd her heart is breaking in front of me\nAnd I have no choice, 'cause I won't say goodbye anymore",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "Куплет 2",
+          "text": "I tried my best to feed her appetite\nKeep her coming every night\nSo hard to keep her satisfied, oh\nKept playing love like it was just a game\nPretending to feel the same\nThen turn around and leave again, but uh-oh",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Бридж",
+          "text": "I'll fix these broken things, repair your broken wings\nAnd make sure everything's alright (it's alright, it's alright), oh, oh\nMy pressure on your hips, sinking my fingertips\nInto every inch of you because I know that's what you want me to do\n",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
+    },
+    {
       "name": "Maroon 5 – Moves like Jagger",
       "sub": "",
       "pad": "",
