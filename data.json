@@ -177,7 +177,17 @@
           "text": "Нас не стереть, мы живём назло\nПусть не везёт, но мы своё возьмём\nЭто небо - вместо сцены, здесь всё вверх ногами\nИ эти звёзды в темноте - тобой зажжённый фонарик\nТысяча меня до меня и после меня будет\nТысяча меня и в тысячах не меня - тыща меня\nИ мы снова вдребезги и нас не починить\nПлевать, ведь наши дети будут лучше, чем мы",
           "chords": ""
         }
-      ]
+      ],
+      "songStyle": {
+        "fontSize": 22,
+        "lineH": 1.5,
+        "color": "#000000",
+        "align": "center"
+      },
+      "chordStyle": {
+        "fontSize": 13,
+        "color": "#1a73e8"
+      }
     },
     {
       "name": "Бурито - Мама",
@@ -1202,6 +1212,50 @@
       ]
     },
     {
+      "name": "Ed Sheeran - Bad habits",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Every time you come around, you know I can't say no\nEvery time the sun goes down, I let you take control\nI can feel the paradise before my world implodes\nAnd tonight had something wonderful",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Припев",
+          "text": "My bad habits lead to late nights endin' alone\nConversations with a stranger I barely know\nSwearin' this will be the last, but it probably won't\nI got nothin' left to lose, or use, or do\n\nMy bad habits lead to wide eyes stare into space\nAnd I know I lose control of the things that I say\nYeah, I was lookin' for a way out, now I can't escape\nNothin' happens after two, it's true, it's true\nMy bad habits lead to you",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Every pure intention ends when the good times start\nFallin' over everything to reach the first time's spark\nIt started under neon lights, and then it all got dark\nI only know how to go too far\n",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "Бридж",
+          "text": "We took the long way 'round\nAnd burned 'til the fun ran out, now",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
+    },
+    {
       "name": "Gnarls Barkley - Crazy",
       "sub": "",
       "pad": "",
@@ -1262,6 +1316,62 @@
           "style": {
             "bold": true
           }
+        }
+      ]
+    },
+    {
+      "name": "Harry Styles - Watermelon sugar",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 95,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "Tastes like strawberries on a summer evenin'\nAnd it sounds just like a song\nI want more berries and that summer feelin'\nIt's so wonderful and warm",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "преПрипев",
+          "text": "Breathe me in, breathe me out\nI don't know if I could ever go without\nI'm just thinking out loud\nI don't know if I could ever go without",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        },
+        {
+          "label": "припев",
+          "text": "Watermelon sugar high, watermelon sugar high",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": false
+          }
+        },
+        {
+          "label": "куплет 2",
+          "text": "Strawberries on a summer evenin'\nBaby, you're the end of June\nI want your belly and that summer feelin'\nGetting washed away in you",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "Аутро",
+          "text": "I just wanna taste it, I just wanna taste it (yeah)\nWatermelon sugar high",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
         }
       ]
     },
@@ -1835,50 +1945,6 @@
         {
           "label": "Куплет 3",
           "text": "Go chica, go cocca, keep it all shakin'\nYou know tonight somethin's up for the takin'\nMy heart is gold, heart of a saint\nWith you beside me girl, oh, then I ain't",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {}
-        }
-      ]
-    },
-    {
-      "name": "Ed Sheeran - Bad habits",
-      "sub": "",
-      "pad": "",
-      "voice": "",
-      "bpm": 100,
-      "showChords": false,
-      "verses": [
-        {
-          "label": "Куплет 1",
-          "text": "Every time you come around, you know I can't say no\nEvery time the sun goes down, I let you take control\nI can feel the paradise before my world implodes\nAnd tonight had something wonderful",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {}
-        },
-        {
-          "label": "Припев",
-          "text": "My bad habits lead to late nights endin' alone\nConversations with a stranger I barely know\nSwearin' this will be the last, but it probably won't\nI got nothin' left to lose, or use, or do\n\nMy bad habits lead to wide eyes stare into space\nAnd I know I lose control of the things that I say\nYeah, I was lookin' for a way out, now I can't escape\nNothin' happens after two, it's true, it's true\nMy bad habits lead to you",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {
-            "bold": true
-          }
-        },
-        {
-          "label": "Куплет 2",
-          "text": "Every pure intention ends when the good times start\nFallin' over everything to reach the first time's spark\nIt started under neon lights, and then it all got dark\nI only know how to go too far\n",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {}
-        },
-        {
-          "label": "Бридж",
-          "text": "We took the long way 'round\nAnd burned 'til the fun ran out, now",
           "chords": "",
           "showLabel": true,
           "cols": 1,
