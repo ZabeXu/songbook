@@ -5,7 +5,7 @@
       "sub": "",
       "pad": "",
       "voice": "",
-      "bpm": 70,
+      "bpm": 69,
       "showChords": false,
       "verses": [
         {
@@ -49,7 +49,7 @@
       "sub": "",
       "pad": "",
       "voice": "",
-      "bpm": 75,
+      "bpm": 73,
       "showChords": false,
       "verses": [
         {
@@ -85,7 +85,7 @@
       "sub": "",
       "pad": "",
       "voice": "",
-      "bpm": 75,
+      "bpm": 80,
       "showChords": false,
       "verses": [
         {
@@ -1206,7 +1206,7 @@
       "sub": "",
       "pad": "",
       "voice": "",
-      "bpm": 115,
+      "bpm": 111,
       "showChords": false,
       "verses": [
         {
@@ -1296,7 +1296,7 @@
       "sub": "",
       "pad": "",
       "voice": "",
-      "bpm": 100,
+      "bpm": 95,
       "showChords": false,
       "verses": [
         {
@@ -1639,7 +1639,7 @@
       "sub": "",
       "pad": "",
       "voice": "",
-      "bpm": 67,
+      "bpm": 66,
       "showChords": false,
       "verses": [
         {
@@ -1918,7 +1918,17 @@
           "cols": 1,
           "style": {}
         }
-      ]
+      ],
+      "songStyle": {
+        "fontSize": 22,
+        "lineH": 1.5,
+        "color": "#000000",
+        "align": "center"
+      },
+      "chordStyle": {
+        "fontSize": 13,
+        "color": "#1a73e8"
+      }
     },
     {
       "name": "Weeknd - Starboy",
