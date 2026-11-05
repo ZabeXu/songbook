@@ -1148,6 +1148,42 @@
       ]
     },
     {
+      "name": "Danzel - Pump it up",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 130,
+      "showChords": false,
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "t's not so long ago\nThat the sound hit the nation\nEvery Saturday night\nOn your favourite radio\n\nAnd the party's jumpin', yeah\nAnd the vibe feels so strong\nThrow your hands in the air\nLift your head up high\nYou know you got to sing along",
+          "chords": "",
+          "showLabel": true,
+          "cols": 2,
+          "style": {}
+        },
+        {
+          "label": "Припев",
+          "text": "Don't you know, pump it up\nYou got to pump it up",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Got the feeling, what's the name of the jam?\nSay I can feel it, you know you can\nI've got my groove on and I'm ready to go\nCheck out my ride girl, but don't touch my radio",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
+    },
+    {
       "name": "Don Omar – Danza Kuduro",
       "sub": "",
       "pad": "",
@@ -2045,42 +2081,6 @@
         {
           "label": "Куплет 3",
           "text": "Go chica, go cocca, keep it all shakin'\nYou know tonight somethin's up for the takin'\nMy heart is gold, heart of a saint\nWith you beside me girl, oh, then I ain't",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {}
-        }
-      ]
-    },
-    {
-      "name": "Danzel - Pump it up",
-      "sub": "",
-      "pad": "",
-      "voice": "",
-      "bpm": 130,
-      "showChords": false,
-      "verses": [
-        {
-          "label": "Куплет 1",
-          "text": "t's not so long ago\nThat the sound hit the nation\nEvery Saturday night\nOn your favourite radio\n\nAnd the party's jumpin', yeah\nAnd the vibe feels so strong\nThrow your hands in the air\nLift your head up high\nYou know you got to sing along",
-          "chords": "",
-          "showLabel": true,
-          "cols": 2,
-          "style": {}
-        },
-        {
-          "label": "Припев",
-          "text": "Don't you know, pump it up\nYou got to pump it up",
-          "chords": "",
-          "showLabel": true,
-          "cols": 1,
-          "style": {
-            "bold": true
-          }
-        },
-        {
-          "label": "Куплет 2",
-          "text": "Got the feeling, what's the name of the jam?\nSay I can feel it, you know you can\nI've got my groove on and I'm ready to go\nCheck out my ride girl, but don't touch my radio",
           "chords": "",
           "showLabel": true,
           "cols": 1,
