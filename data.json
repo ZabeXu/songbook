@@ -1770,7 +1770,17 @@
           "cols": 1,
           "style": {}
         }
-      ]
+      ],
+      "songStyle": {
+        "fontSize": 22,
+        "lineH": 1.5,
+        "color": "#000000",
+        "align": "center"
+      },
+      "chordStyle": {
+        "fontSize": 13,
+        "color": "#1a73e8"
+      }
     },
     {
       "name": "Maroon 5 – Moves like Jagger",
@@ -2041,6 +2051,15 @@
           "style": {}
         }
       ]
+    },
+    {
+      "name": "Danzel - Pump it up",
+      "sub": "",
+      "pad": "",
+      "voice": "",
+      "bpm": 100,
+      "showChords": false,
+      "verses": []
     }
   ],
   "cfg": {
