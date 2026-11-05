@@ -2057,9 +2057,36 @@
       "sub": "",
       "pad": "",
       "voice": "",
-      "bpm": 100,
+      "bpm": 125,
       "showChords": false,
-      "verses": []
+      "verses": [
+        {
+          "label": "Куплет 1",
+          "text": "t's not so long ago\nThat the sound hit the nation\nEvery Saturday night\nOn your favourite radio\n\nAnd the party's jumpin', yeah\nAnd the vibe feels so strong\nThrow your hands in the air\nLift your head up high\nYou know you got to sing along",
+          "chords": "",
+          "showLabel": true,
+          "cols": 2,
+          "style": {}
+        },
+        {
+          "label": "Припев",
+          "text": "Don't you know, pump it up\nYou got to pump it up",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {
+            "bold": true
+          }
+        },
+        {
+          "label": "Куплет 2",
+          "text": "Got the feeling, what's the name of the jam?\nSay I can feel it, you know you can\nI've got my groove on and I'm ready to go\nCheck out my ride girl, but don't touch my radio",
+          "chords": "",
+          "showLabel": true,
+          "cols": 1,
+          "style": {}
+        }
+      ]
     }
   ],
   "cfg": {
